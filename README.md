@@ -10,3 +10,4 @@ This repository contains my Neovim config, which is written in Lua. It uses pack
 ## Other tips for configuring Neovim
 - When setting the style for material.nvim, the style **MUST** come before enabling the colorscheme, otherwise, a manual `:source %` is required to apply the new style
 - When installing the Lua language server with Mason for the first time, change "sumneko_lua" to "lua_ls"
+- When installing certain LSPs like pyright, npm must be installed first through terminal (just run `sudo apt install nodejs npm`

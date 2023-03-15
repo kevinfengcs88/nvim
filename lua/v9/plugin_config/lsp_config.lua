@@ -15,5 +15,13 @@ local on_attach = function(_, _)
 end
 
 require('lspconfig').lua_ls.setup {
-  on_attach = on_attach
+  on_attach = on_attach,
+  settings = {
+    Lua = {
+      diagnostics = {
+        -- the line below is necessary to ignore annoying Lua LSP for vim variable
+        globals = { 'vim' }
+      }
+    }
+  }
 }
