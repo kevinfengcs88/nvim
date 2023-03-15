@@ -8,4 +8,4 @@ This repository contains my Neovim config, which is written in Lua. It uses pack
 - `a` while focused on nvim-tree adds a new file (or folder)
 
 ## Other tips for configuring Neovim
-- When setting the style for material.nvim, you have to run `:source %` in order for the changes to take effect
+- When setting the style for material.nvim, the style **MUST** come before enabling the colorscheme, otherwise, a manual `:source %` is required to apply the new style
