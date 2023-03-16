@@ -27,14 +27,17 @@ return require('packer').startup(function(use)
   use {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
-    'neovim/nvim-lspconfig',
+    'neovim/nvim-lspconfig'
   }
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
   use 'rafamadriz/friendly-snippets'
-  use { "akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" }
+  use { "akinsho/toggleterm.nvim",
+    commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda",
+    config = "require('toggleterm')"
+  }
   -- My plugins here
   -- use 'foo1/bar1.nvim'
   -- use 'foo2/bar2.nvim'
