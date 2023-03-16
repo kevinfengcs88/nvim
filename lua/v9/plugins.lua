@@ -38,6 +38,11 @@ return require('packer').startup(function(use)
     commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda",
     config = "require('toggleterm')"
   }
+  use({
+      "iamcco/markdown-preview.nvim",
+      run = function() vim.fn["mkdp#util#install"]() end,
+  })
+
   -- My plugins here
   -- use 'foo1/bar1.nvim'
   -- use 'foo2/bar2.nvim'
