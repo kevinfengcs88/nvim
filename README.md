@@ -12,6 +12,14 @@ This repository contains my Neovim config, which is written in Lua. It uses pack
 - If installing the Lua language server with Mason for the first time, change "sumneko_lua" to "lua_ls"
 - When installing certain LSPs like pyright, npm must be installed first through terminal (just run `sudo apt install nodejs npm`
 - Make sure to add the languages that you are working with in `treesitter.lua`, otherwise their syntax highlighting will be suboptimal
+- For installing markdown-preview plugin, use this code to install without yarn or npm:
+```lua
+use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+})
+```
+
 
 ## Linux tips/miscellaneous tips
 - `q` while stuck in `git diff` exits the logs (may need to hit `i` if the terminal doesn't respond to `q`)
