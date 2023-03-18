@@ -11,8 +11,6 @@ This repository contains my Neovim config, which is written in Lua. It uses pack
 - When setting the style for material.nvim, the style **MUST** come before enabling the colorscheme, otherwise, a manual `:source %` is required to apply the new style
 - If installing the Lua language server with Mason for the first time, change "sumneko_lua" to "lua_ls"
 - When installing certain LSPs like pyright, npm must be installed first through terminal (just run `sudo apt install nodejs npm`
-- The toggleterm plugin does **not** function properly without being in the `~/.config/nvim/plugin` directory
-    - It does not need to be in the `lua/v9/plugin_config` directory (you can add it just for modularity's sake, but it does not impact functionality)
 - Make sure to add the languages that you are working with in `treesitter.lua`, otherwise their syntax highlighting will be suboptimal
 
 ## Linux tips/miscellaneous tips
