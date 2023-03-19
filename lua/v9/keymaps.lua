@@ -11,6 +11,7 @@ set.showcmd = true
 set.laststatus = 2
 set.autowrite = true
 set.autoread = true
+set.cursorline = true
 
 set.tabstop = 2
 set.shiftwidth = 2
@@ -25,3 +26,4 @@ keymap.set('n', '<leader>s', ':source %<CR>')
 keymap.set('n', '<leader>a', 'ggVG<CR>')
 keymap.set('n', '<TAB>', '>>')
 keymap.set('n', '<S-TAB>', '<<')
+keymap.set('n', '<leader>p', ':PackerSync<CR>')

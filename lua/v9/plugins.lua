@@ -49,6 +49,10 @@ return require('packer').startup(function(use)
       end
   }
   use 'JoosepAlviste/nvim-ts-context-commentstring'
+  use {
+    "windwp/nvim-autopairs",
+      config = function() require("nvim-autopairs").setup {} end
+  }
 
   -- My plugins here
   -- use 'foo1/bar1.nvim'

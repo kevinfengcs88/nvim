@@ -9,5 +9,8 @@ require'nvim-treesitter.configs'.setup {
   context_commentstring = {
     enable = true,
     autocmd = false
+  },
+  autopairs = {
+    enable = true
   }
 }
