@@ -48,6 +48,7 @@ return require('packer').startup(function(use)
           require('Comment').setup()
       end
   }
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
 
   -- My plugins here
   -- use 'foo1/bar1.nvim'
