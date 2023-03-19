@@ -53,6 +53,11 @@ return require('packer').startup(function(use)
     "windwp/nvim-autopairs",
       config = function() require("nvim-autopairs").setup {} end
   }
+  use {
+    "windwp/nvim-ts-autotag",
+      config = function() require("nvim-ts-autotag").setup {} end
+  }
+
 
   -- My plugins here
   -- use 'foo1/bar1.nvim'
