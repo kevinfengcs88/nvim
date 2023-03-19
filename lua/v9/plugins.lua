@@ -42,6 +42,12 @@ return require('packer').startup(function(use)
       "iamcco/markdown-preview.nvim",
       run = function() vim.fn["mkdp#util#install"]() end,
   })
+  use {
+      'numToStr/Comment.nvim',
+      config = function()
+          require('Comment').setup()
+      end
+  }
 
   -- My plugins here
   -- use 'foo1/bar1.nvim'
