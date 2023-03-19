@@ -19,6 +19,7 @@ use({
     run = function() vim.fn["mkdp#util#install"]() end,
 })
 ```
+- To show current keymaps, use `:nmap`, `:vmap`, and `:imap` for normal, visual, and insert mode mappings, respectively
 
 
 ## Linux tips/miscellaneous tips
