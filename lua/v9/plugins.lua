@@ -57,7 +57,12 @@ return require('packer').startup(function(use)
     "windwp/nvim-ts-autotag",
       config = function() require("nvim-ts-autotag").setup {} end
   }
-
+  use {
+      'goolord/alpha-nvim',
+      config = function ()
+          require'alpha'.setup(require'alpha.themes.dashboard'.config)
+      end
+  }
 
   -- My plugins here
   -- use 'foo1/bar1.nvim'
