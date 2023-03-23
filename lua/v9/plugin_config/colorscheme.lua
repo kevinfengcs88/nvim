@@ -1,3 +1,3 @@
 vim.o.termguicolors = true
-vim.g.material_style = "deep ocean"
+vim.g.material_style = "darker"
 vim.cmd("colorscheme material")
