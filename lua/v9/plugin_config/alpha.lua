@@ -20,15 +20,15 @@ dashboard.section.header.val = {
 
  dashboard.section.buttons.val = {
    dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
-   dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
+   dashboard.button("e", "  New file", ":ene <CR>"),
    dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
    dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
-   dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.lua<CR>"),
+   dashboard.button("p", "  Plugins", ":e ~/.config/nvim/lua/v9/plugins.lua <CR>"),
    dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
 }
 
 local function footer()
- return "Don't Stop Until You are Proud..."
+ return "Not all those wander are lost..."
 end
 
 dashboard.section.footer.val = footer()
@@ -39,4 +39,3 @@ dashboard.section.buttons.opts.hl = "Keyword"
 
 dashboard.opts.opts.noautocmd = true
 alpha.setup(dashboard.opts)
-
