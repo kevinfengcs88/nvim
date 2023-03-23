@@ -28,5 +28,6 @@ keymap.set('n', '<TAB>', '>>')
 keymap.set('n', '<S-TAB>', '<<')
 keymap.set('n', '<leader>p', ':PackerSync<CR>')
 keymap.set('n', '<leader>h', ':noh<CR>')
-keymap.set('v', '<C-c>', '"+y')
+keymap.set('n', '<CR>', 'o<Esc>') -- this creates a new line below the cursor and goes back into normal mode
 
+keymap.set('v', '<C-c>', '"+y')
