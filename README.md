@@ -21,6 +21,8 @@ use({
 ```
 - To show current keymaps, use `:nmap`, `:vmap`, and `:imap` for normal, visual, and insert mode mappings, respectively
 - To show currently installed parsers for treesitter, use `:TSInstallInfo`
+- `pip` is a requirement for lichess
+    - `pip install berserk` for the lichess requirement
 
 ## Linux tips/miscellaneous tips
 - `q` while stuck in `git diff` exits the logs (may need to hit `i` if the terminal doesn't respond to `q`)

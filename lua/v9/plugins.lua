@@ -63,10 +63,7 @@ return require('packer').startup(function(use)
           require'alpha'.setup(require'alpha.themes.dashboard'.config)
       end
   }
-
-  -- My plugins here
-  -- use 'foo1/bar1.nvim'
-  -- use 'foo2/bar2.nvim'
+  use 'luk400/vim-lichess'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
