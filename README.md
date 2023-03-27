@@ -7,6 +7,8 @@ This repository contains my Neovim config, which is written in Lua. It uses pack
 - `a` while focused on nvim-tree adds a new file (or folder, just append a '/' character)
 - Neovim allows for pasting from the system clipboard via `CTRL + SHIFT + V` both in insert mode and command mode (note that wl-clipboard is installed, which might influence this behavior)
 - `;q` quits Neovim and `;w` saves all buffers
+- `TAB` and `SHIFT + TAB` indent and outdent a line, regardless of where the cursor is
+    - In visual mode, the same keymaps work (just remapped to their multi-line variants)
 
 ## Other tips for configuring Neovim
 - When setting the style for material.nvim, the style **MUST** come before enabling the colorscheme, otherwise, a manual `:source %` is required to apply the new style

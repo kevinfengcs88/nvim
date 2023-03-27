@@ -35,3 +35,5 @@ keymap.set('n', '<CR>', 'o<Esc>') -- this creates a new line below the cursor an
 keymap.set('n', '<C-l>', '<C-w>w') -- this creates a new line below the cursor and goes back into normal mode
 
 keymap.set('v', '<C-c>', '"+y')
+keymap.set('v', '<TAB>', '<S-.>')
+keymap.set('v', '<S-TAB>', '<S-,>')
