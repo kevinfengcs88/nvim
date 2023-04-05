@@ -35,3 +35,4 @@ use({
 - Underline errors through LSP
 - Screensaver after certain amount of inactivity
 - lolcat animated dashboard for alpha
+- Buffer resize keymaps
