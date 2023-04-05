@@ -32,7 +32,11 @@ keymap.set('n', '<C-a>', 'ggVG<CR>')
 keymap.set('n', '<TAB>', '>>')
 keymap.set('n', '<S-TAB>', '<<')
 keymap.set('n', '<CR>', 'o<Esc>') -- this creates a new line below the cursor and goes back into normal mode
-keymap.set('n', '<C-l>', '<C-w>w') -- makes toggleing between nvim tree and current buffer easier
+keymap.set('n', '<C-j>', '<C-w>w') -- makes toggling between buffers easier
+
+-- enables switching buffers from left to right and vice versa
+keymap.set('n', '<C-h>', '<C-w>h')
+keymap.set('n', '<C-l>', '<C-w>l')
 
 keymap.set('v', '<C-c>', '"+y')
 keymap.set('v', '<TAB>', '<S-.>')
