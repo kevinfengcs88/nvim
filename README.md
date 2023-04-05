@@ -36,3 +36,4 @@ use({
 - Screensaver after certain amount of inactivity
 - lolcat animated dashboard for alpha
 - Buffer resize keymaps
+- Add whichkey plugin
