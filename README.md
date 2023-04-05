@@ -37,3 +37,4 @@ use({
 - lolcat animated dashboard for alpha
 - Buffer resize keymaps
 - Add whichkey plugin
+- Add bufferline plugin
