@@ -31,14 +31,22 @@ keymap.set('n', '<leader>a', ':Alpha<CR>', opts)
 keymap.set('n', '<C-a>', 'ggVG<CR>', opts)
 keymap.set('n', '<TAB>', '>>', opts)
 keymap.set('n', '<S-TAB>', '<<', opts)
+
 -- this creates a new line below the cursor and goes back into normal mode
 keymap.set('n', '<CR>', 'o<Esc>', opts)
+
 -- makes toggling between buffers easier
 keymap.set('n', '<C-j>', '<C-w>w', opts)
 
 -- enables switching buffers from left to right and vice versa
 keymap.set('n', '<C-h>', '<C-w>h', opts)
 keymap.set('n', '<C-l>', '<C-w>l', opts)
+
+-- quick resizing of buffers
+keymap.set("n", "<C-Up>", ":resize -2<CR>", opts)
+keymap.set("n", "<C-Down>", ":resize +2<CR>", opts)
+keymap.set("n", "<C-Left>", ":vertical resize -2<CR>", opts)
+keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 keymap.set('v', '<C-c>', '"+y', opts)
 keymap.set('v', '<TAB>', '<S-.>', opts)
