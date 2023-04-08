@@ -44,3 +44,4 @@ sudo dpkg -i ripgrep_13.0.0_amd64.deb
 - Add option to alpha to open nvim-tree
 - Edit README to align with lazy package manager, not packer
 - Fix keymappings for indenting/outdenting code in visual mode
+- Reduce startup time (initially faster than packer, but now something made it slower)
