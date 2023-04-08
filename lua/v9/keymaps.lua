@@ -19,7 +19,6 @@ set.shiftwidth = 2
 set.shiftround = true
 set.expandtab = true
 
--- useful keymaps
 keymap.set('n', '<leader>w', ':wa<CR>', opts)
 keymap.set('n', '<leader>q', ':qa<CR>', opts)
 keymap.set('n', '<leader>m', ':MarkdownPreview<CR>', opts)
@@ -31,6 +30,14 @@ keymap.set('n', '<leader>a', ':Alpha<CR>', opts)
 keymap.set('n', '<C-a>', 'ggVG<CR>', opts)
 keymap.set('n', '<TAB>', '>>', opts)
 keymap.set('n', '<S-TAB>', '<<', opts)
+
+-- search movement
+keymap.set('n', 'n', 'nzzzv', opts)
+keymap.set('n', 'N', 'Nzzzv', opts)
+
+-- vertical movement
+keymap.set('n', '<C-d>', '<C-d>zz', opts)
+keymap.set('n', '<C-u>', '<C-u>zz', opts)
 
 -- this creates a new line below the cursor and goes back into normal mode
 keymap.set('n', '<CR>', 'o<Esc>', opts)
