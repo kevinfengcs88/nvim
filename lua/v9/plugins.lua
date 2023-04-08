@@ -21,7 +21,9 @@ local plugins = {
   {
     'nvim-telescope/telescope.nvim',
     version = '0.1.0',
-    dependencies = { {'nvim-lua/plenary.nvim'} }
+    dependencies = {
+      'nvim-lua/plenary.nvim'
+    }
   },
   {
     'williamboman/mason.nvim',
