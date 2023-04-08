@@ -37,10 +37,12 @@ local plugins = {
     commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda",
     config = "require('toggleterm')"
   },
-  ({
+  {
       "iamcco/markdown-preview.nvim",
-      run = function() vim.fn["mkdp#util#install"]() end,
-  }),
+      config = function()
+        vim.fn["mkdp#util#install"]()
+      end,
+  },
   {
       'numToStr/Comment.nvim',
       config = function()
