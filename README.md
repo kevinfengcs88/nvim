@@ -37,7 +37,7 @@ sudo dpkg -i ripgrep_13.0.0_amd64.deb
 - `q` while stuck in `git diff` exits the logs (may need to hit `i` if the terminal doesn't respond to `q`)
 - For moving files to `$PATH`, you cannot just drag and drop files via the file explorer (or copy + paste them for that matter). Instead you have to do it with super user permissions: `sudo mv filename /usr/local/bin`
 
-## Plugins/features to add
+## TODO
 - Underline errors through LSP
 - Screensaver after certain amount of inactivity
 - lolcat animated dashboard for alpha
@@ -45,3 +45,4 @@ sudo dpkg -i ripgrep_13.0.0_amd64.deb
 - Edit README to align with lazy package manager, not packer
 - Fix keymappings for indenting/outdenting code in visual mode
 - Reduce startup time (initially faster than packer, but now something made it slower)
+    - Use vim-startuptime data to reduce startup time

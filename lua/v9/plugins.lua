@@ -67,7 +67,8 @@ local plugins = {
           require'alpha'.setup(require'alpha.themes.dashboard'.config)
       end
   },
-  'luk400/vim-lichess'
+  'luk400/vim-lichess',
+  'dstein64/vim-startuptime'
 }
 
 local opts = {}
