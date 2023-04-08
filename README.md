@@ -35,4 +35,3 @@ use({
 - Underline errors through LSP
 - Screensaver after certain amount of inactivity
 - lolcat animated dashboard for alpha
-- Migrate to lazy.nvim for package manager
