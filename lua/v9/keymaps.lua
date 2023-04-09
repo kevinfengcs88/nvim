@@ -21,7 +21,7 @@ set.expandtab = true
 
 keymap.set('n', '<leader>w', ':wa<CR>', opts)
 keymap.set('n', '<leader>q', ':qa<CR>', opts)
-keymap.set('n', '<leader>m', ':MarkdownPreview<CR>', opts)
+keymap.set('n', '<leader>m', ':PeekOpen<CR>', opts)
 keymap.set('n', '<leader>s', ':source %<CR>', opts)
 keymap.set('n', '<leader>p', ':PackerSync<CR>', opts)
 keymap.set('n', '<leader>h', ':noh<CR>', opts)

@@ -13,7 +13,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-  {'ellisonleao/gruvbox.nvim', lazy=true},
   {'nvim-tree/nvim-tree.lua', lazy=true},
   {'nvim-tree/nvim-web-devicons', lazy=true},
   {'nvim-lualine/lualine.nvim', lazy=true},
@@ -42,11 +41,19 @@ local plugins = {
     config = "require('toggleterm')",
     lazy=true
   },
+  -- {
+  --     "iamcco/markdown-preview.nvim",
+  --     config = function ()
+  --       vim.fn["mkdp#util#install"]()
+  --     end
+  -- },
   {
-      "iamcco/markdown-preview.nvim",
-      config = function()
-        vim.fn["mkdp#util#install"]()
-      end, lazy=true
+    'toppair/peek.nvim',
+    run = 'deno task --quiet build:fast',
+    config = function()
+      vim.api.nvim_create_user_command('PeekOpen', require('peek').open, {})
+      vim.api.nvim_create_user_command('PeekClose', require('peek').close, {})
+    end,
   },
   {
       'numToStr/Comment.nvim',
@@ -76,4 +83,3 @@ local plugins = {
 local opts = {}
 
 require("lazy").setup(plugins, opts)
-
