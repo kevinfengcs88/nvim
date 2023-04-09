@@ -53,3 +53,6 @@ python3 -m pip install --user --upgrade pynvim
 - lolcat animated dashboard for alpha
 - Add option to alpha to open nvim-tree
 - Check out leap or hop plugins for movement
+- Add games
+    - vim-be-good
+    - Tetris
