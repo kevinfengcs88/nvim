@@ -37,6 +37,10 @@ sudo unzip -d /usr/local/bin /tmp/deno.zip
 ```
 cd ~/.local/share/nvim/lazy/peek.nvim && deno task build:debug
 ```
+- Run this command if `python3` provider cannot be found for lichess plugin:
+```
+python3 -m pip install --user --upgrade pynvim
+```
 
 ## Linux tips/miscellaneous tips
 - `q` while stuck in `git diff` exits the logs (may need to hit `i` if the terminal doesn't respond to `q`)
