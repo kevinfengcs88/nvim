@@ -32,11 +32,11 @@ local plugins = {
     'neovim/nvim-lspconfig',
     lazy=true
   },
-  {'hrsh7th/nvim-cmp', lazy=true},
-  {'hrsh7th/cmp-nvim-lsp', lazy=true},
-  {'L3MON4D3/LuaSnip', lazy=true},
-  {'saadparwaiz1/cmp_luasnip', lazy=true},
-  {'rafamadriz/friendly-snippets', lazy=true},
+  {'hrsh7th/nvim-cmp'},
+  {'hrsh7th/cmp-nvim-lsp'},
+  {'L3MON4D3/LuaSnip'},
+  {'saadparwaiz1/cmp_luasnip'},
+  {'rafamadriz/friendly-snippets'},
   { "akinsho/toggleterm.nvim",
     commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda",
     config = "require('toggleterm')",
@@ -52,16 +52,16 @@ local plugins = {
       'numToStr/Comment.nvim',
       config = function()
           require('Comment').setup()
-      end, lazy=true
+      end
   },
   {'JoosepAlviste/nvim-ts-context-commentstring', lazy=true},
   {
     "windwp/nvim-autopairs",
-      config = function() require("nvim-autopairs").setup {} end, lazy=true
+      config = function() require("nvim-autopairs").setup {} end
   },
   {
     "windwp/nvim-ts-autotag",
-      config = function() require("nvim-ts-autotag").setup {} end, lazy=true
+      config = function() require("nvim-ts-autotag").setup {} end
   },
   {
       'goolord/alpha-nvim',
