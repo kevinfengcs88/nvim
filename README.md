@@ -51,4 +51,3 @@ python3 -m pip install --user --upgrade pynvim
 - Underline errors through LSP
 - Screensaver after certain amount of inactivity
 - lolcat animated dashboard for alpha
-- Add option to alpha to open nvim-tree
