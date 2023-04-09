@@ -2,7 +2,7 @@
 This repository contains my Neovim config, which is written in Lua. It uses lazy for managing plugins. Below are some useful keymaps and configuration tips as I learn more about Neovim as well as some additional Linux/miscellaneous tips that I discovered while setting up my workflow. 
 
 ## Useful keymaps
-- `CTRL + L` cycles through buffers (particularly useful for switching between nvim-tree and the editor)
+- `CTRL + J` cycles through buffers (particularly useful for switching between nvim-tree and the editor)
 - `r` while focused on nvim-tree renames the current file
 - `a` while focused on nvim-tree adds a new file (or folder, just append a '/' character)
 - Neovim allows for pasting from the system clipboard via `CTRL + SHIFT + V` both in insert mode and command mode (note that wl-clipboard is installed, which might influence this behavior)

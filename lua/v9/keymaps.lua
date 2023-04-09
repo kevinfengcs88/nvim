@@ -3,8 +3,8 @@ local global = vim.g
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
-global.mapleader = ';'
-global.maplocalleader = ';'
+global.mapleader = ' '
+global.maplocalleader = ' '
 
 set.number = true
 set.backspace = '2'
@@ -22,8 +22,8 @@ set.expandtab = true
 keymap.set('n', '<leader>w', ':wa<CR>', opts)
 keymap.set('n', '<leader>q', ':qa<CR>', opts)
 keymap.set('n', '<leader>m', ':PeekOpen<CR>', opts)
-keymap.set('n', '<leader>s', ':source %<CR>', opts)
-keymap.set('n', '<leader>p', ':PackerSync<CR>', opts)
+-- keymap.set('n', '<leader>s', ':source %<CR>', opts)
+-- keymap.set('n', '<leader>p', ':PackerSync<CR>', opts)
 keymap.set('n', '<leader>h', ':noh<CR>', opts)
 keymap.set('n', '<leader>a', ':Alpha<CR>', opts)
 
@@ -56,5 +56,5 @@ keymap.set("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 keymap.set('v', '<C-c>', '"+y', opts)
-keymap.set('v', '<TAB>', '<S-.>', opts)
-keymap.set('v', '<S-TAB>', '<S-,>', opts)
+keymap.set('v', '<TAB>', '<S->>', opts)
+keymap.set('v', '<S-TAB>', '<S-<>', opts)
