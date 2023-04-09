@@ -1,74 +1,77 @@
-local ensure_packer = function()
-  local fn = vim.fn
-  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
-  if fn.empty(fn.glob(install_path)) > 0 then
-    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-    vim.cmd [[packadd packer.nvim]]
-    return true
-  end
-  return false
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
 end
 
-local packer_bootstrap = ensure_packer()
+vim.opt.rtp:prepend(lazypath)
 
-return require('packer').startup(function(use)
-  use 'wbthomason/packer.nvim'
-  use 'ellisonleao/gruvbox.nvim'
-  use 'nvim-tree/nvim-tree.lua'
-  use 'nvim-tree/nvim-web-devicons'
-  use 'nvim-lualine/lualine.nvim'
-  use 'marko-cerovac/material.nvim'
-  use 'nvim-treesitter/nvim-treesitter'
-  use {
+local plugins = {
+  'ellisonleao/gruvbox.nvim',
+  'nvim-tree/nvim-tree.lua',
+  'nvim-tree/nvim-web-devicons',
+  'nvim-lualine/lualine.nvim',
+  'marko-cerovac/material.nvim',
+  'nvim-treesitter/nvim-treesitter',
+  {
     'nvim-telescope/telescope.nvim',
-    tag = '0.1.0',
-    requires = { {'nvim-lua/plenary.nvim'} }
-  }
-  use {
+    version = '0.1.0',
+    dependencies = {
+      'nvim-lua/plenary.nvim'
+    }
+  },
+  {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
     'neovim/nvim-lspconfig'
-  }
-  use 'hrsh7th/nvim-cmp'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'L3MON4D3/LuaSnip'
-  use 'saadparwaiz1/cmp_luasnip'
-  use 'rafamadriz/friendly-snippets'
-  use { "akinsho/toggleterm.nvim",
+  },
+  'hrsh7th/nvim-cmp',
+  'hrsh7th/cmp-nvim-lsp',
+  'L3MON4D3/LuaSnip',
+  'saadparwaiz1/cmp_luasnip',
+  'rafamadriz/friendly-snippets',
+  { "akinsho/toggleterm.nvim",
     commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda",
     config = "require('toggleterm')"
-  }
-  use({
+  },
+  {
       "iamcco/markdown-preview.nvim",
-      run = function() vim.fn["mkdp#util#install"]() end,
-  })
-  use {
+      config = function()
+        vim.fn["mkdp#util#install"]()
+      end,
+  },
+  {
       'numToStr/Comment.nvim',
       config = function()
           require('Comment').setup()
       end
-  }
-  use 'JoosepAlviste/nvim-ts-context-commentstring'
-  use {
+  },
+  'JoosepAlviste/nvim-ts-context-commentstring',
+  {
     "windwp/nvim-autopairs",
       config = function() require("nvim-autopairs").setup {} end
-  }
-  use {
+  },
+  {
     "windwp/nvim-ts-autotag",
       config = function() require("nvim-ts-autotag").setup {} end
-  }
-  use {
+  },
+  {
       'goolord/alpha-nvim',
       config = function ()
           require'alpha'.setup(require'alpha.themes.dashboard'.config)
       end
-  }
-  use 'luk400/vim-lichess'
+  },
+  'luk400/vim-lichess',
+  'dstein64/vim-startuptime'
+}
 
-  -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
-  if packer_bootstrap then
-    require('packer').sync()
-  end
-end)
+local opts = {}
+
+require("lazy").setup(plugins, opts)
 
