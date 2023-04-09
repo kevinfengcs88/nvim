@@ -85,7 +85,8 @@ local plugins = {
       require('leap').add_default_mappings()
     end
   },
-  {'ThePrimeagen/vim-be-good'}
+  {'ThePrimeagen/vim-be-good'},
+  {'alec-gibson/nvim-tetris'}
 }
 
 local opts = {}
