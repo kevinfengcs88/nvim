@@ -9,6 +9,7 @@ This repository contains my Neovim config, which is written in Lua. It uses lazy
 - `;q` quits Neovim (by quitting all buffers) and `;w` saves all buffers
 - `TAB` and `SHIFT + TAB` indent and outdent a line, regardless of where the cursor is
     - In visual mode, the same keymaps work (just remapped to their multi-line variants)
+- Upon opening Neovim (and seeing the alpha dashboard), just hit `ENTER` rather than `CTRL + P` for telescope's find file function since the cursor is already focused on the first option
 
 ## Other tips for configuring Neovim
 - When setting the style for material.nvim, the style **MUST** come before enabling the colorscheme, otherwise, a manual `:source %` is required to apply the new style
@@ -51,3 +52,4 @@ python3 -m pip install --user --upgrade pynvim
 - Screensaver after certain amount of inactivity
 - lolcat animated dashboard for alpha
 - Add option to alpha to open nvim-tree
+- Check out leap or hop plugins for movement
