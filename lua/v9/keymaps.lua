@@ -13,6 +13,7 @@ set.laststatus = 2
 set.autowrite = true
 set.autoread = true
 set.cursorline = true
+set.relativenumber = true
 
 set.tabstop = 2
 set.shiftwidth = 2

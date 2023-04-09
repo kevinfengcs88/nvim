@@ -78,7 +78,13 @@ local plugins = {
   },
   {'luk400/vim-lichess'},
   {'dstein64/vim-startuptime'},
-  {'rhysd/clever-f.vim'}
+  {'rhysd/clever-f.vim'},
+  {
+    'ggandor/leap.nvim',
+    config = function()
+      require('leap').add_default_mappings()
+    end
+  }
 }
 
 local opts = {}
