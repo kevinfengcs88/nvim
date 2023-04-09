@@ -52,5 +52,3 @@ python3 -m pip install --user --upgrade pynvim
 - Screensaver after certain amount of inactivity
 - lolcat animated dashboard for alpha
 - Add option to alpha to open nvim-tree
-- Add games
-    - Tetris
