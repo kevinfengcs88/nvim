@@ -431,3 +431,25 @@ times in msec
 200.602  000.002: before starting main loop
 201.687  001.085: first screen update
 201.690  000.003: --- NVIM STARTED ---
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.005  000.005: --- NVIM STARTING ---
+000.084  000.079: event init
+000.171  000.087: early init
+000.222  000.051: locale set
+000.266  000.045: init first window
+000.541  000.275: inits 1
+000.549  000.008: window checked
+000.551  000.002: parsing arguments
+000.953  000.046  000.046: require('vim.shared')
+001.047  000.035  000.035: require('vim._meta')
+001.049  000.093  000.058: require('vim._editor')
+001.050  000.176  000.037: require('vim._init_packages')
+001.051  000.324: init lua interpreter
+001.573  000.521: expanding arguments
+001.620  000.047: inits 2
+001.922  000.302: init highlight
