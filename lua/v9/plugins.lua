@@ -84,7 +84,8 @@ local plugins = {
     config = function()
       require('leap').add_default_mappings()
     end
-  }
+  },
+  {'ThePrimeagen/vim-be-good'}
 }
 
 local opts = {}
