@@ -3,8 +3,8 @@ local global = vim.g
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
-global.mapleader = ' '
-global.maplocalleader = ' '
+global.mapleader = ';'
+global.maplocalleader = ';'
 
 set.number = true
 set.backspace = '2'

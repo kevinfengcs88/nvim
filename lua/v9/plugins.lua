@@ -77,7 +77,8 @@ local plugins = {
       end, lazy=true
   },
   {'luk400/vim-lichess'},
-  {'dstein64/vim-startuptime'}
+  {'dstein64/vim-startuptime'},
+  {'rhysd/clever-f.vim'}
 }
 
 local opts = {}

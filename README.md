@@ -47,5 +47,3 @@ cd ~/.local/share/nvim/lazy/peek.nvim && deno task build:debug
 - Screensaver after certain amount of inactivity
 - lolcat animated dashboard for alpha
 - Add option to alpha to open nvim-tree
-- Edit README to align with lazy package manager, not packer
-- Fix keymappings for indenting/outdenting code in visual mode
