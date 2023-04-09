@@ -45,5 +45,4 @@ sudo dpkg -i ripgrep_13.0.0_amd64.deb
 - Edit README to align with lazy package manager, not packer
 - Fix keymappings for indenting/outdenting code in visual mode
 - Reduce startup time (initially faster than packer, but now something made it slower)
-    - Might be due to lingering packer directories/files
     - Use vim-startuptime data to reduce startup time
