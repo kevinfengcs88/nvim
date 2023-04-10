@@ -48,6 +48,6 @@ python3 -m pip install --user --upgrade pynvim
 - For moving files to `$PATH`, you cannot just drag and drop files via the file explorer (or copy + paste them for that matter). Instead you have to do it with super user permissions: `sudo mv filename /usr/local/bin`
 
 ## TODO
-- Underline errors through LSP
+- Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
 - Screensaver after certain amount of inactivity
 - lolcat animated dashboard for alpha

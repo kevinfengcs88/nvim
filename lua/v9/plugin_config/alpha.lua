@@ -3,20 +3,13 @@ if not status_ok then
  return
 end
 
+local function header()
+  return require("v9.plugin_config.logos")["random"]
+end
+
 local dashboard = require("alpha.themes.dashboard")
-dashboard.section.header.val = {
 
-    [[          ▀████▀▄▄              ▄█ ]],
-    [[            █▀    ▀▀▄▄▄▄▄    ▄▄▀▀█ ]],
-    [[    ▄        █          ▀▀▀▀▄  ▄▀  ]],
-    [[   ▄▀ ▀▄      ▀▄              ▀▄▀  ]],
-    [[  ▄▀    █     █▀   ▄█▀▄      ▄█    ]],
-    [[  ▀▄     ▀▄  █     ▀██▀     ██▄█   ]],
-    [[   ▀▄    ▄▀ █   ▄██▄   ▄  ▄  ▀▀ █  ]],
-    [[    █  ▄▀  █    ▀██▀    ▀▀ ▀▀  ▄▀  ]],
-    [[   █   █  █      ▄▄           ▄▀   ]],
-
-}
+dashboard.section.header.val = header()
 
  dashboard.section.buttons.val = {
    dashboard.button("CTRL+P", "  Find file", ":Telescope find_files <CR>"),
