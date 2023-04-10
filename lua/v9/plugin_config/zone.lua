@@ -1,6 +1,6 @@
 require('zone').setup {
     style = "dvd",
-    after = 5,          -- Idle timeout
+    after = 30,          -- Idle timeout
     exclude_filetypes = { "TelescopePrompt", "NvimTree", "neo-tree", "dashboard", "lazy" },
     -- More options to come later
 
