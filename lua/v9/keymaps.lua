@@ -13,6 +13,7 @@ set.laststatus = 2
 set.autowrite = true
 set.autoread = true
 set.cursorline = true
+set.relativenumber = true
 
 set.tabstop = 2
 set.shiftwidth = 2
@@ -21,9 +22,9 @@ set.expandtab = true
 
 keymap.set('n', '<leader>w', ':wa<CR>', opts)
 keymap.set('n', '<leader>q', ':qa<CR>', opts)
-keymap.set('n', '<leader>m', ':MarkdownPreview<CR>', opts)
-keymap.set('n', '<leader>s', ':source %<CR>', opts)
-keymap.set('n', '<leader>p', ':PackerSync<CR>', opts)
+keymap.set('n', '<leader>m', ':PeekOpen<CR>', opts)
+-- keymap.set('n', '<leader>s', ':source %<CR>', opts)
+-- keymap.set('n', '<leader>p', ':PackerSync<CR>', opts)
 keymap.set('n', '<leader>h', ':noh<CR>', opts)
 keymap.set('n', '<leader>a', ':Alpha<CR>', opts)
 
@@ -56,5 +57,5 @@ keymap.set("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 keymap.set('v', '<C-c>', '"+y', opts)
-keymap.set('v', '<TAB>', '<S-.>', opts)
-keymap.set('v', '<S-TAB>', '<S-,>', opts)
+keymap.set('v', '<TAB>', '<S->>', opts)
+keymap.set('v', '<S-TAB>', '<S-<>', opts)
