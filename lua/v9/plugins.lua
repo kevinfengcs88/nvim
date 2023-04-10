@@ -86,7 +86,8 @@ local plugins = {
     end
   },
   {'ThePrimeagen/vim-be-good'},
-  {'alec-gibson/nvim-tetris'}
+  {'alec-gibson/nvim-tetris'},
+  {'tamton-aquib/zone.nvim', lazy=true}
 }
 
 local opts = {}

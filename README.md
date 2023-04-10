@@ -49,5 +49,4 @@ python3 -m pip install --user --upgrade pynvim
 
 ## TODO
 - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
-- Screensaver after certain amount of inactivity
 - lolcat animated dashboard for alpha
