@@ -42,6 +42,7 @@ cd ~/.local/share/nvim/lazy/peek.nvim && deno task build:debug
 ```
 python3 -m pip install --user --upgrade pynvim
 ```
+- For lazy-loading plugins, not having a separate, modular config file (that calls upon the plugin with `require`) can prevent the plugin from working (under `plugin_config` directory)
 
 ## Linux tips/miscellaneous tips
 - `q` while stuck in `git diff` exits the logs (may need to hit `i` if the terminal doesn't respond to `q`)

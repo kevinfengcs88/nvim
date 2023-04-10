@@ -56,20 +56,11 @@ local plugins = {
     end,
   },
   {
-      'numToStr/Comment.nvim',
-      config = function()
-          require('Comment').setup()
-      end
+      'numToStr/Comment.nvim', lazy=true
   },
   {'JoosepAlviste/nvim-ts-context-commentstring', lazy=true},
-  {
-    "windwp/nvim-autopairs",
-      config = function() require("nvim-autopairs").setup {} end
-  },
-  {
-    "windwp/nvim-ts-autotag",
-      config = function() require("nvim-ts-autotag").setup {} end
-  },
+  {"windwp/nvim-autopairs", lazy=true},
+  {"windwp/nvim-ts-autotag", lazy=true},
   {
       'goolord/alpha-nvim',
       config = function ()
