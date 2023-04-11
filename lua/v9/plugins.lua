@@ -78,7 +78,7 @@ local plugins = {
   },
   {'ThePrimeagen/vim-be-good'},
   {'alec-gibson/nvim-tetris'},
-  {'tamton-aquib/zone.nvim', lazy=true}
+  {'tamton-aquib/zone.nvim', lazy=true, enabled=false}
 }
 
 local opts = {}

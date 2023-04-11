@@ -3,15 +3,103 @@ if not status_ok then
  return
 end
 
-local function header()
-  return require("v9.plugin_config.logos")["random"]
-end
-
 local dashboard = require("alpha.themes.dashboard")
 
-dashboard.section.header.val = header()
+-- local function header()
+--   return require("v9.plugin_config.logos")["random"]
+-- end
 
- dashboard.section.buttons.val = {
+-- dashboard.section.header.val = header()
+
+-- local random_image = header()
+
+
+
+ASCII_IMAGES_FOLDER = os.getenv("HOME") .. "/.config/nvim/static"
+
+local function list_files(path, extension)
+    local files = {}
+    local pfile = io.popen("ls " .. path .. "/*" .. extension)
+
+    for filename in pfile:lines() do
+        table.insert(files, filename)
+    end
+
+    return files
+end
+
+local function get_random_ascii_image(path)
+
+    math.randomseed(os.clock())
+
+    local images = list_files(path, ".cat")
+    local colored_images = list_files(path, ".ccat")
+
+    for _, v in pairs(colored_images) do
+        table.insert(images, v)
+    end
+
+    return images[math.random(1, #images)]
+end
+
+local function remove_escaped_colors(str)
+    return str:gsub("\27%[[0-9;]*m", "")
+end
+
+local function get_ascii_image_dim(path)
+    local width = 0
+    local height = 0
+
+    local pfile = io.open(path, "r")
+
+    for line in pfile:lines() do
+        -- Take into account colored output
+        line = remove_escaped_colors(line)
+        local current_width = vim.fn.strdisplaywidth(line)
+        if current_width > width then
+            width = current_width
+        end
+        height = height + 1
+    end
+    return { width, height }
+end
+
+local function is_colored_image(path)
+    return path:sub(-4) == 'ccat'
+end
+
+local random_image = get_random_ascii_image(ASCII_IMAGES_FOLDER)
+local image_width, image_height = unpack(get_ascii_image_dim(random_image))
+
+image_height = 32
+
+local command = "cat | "
+
+if is_colored_image(random_image) then
+    command = command .. "cat "
+else
+    command = os.getenv("HOME") .. "/.config/nvim/static/animated_lolcat.sh "
+end
+
+
+local terminal = {
+  type = "terminal",
+  command = command .. random_image,
+
+  width = image_width,
+  height = image_height,
+
+  opts = {
+    redraw = true,
+    window_config = {}
+  }
+}
+
+dashboard.config.layout = {
+  terminal
+}
+
+dashboard.section.buttons.val = {
    dashboard.button("CTRL+P", "  Find file", ":Telescope find_files <CR>"),
    dashboard.button("f", "  New file", ":ene <CR>"),
    dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
@@ -34,3 +122,5 @@ dashboard.section.buttons.opts.hl = "Keyword"
 
 dashboard.opts.opts.noautocmd = true
 alpha.setup(dashboard.opts)
+
+require 'alpha.term'

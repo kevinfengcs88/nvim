@@ -43,6 +43,10 @@ cd ~/.local/share/nvim/lazy/peek.nvim && deno task build:debug
 python3 -m pip install --user --upgrade pynvim
 ```
 - For lazy-loading plugins, not having a separate, modular config file (that calls upon the plugin with `require`) can prevent the plugin from working (under `plugin_config` directory)
+- If the animated alpha dashboard ASCII art is broken due to a zsh permission error, that means the permissions of the script, `animated_lolcat.sh` need to be updated with something like this:
+```
+sudo chmod +x animated_lolcat.sh
+```
 
 ## Linux tips/miscellaneous tips
 - `q` while stuck in `git diff` exits the logs (may need to hit `i` if the terminal doesn't respond to `q`)
@@ -50,6 +54,5 @@ python3 -m pip install --user --upgrade pynvim
 
 ## TODO
 - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
-- lolcat animated dashboard for alpha 
 - Add lolcat figlet zsh output on desktop
 - Add smoother borders to autocompletion/LSP/bufhover with a plugin
