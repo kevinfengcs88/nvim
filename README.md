@@ -50,6 +50,6 @@ python3 -m pip install --user --upgrade pynvim
 
 ## TODO
 - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
-- lolcat animated dashboard for alpha (might have to switch to dashboard over alpha)
+- lolcat animated dashboard for alpha 
 - Add lolcat figlet zsh output on desktop
 - Add smoother borders to autocompletion/LSP/bufhover with a plugin
