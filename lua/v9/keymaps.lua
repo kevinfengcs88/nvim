@@ -20,15 +20,19 @@ set.shiftwidth = 2
 set.shiftround = true
 set.expandtab = true
 
+-- save all and quit all
 keymap.set('n', '<leader>w', ':wa<CR>', opts)
 keymap.set('n', '<leader>q', ':qa<CR>', opts)
+
+-- miscellaneous utility keymappings
 keymap.set('n', '<leader>m', ':PeekOpen<CR>', opts)
--- keymap.set('n', '<leader>s', ':source %<CR>', opts)
--- keymap.set('n', '<leader>p', ':PackerSync<CR>', opts)
 keymap.set('n', '<leader>h', ':noh<CR>', opts)
 keymap.set('n', '<leader>a', ':Alpha<CR>', opts)
 
+-- select entire file with CTRL + A
 keymap.set('n', '<C-a>', 'ggVG<CR>', opts)
+
+-- indent and outdent lines quickly
 keymap.set('n', '<TAB>', '>>', opts)
 keymap.set('n', '<S-TAB>', '<<', opts)
 
@@ -40,7 +44,7 @@ keymap.set('n', 'N', 'Nzzzv', opts)
 keymap.set('n', '<C-d>', '<C-d>zz', opts)
 keymap.set('n', '<C-u>', '<C-u>zz', opts)
 
--- this creates a new line below the cursor and goes back into normal mode
+-- creates a new line below the cursor and goes back into normal mode
 keymap.set('n', '<CR>', 'o<Esc>', opts)
 
 -- makes toggling between buffers easier
@@ -56,6 +60,12 @@ keymap.set("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap.set("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
+-- copy into system clipboard with CTRL + C
 keymap.set('v', '<C-c>', '"+y', opts)
+
+-- indent and outdent lines in visual mode
 keymap.set('v', '<TAB>', '<S->>', opts)
 keymap.set('v', '<S-TAB>', '<S-<>', opts)
+
+-- the greatest remap ever (Primeagen)
+keymap.set('v', '<leader>p', "\"_dP", opts)
