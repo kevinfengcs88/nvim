@@ -47,6 +47,18 @@ python3 -m pip install --user --upgrade pynvim
 ```
 sudo chmod +x animated_lolcat.sh
 ```
+- Run this command for changing the font size rendering of GNOME terminal:
+```
+gsettings set org.gnome.desktop.interface text-scaling-factor 1
+```
+- Run this command to find the profile of the GNOME terminal:
+```
+dconf dump /org/gnome/terminal/legacy/profiles:/
+```
+- Run this command using that profile ID to change the transparency of the terminal to a specific value (more precise than using the slider in preferences):
+```
+dconf write /org/gnome/terminal/legacy/profiles:/<PROFILE-ID>/background-transparency-percent 50
+```
 
 ## Linux tips/miscellaneous tips
 - `q` while stuck in `git diff` exits the logs (may need to hit `i` if the terminal doesn't respond to `q`)
@@ -57,4 +69,3 @@ sudo chmod +x animated_lolcat.sh
 - Add lolcat figlet zsh output on desktop
 - Figure out where "utf-8" Field autocomplete comes from, coding lines that end with '8' annoyingly autocomplete to this bogus
 - Change directory structure to suggested one (include `after`) folder; this could possibly improve startup time as well
-- Test out transparent plugin

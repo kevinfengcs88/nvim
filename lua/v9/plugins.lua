@@ -86,7 +86,8 @@ local plugins = {
       "rcarriga/nvim-notify",
     },
     lazy=true
-  }
+  },
+  {'xiyaowong/transparent.nvim'}
 }
 
 local opts = {}
