@@ -15,6 +15,17 @@ cmp.setup({
       require('luasnip').lsp_expand(args.body)
     end,
   },
+  window = {
+      completion = { -- rounded border; thin-style scrollbar
+        border = 'rounded',
+        scrollbar = '║',
+      },
+      documentation = { -- no border; native-style scrollbar
+        border = nil,
+        scrollbar = '',
+        -- other options
+      },
+  },
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
     { name = 'luasnip' },

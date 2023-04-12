@@ -26,7 +26,7 @@ This repository contains my Neovim config, which is written in Lua. It uses lazy
 curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
 sudo dpkg -i ripgrep_13.0.0_amd64.deb
 ```
-- `deno` is a JavaScript runtime requirement for the peek plugin, install the latest version with these commands (first navigate to ~ directory):
+- `deno` is a JavaScript runtime requirement for the peek plugin, install the latest version with these commands:
 ```
 cd /tmp
 curl -Lo "deno.zip" "https://github.com/denoland/deno/releases/latest/download/deno-x86_64-unknown-linux-gnu.zip"
@@ -55,5 +55,5 @@ sudo chmod +x animated_lolcat.sh
 ## TODO
 - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
 - Add lolcat figlet zsh output on desktop
-- Add smoother borders to autocompletion/LSP/bufhover with a plugin
-- Figure out where "utf-8" Field autocomplete comes from, coding out lines that end with '8' annoyingly autocomplete to this bogus
+- Figure out where "utf-8" Field autocomplete comes from, coding lines that end with '8' annoyingly autocomplete to this bogus
+- Change directory structure to suggested one (include `after`) folder; this could possibly improve startup time as well
