@@ -78,7 +78,15 @@ local plugins = {
   },
   {'ThePrimeagen/vim-be-good'},
   {'alec-gibson/nvim-tetris'},
-  {'tamton-aquib/zone.nvim', lazy=true, enabled=false}
+  {'tamton-aquib/zone.nvim', lazy=true, enabled=false},
+  {
+    "folke/noice.nvim",
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    },
+    lazy=true
+  }
 }
 
 local opts = {}

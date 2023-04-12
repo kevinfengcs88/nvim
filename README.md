@@ -57,4 +57,3 @@ sudo chmod +x animated_lolcat.sh
 - Add lolcat figlet zsh output on desktop
 - Figure out where "utf-8" Field autocomplete comes from, coding lines that end with '8' annoyingly autocomplete to this bogus
 - Change directory structure to suggested one (include `after`) folder; this could possibly improve startup time as well
-- Change cmdline to noice
