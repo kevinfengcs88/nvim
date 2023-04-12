@@ -56,3 +56,4 @@ sudo chmod +x animated_lolcat.sh
 - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
 - Add lolcat figlet zsh output on desktop
 - Add smoother borders to autocompletion/LSP/bufhover with a plugin
+- Figure out where "utf-8" Field autocomplete comes from, coding out lines that end with '8' annoyingly autocomplete to this bogus
