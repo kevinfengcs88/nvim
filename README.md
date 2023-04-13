@@ -76,3 +76,4 @@ dconf write /org/gnome/terminal/legacy/profiles:/<PROFILE-ID>/background-transpa
 - Change directory structure to suggested one (include `after`) folder; this could possibly improve startup time as well (clean this one up)
 - Fix noice error with transparency plugins
 - Fix peek markdown preview
+- Change some keymaps with harpoon and nvim-tree
