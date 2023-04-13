@@ -10,7 +10,6 @@ require('harpoon').setup({
 keymap.set('n', '<leader>h', ':lua require("harpoon.mark").add_file()<CR>', opts)
 keymap.set('n', '<C-h>', ':lua require("harpoon.ui").toggle_quick_menu()<CR>', opts)
 
-keymap.set('n', '<C-h>', ':lua require("harpoon.ui").nav_prev()<CR>', opts)
 keymap.set('n', '<C-l>', ':lua require("harpoon.ui").nav_next()<CR>', opts)
 
 keymap.set('n', '<leader>1', ':lua require("harpoon.ui").nav_file(1)<CR>', opts)
