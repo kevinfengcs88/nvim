@@ -13,23 +13,23 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-  {'nvim-tree/nvim-tree.lua', lazy=true},
-  {'nvim-tree/nvim-web-devicons', lazy=true},
-  {'nvim-lualine/lualine.nvim', lazy=true},
-  {'marko-cerovac/material.nvim', lazy=true},
-  {'nvim-treesitter/nvim-treesitter', lazy=true},
+  {'nvim-tree/nvim-tree.lua', lazy = true},
+  {'nvim-tree/nvim-web-devicons', lazy = true},
+  {'nvim-lualine/lualine.nvim', lazy = true},
+  {'marko-cerovac/material.nvim', lazy = true},
+  {'nvim-treesitter/nvim-treesitter', lazy = true},
   {
     'nvim-telescope/telescope.nvim',
     version = '0.1.0',
     dependencies = {
       'nvim-lua/plenary.nvim'
-    }, lazy=true
+    }, lazy = true
   },
   {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
     'neovim/nvim-lspconfig',
-    lazy=true
+    lazy = true
   },
   {'hrsh7th/nvim-cmp'},
   {'hrsh7th/cmp-nvim-lsp'},
@@ -39,8 +39,9 @@ local plugins = {
   { "akinsho/toggleterm.nvim",
     commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda",
     config = "require('toggleterm')",
-    lazy=true
+    lazy = true
   },
+  -- This method works for lazy, but it doubles startup time
   -- {
   --     "iamcco/markdown-preview.nvim",
   --     config = function ()
@@ -55,8 +56,9 @@ local plugins = {
     end,
     config = function()
       vim.keymap.set("n", "<leader>m", "<Plug>MarkdownPreviewToggle", { desc = "Markdown Preview" })
-    end,
+    end
   },
+  -- Peek works (assuming deno and JavaScript dependencies are installed), but there is a bug currently where the preview doesn't load
   -- {
   --   'toppair/peek.nvim',
   --   run = 'deno task --quiet build:fast',
@@ -66,16 +68,16 @@ local plugins = {
   --   end,
   -- },
   {
-      'numToStr/Comment.nvim', lazy=true
+      'numToStr/Comment.nvim', lazy = true
   },
-  {'JoosepAlviste/nvim-ts-context-commentstring', lazy=true},
-  {"windwp/nvim-autopairs", lazy=true},
-  {"windwp/nvim-ts-autotag", lazy=true},
+  {'JoosepAlviste/nvim-ts-context-commentstring', lazy = true},
+  {"windwp/nvim-autopairs", lazy = true},
+  {"windwp/nvim-ts-autotag", lazy = true},
   {
       'goolord/alpha-nvim',
       config = function ()
           require'alpha'.setup(require'alpha.themes.dashboard'.config)
-      end, lazy=true
+      end, lazy = true
   },
   {'luk400/vim-lichess'},
   {'dstein64/vim-startuptime'},
@@ -88,17 +90,17 @@ local plugins = {
   },
   {'ThePrimeagen/vim-be-good'},
   {'alec-gibson/nvim-tetris'},
-  {'tamton-aquib/zone.nvim', lazy=true, enabled=false},
+  {'tamton-aquib/zone.nvim', lazy = true, enabled=false},
   {
     "folke/noice.nvim",
     dependencies = {
       "MunifTanjim/nui.nvim",
       "rcarriga/nvim-notify",
     },
-    lazy=true
+    lazy = true
   },
   {'xiyaowong/transparent.nvim'},
-  {'ThePrimeagen/harpoon', lazy=true}
+  {'ThePrimeagen/harpoon', lazy = true}
 }
 
 local opts = {}
