@@ -48,13 +48,23 @@ local plugins = {
   --     end
   -- },
   {
-    'toppair/peek.nvim',
-    run = 'deno task --quiet build:fast',
+    "iamcco/markdown-preview.nvim",
+    build = "cd app && npm install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
     config = function()
-      vim.api.nvim_create_user_command('PeekOpen', require('peek').open, {})
-      vim.api.nvim_create_user_command('PeekClose', require('peek').close, {})
+      vim.keymap.set("n", "<leader>m", "<Plug>MarkdownPreviewToggle", { desc = "Markdown Preview" })
     end,
   },
+  -- {
+  --   'toppair/peek.nvim',
+  --   run = 'deno task --quiet build:fast',
+  --   config = function()
+  --     vim.api.nvim_create_user_command('PeekOpen', require('peek').open, {})
+  --     vim.api.nvim_create_user_command('PeekClose', require('peek').close, {})
+  --   end,
+  -- },
   {
       'numToStr/Comment.nvim', lazy=true
   },

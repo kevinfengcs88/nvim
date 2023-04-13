@@ -25,7 +25,6 @@ keymap.set('n', '<leader>w', ':wa<CR>', opts)
 keymap.set('n', '<leader>q', ':qa<CR>', opts)
 
 -- miscellaneous utility keymappings
-keymap.set('n', '<leader>m', ':PeekOpen<CR>', opts)
 keymap.set('n', '<leader><leader>', ':noh<CR>', opts)
 keymap.set('n', '<leader>a', ':Alpha<CR>', opts)
 keymap.set('n', '<leader>t', ':TransparentToggle<CR>', opts)
