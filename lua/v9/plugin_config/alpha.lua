@@ -126,10 +126,9 @@
 --   dashboard.section.buttons,
 --   { type = "padding", val = 1 },
 -- }
---
+-- -- MARKER
 -- pcall(vim.cmd.AlphaRedraw)
 
--- &
 
 local status_ok, alpha = pcall(require, "alpha")
 if not status_ok then
