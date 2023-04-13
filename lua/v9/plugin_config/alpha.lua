@@ -151,11 +151,15 @@ dashboard.section.header.val = header()
    dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
 }
 
-local function footer()
- return "Not all those wander are lost..."
-end
-
-dashboard.section.footer.val = footer()
+vim.api.nvim_create_autocmd("User", {
+			pattern = "LazyVimStarted",
+			callback = function()
+				local stats = require("lazy").stats()
+				local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
+				dashboard.section.footer.val = "⚡ Neovim loaded " .. stats.count .. " plugins in " .. ms .. "ms"
+				pcall(vim.cmd.AlphaRedraw)
+			end,
+})
 
 dashboard.section.footer.opts.hl = "Type"
 dashboard.section.header.opts.hl = "Include"
