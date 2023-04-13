@@ -42,18 +42,11 @@ keymap.set('n', 'n', 'nzzzv', opts)
 keymap.set('n', 'N', 'Nzzzv', opts)
 
 -- vertical movement
-keymap.set('n', '<C-d>', '<C-d>zz', opts)
-keymap.set('n', '<C-u>', '<C-u>zz', opts)
+keymap.set('n', '<C-j>', '<C-d>zz', opts)
+keymap.set('n', '<C-k>', '<C-u>zz', opts)
 
 -- creates a new line below the cursor and goes back into normal mode
 keymap.set('n', '<CR>', 'o<Esc>', opts)
-
--- makes toggling between buffers easier
-keymap.set('n', '<C-j>', '<C-w>w', opts)
-
--- enables switching buffers from left to right and vice versa
-keymap.set('n', '<C-h>', '<C-w>h', opts)
-keymap.set('n', '<C-l>', '<C-w>l', opts)
 
 -- quick resizing of buffers
 keymap.set("n", "<C-Up>", ":resize -2<CR>", opts)
