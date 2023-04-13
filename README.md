@@ -38,7 +38,7 @@ sudo unzip -d /usr/local/bin /tmp/deno.zip
 ```
 cd ~/.local/share/nvim/lazy/peek.nvim && deno task build:debug
 ```
-- Another way of fixing the mizzing JavaScript bundles is to run:
+- Another way of fixing the missing JavaScript bundles is to run:
 ```
 cd ~/.local/share/nvim/lazy/peek.nvim
 deno run --allow-run --allow-net --allow-read --allow-write --allow-env --no-check scripts/build.js
