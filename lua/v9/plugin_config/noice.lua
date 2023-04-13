@@ -15,5 +15,15 @@ require('noice').setup({
   },
   messages = {
     enabled=false
+  },
+  notify = {
+    enabled=true
+  },
+  popupmenu = {
+    enabled=false
   }
+})
+
+require('notify').setup({
+  background_color = '#ff0000'
 })
