@@ -69,4 +69,5 @@ dconf write /org/gnome/terminal/legacy/profiles:/<PROFILE-ID>/background-transpa
 - Add lolcat figlet zsh output on desktop
 - Figure out where "utf-8" Field autocomplete comes from, coding lines that end with '8' annoyingly autocomplete to this bogus
 - Change directory structure to suggested one (include `after`) folder; this could possibly improve startup time as well (clean this one up)
-- Try out harpoon (Primeagen is the GOAT)
+- Disable noice for nvim tree popups
+- Kraken art is too large? Maybe remove
