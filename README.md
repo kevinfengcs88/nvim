@@ -76,3 +76,4 @@ dconf write /org/gnome/terminal/legacy/profiles:/<PROFILE-ID>/background-transpa
 - Change directory structure to suggested one (include `after`) folder; this could possibly improve startup time as well (clean this one up)
 - Fix noice error with transparency plugins
 - Add bash script for opening a random background image
+- Look into a plugin for maintaining sessions (persistence of buffers across sessions)
