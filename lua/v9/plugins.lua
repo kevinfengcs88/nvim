@@ -49,10 +49,11 @@ local plugins = {
   --     end
   -- },
   {
-    "iamcco/markdown-preview.nvim",
-    build = "cd app && npm install",
+    'iamcco/markdown-preview.nvim',
+    build = 'cd app && npm install',
+    -- using npm to install rather than the vim function leads to significantly faster startup time
     init = function()
-      vim.g.mkdp_filetypes = { "markdown" }
+      vim.g.mkdp_filetypes = { 'markdown' }
     end,
     config = function()
       vim.keymap.set("n", "<leader>m", "<Plug>MarkdownPreviewToggle", { desc = "Markdown Preview" })
@@ -67,12 +68,10 @@ local plugins = {
   --     vim.api.nvim_create_user_command('PeekClose', require('peek').close, {})
   --   end,
   -- },
-  {
-      'numToStr/Comment.nvim', lazy = true
-  },
+  {'numToStr/Comment.nvim', lazy = true},
   {'JoosepAlviste/nvim-ts-context-commentstring', lazy = true},
-  {"windwp/nvim-autopairs", lazy = true},
-  {"windwp/nvim-ts-autotag", lazy = true},
+  {'windwp/nvim-autopairs', lazy = true},
+  {'windwp/nvim-ts-autotag', lazy = true},
   {
       'goolord/alpha-nvim',
       config = function ()
@@ -90,12 +89,12 @@ local plugins = {
   },
   {'ThePrimeagen/vim-be-good'},
   {'alec-gibson/nvim-tetris'},
-  {'tamton-aquib/zone.nvim', lazy = true, enabled=false},
+  {'tamton-aquib/zone.nvim', lazy = true, enabled = false},
   {
-    "folke/noice.nvim",
+    'folke/noice.nvim',
     dependencies = {
-      "MunifTanjim/nui.nvim",
-      "rcarriga/nvim-notify",
+      'MunifTanjim/nui.nvim',
+      'rcarriga/nvim-notify',
     },
     lazy = true
   },

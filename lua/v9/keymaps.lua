@@ -30,7 +30,7 @@ keymap.set('n', '<leader>a', ':Alpha<CR>', opts)
 keymap.set('n', '<leader>t', ':TransparentToggle<CR>', opts)
 
 -- select entire file with CTRL + A
-keymap.set('n', '<C-a>', 'ggVG<CR>', opts)
+keymap.set('n', '<C-a>', 'ggVG', opts)
 
 -- indent and outdent lines quickly
 keymap.set('n', '<TAB>', '>>', opts)
@@ -48,10 +48,10 @@ keymap.set('n', '<C-k>', '<C-u>zz', opts)
 keymap.set('n', '<CR>', 'o<Esc>', opts)
 
 -- quick resizing of buffers
-keymap.set("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap.set("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap.set("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap.set('n', '<C-Up>', ':resize -2<CR>', opts)
+keymap.set('n', '<C-Down>', ':resize +2<CR>', opts)
+keymap.set('n', '<C-Left>', ':vertical resize -2<CR>', opts)
+keymap.set('n', '<C-Right>', ':vertical resize +2<CR>', opts)
 
 -- copy into system clipboard with CTRL + C
 keymap.set('v', '<C-c>', '"+y', opts)
