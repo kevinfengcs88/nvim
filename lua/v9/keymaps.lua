@@ -82,4 +82,3 @@ keymap.set('v', '<leader>p', "\"_dP", opts)
 -- move lines around
 keymap.set('v', 'J', ":m '>+1<CR>gv=gv", opts)
 keymap.set('v', 'K', ":m '<-2<CR>gv=gv", opts)
-

@@ -67,9 +67,9 @@ dconf dump /org/gnome/terminal/legacy/profiles:/
 ```
 dconf write /org/gnome/terminal/legacy/profiles:/<PROFILE-ID>/background-transparency-percent 50
 ```
-- Once in the `waifus` directory, run this command to open a random image:
+- Use this command to open up a random image for background (make sure transparency is toggled to see the image):
 ```
-shuf -ezn1 * | xargs -0 -n1 xdg-open
+cd waifus && shuf -ezn1 * | xargs -0 -n1 xdg-open && cd ..
 ```
 - Commands for installing figlet and lolcat (lolcat is a dependency for animated alpha dashboard):
 ```
@@ -91,3 +91,5 @@ sudo gem install lolcat
 - Add bash script for opening a random background image (kind of done?)
 - Look into a plugin for maintaining sessions (persistence of buffers across sessions)
 - Fix blackjack score storing directory bug
+- Test out lab plugin
+- Test out OpenAI GPT plugin
