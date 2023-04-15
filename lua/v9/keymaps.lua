@@ -20,15 +20,30 @@ set.shiftwidth = 2
 set.shiftround = true
 set.expandtab = true
 
+-- make CTRL + C behave exactly the same as ESC
+keymap.set('i', '<C-c>', '<ESC>', opts)
+
 -- save all and quit all
 keymap.set('n', '<leader>w', ':wa<CR>', opts)
 keymap.set('n', '<leader>q', ':qa<CR>', opts)
 
--- miscellaneous utility keymappings
+-- clear search term
 keymap.set('n', '<leader><leader>', ':noh<CR>', opts)
-keymap.set('n', '<leader>a', ':Alpha<CR>', opts)
+
+-- toggle transparency
 keymap.set('n', '<leader>t', ':TransparentToggle<CR>', opts)
-keymap.set('n', '<C-c>', '<ESC>', opts)
+
+-- replace current word
+keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+-- make current file an executable
+keymap.set('n', '<leader>x', '<cmd>!chmod +x %<CR>', opts)
+
+-- avoid falling into the black hole that is capital Q
+keymap.set('n', 'Q', '<nop>', opts)
+
+-- keep cursor at front when appending lines below
+keymap.set('n', 'J', "mzJ`z", opts)
 
 -- select entire file with CTRL + A
 keymap.set('n', '<C-a>', 'ggVG', opts)
@@ -37,11 +52,11 @@ keymap.set('n', '<C-a>', 'ggVG', opts)
 keymap.set('n', '<TAB>', '>>', opts)
 keymap.set('n', '<S-TAB>', '<<', opts)
 
--- search movement
+-- search movement keeps cursor in middle
 keymap.set('n', 'n', 'nzzzv', opts)
 keymap.set('n', 'N', 'Nzzzv', opts)
 
--- vertical movement
+-- vertical movement keeps cursor in middle
 keymap.set('n', '<C-j>', '<C-d>zz', opts)
 keymap.set('n', '<C-k>', '<C-u>zz', opts)
 
@@ -63,3 +78,8 @@ keymap.set('v', '<S-TAB>', '<S-<>', opts)
 
 -- the greatest remap ever (Primeagen)
 keymap.set('v', '<leader>p', "\"_dP", opts)
+
+-- move lines around
+keymap.set('v', 'J', ":m '>+1<CR>gv=gv", opts)
+keymap.set('v', 'K', ":m '<-2<CR>gv=gv", opts)
+

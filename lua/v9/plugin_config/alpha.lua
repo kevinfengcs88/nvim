@@ -1,3 +1,7 @@
+local opts = { noremap = true, silent = true }
+
+vim.keymap.set('n', '<leader>a', ':Alpha<CR>', opts)
+
 -- require 'alpha.term'
 --
 -- local status_ok, alpha = pcall(require, "alpha")

@@ -90,5 +90,4 @@ sudo gem install lolcat
 - Fix noice error with transparency plugins
 - Add bash script for opening a random background image (kind of done?)
 - Look into a plugin for maintaining sessions (persistence of buffers across sessions)
-- Add primeagen keymaps from 0 to LSP video
 - Fix blackjack score storing directory bug
