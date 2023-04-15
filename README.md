@@ -90,4 +90,3 @@ sudo gem install lolcat
 - Add primeagen keymaps from 0 to LSP video
 - Make note of find + replace syntax for / searching
 - Fix blackjack score storing directory bug
-- Try to lazy load more plugins

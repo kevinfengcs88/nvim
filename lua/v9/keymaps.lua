@@ -28,6 +28,7 @@ keymap.set('n', '<leader>q', ':qa<CR>', opts)
 keymap.set('n', '<leader><leader>', ':noh<CR>', opts)
 keymap.set('n', '<leader>a', ':Alpha<CR>', opts)
 keymap.set('n', '<leader>t', ':TransparentToggle<CR>', opts)
+keymap.set('n', '<C-c>', '<ESC>', opts)
 
 -- select entire file with CTRL + A
 keymap.set('n', '<C-a>', 'ggVG', opts)

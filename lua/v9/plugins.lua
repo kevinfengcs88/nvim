@@ -85,9 +85,10 @@ local plugins = {
     'ggandor/leap.nvim',
     config = function()
       require('leap').add_default_mappings()
-    end
+    end,
+    lazy = true
   },
-  {'ThePrimeagen/vim-be-good'},
+  {'ThePrimeagen/vim-be-good', lazy = true},
   {'alec-gibson/nvim-tetris'},
   {'tamton-aquib/zone.nvim', lazy = true, enabled = false},
   {
