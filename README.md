@@ -82,9 +82,10 @@ sudo gem install lolcat
 
 ## TODO
 - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
-- Add lolcat figlet zsh output on desktop
 - Figure out where "utf-8" Field autocomplete comes from, coding lines that end with '8' annoyingly autocomplete to this bogus
 - Change directory structure to suggested one (include `after`) folder; this could possibly improve startup time as well (clean this one up)
 - Fix noice error with transparency plugins
-- Add bash script for opening a random background image
+- Add bash script for opening a random background image (kind of done?)
 - Look into a plugin for maintaining sessions (persistence of buffers across sessions)
+- Add primeagen keymaps from 0 to LSP video
+- Install blackjack plugin
