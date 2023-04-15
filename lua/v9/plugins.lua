@@ -99,7 +99,8 @@ local plugins = {
     lazy = true
   },
   {'xiyaowong/transparent.nvim'},
-  {'ThePrimeagen/harpoon', lazy = true}
+  {'ThePrimeagen/harpoon', lazy = true},
+  {'alanfortlink/blackjack.nvim', lazy = true}
 }
 
 local opts = {}
