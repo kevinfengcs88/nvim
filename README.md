@@ -64,6 +64,17 @@ dconf dump /org/gnome/terminal/legacy/profiles:/
 ```
 dconf write /org/gnome/terminal/legacy/profiles:/<PROFILE-ID>/background-transparency-percent 50
 ```
+- Once in the `waifus` directory, run this command to open a random image:
+```
+shuf -ezn1 * | xargs -0 -n1 xdg-open
+```
+- Commands for installing figlet and lolcat (lolcat is a dependency for animated alpha dashboard):
+```
+sudo apt-get install figlet
+git clone https://github.com/busyloop/lolcat
+cd lolcat/bin
+sudo gem install lolcat
+```
 
 ## Linux tips/miscellaneous tips
 - `q` while stuck in `git diff` exits the logs (may need to hit `i` if the terminal doesn't respond to `q`)
