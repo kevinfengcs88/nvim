@@ -1,8 +1,7 @@
 # My Neovim Config
 This repository contains my Neovim config, which is written in Lua. It uses lazy for managing plugins. Below are some useful keymaps and configuration tips as I learn more about Neovim as well as some additional Linux/miscellaneous tips that I discovered while setting up my workflow. 
 
-## Useful keymaps
-- `CTRL + J` cycles through buffers (particularly useful for switching between nvim-tree and the editor)
+## Useful keymaps/tricks
 - `r` while focused on nvim-tree renames the current file
 - `a` while focused on nvim-tree adds a new file (or folder, just append a '/' character)
 - Neovim allows for pasting from the system clipboard via `CTRL + SHIFT + V` both in insert mode and command mode (note that wl-clipboard is installed, which might influence this behavior)
@@ -10,6 +9,10 @@ This repository contains my Neovim config, which is written in Lua. It uses lazy
 - `TAB` and `SHIFT + TAB` indent and outdent a line, regardless of where the cursor is
     - In visual mode, the same keymaps work (just remapped to their multi-line variants)
 - Upon opening Neovim (and seeing the alpha dashboard), just hit `ENTER` rather than `CTRL + P` for telescope's find file function since the cursor is already focused on the first option
+- A simple search and replace of the whole file can be completed like this:
+```
+:%s/original/replaced/g
+```
 
 ## Other tips for configuring Neovim
 - When setting the style for material.nvim, the style **MUST** come before enabling the colorscheme, otherwise, a manual `:source %` is required to apply the new style
@@ -88,5 +91,4 @@ sudo gem install lolcat
 - Add bash script for opening a random background image (kind of done?)
 - Look into a plugin for maintaining sessions (persistence of buffers across sessions)
 - Add primeagen keymaps from 0 to LSP video
-- Make note of find + replace syntax for / searching
 - Fix blackjack score storing directory bug
