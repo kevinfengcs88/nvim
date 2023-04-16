@@ -14,6 +14,7 @@ set.autowrite = true
 set.autoread = true
 set.cursorline = true
 set.relativenumber = true
+set.wrap = false
 
 set.tabstop = 2
 set.shiftwidth = 2
