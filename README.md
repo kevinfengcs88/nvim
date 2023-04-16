@@ -88,6 +88,10 @@ sudo n latest
 sudo npm install eslint --global
 sudo npm install -g typescript
 ```
+- gThumb installation:
+```
+sudo apt install gthumb
+```
 
 ## Linux tips/miscellaneous tips
 - `q` while stuck in `git diff` exits the logs (may need to hit `i` if the terminal doesn't respond to `q`)
