@@ -107,3 +107,6 @@ sudo apt install gthumb
 - Look into a plugin for maintaining sessions (persistence of buffers across sessions)
 - Fix blackjack score storing directory bug
 - Find out if there is a way to do fuzzy finding for cmdline
+- Add installation for another file manager
+- i3?
+- tmux?
