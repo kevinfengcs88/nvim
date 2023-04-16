@@ -78,6 +78,16 @@ git clone https://github.com/busyloop/lolcat
 cd lolcat/bin
 sudo gem install lolcat
 ```
+- Some dependencies for the lab plugin are required, which can be installed with all of the following commands:
+```
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+sudo n latest
+
+sudo npm install eslint --global
+sudo npm install -g typescript
+```
 
 ## Linux tips/miscellaneous tips
 - `q` while stuck in `git diff` exits the logs (may need to hit `i` if the terminal doesn't respond to `q`)
@@ -88,8 +98,8 @@ sudo gem install lolcat
 - Figure out where "utf-8" Field autocomplete comes from, coding lines that end with '8' annoyingly autocomplete to this bogus
 - Change directory structure to suggested one (include `after`) folder; this could possibly improve startup time as well (clean this one up)
 - Fix noice error with transparency plugins
-- Add bash script for opening a random background image (kind of done?)
+- Add bash script for opening a random background image
+    - Find a way to make a bash script that can navigate to the `waifus` folder from anywhere and then alias that to something shorter in the .zshrc
 - Look into a plugin for maintaining sessions (persistence of buffers across sessions)
 - Fix blackjack score storing directory bug
-- Test out lab plugin
-- Test out OpenAI GPT plugin
+- Find out if there is a way to do fuzzy finding for cmdline
