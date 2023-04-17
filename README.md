@@ -119,6 +119,8 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - `python3`
 - `figlet`
 - `lolcat`
+- `typescript`
+- `eslint`
 
 ## TODO
 - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
