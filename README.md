@@ -1,5 +1,5 @@
 # My Neovim Config
-This repository contains my Neovim config, which is written in Lua. It uses lazy for managing plugins. Below are some useful keymaps and configuration tips as I learn more about Neovim as well as some additional Linux/miscellaneous tips that I discovered while setting up my workflow. 
+This repository contains my Neovim config, which is written in Lua. It uses lazy for managing plugins. Below, you can find various tips/commands that I learned while configuring Neovim and my workflow as a whole.
 
 ## Useful keymaps/tricks
 - `r` while focused on nvim-tree renames the current file
@@ -14,7 +14,7 @@ This repository contains my Neovim config, which is written in Lua. It uses lazy
 :%s/original/replaced/g
 ```
 
-## Other tips for configuring Neovim
+## Other tips for configuring the workflow
 - When setting the style for material.nvim, the style **MUST** come before enabling the colorscheme, otherwise, a manual `:source %` is required to apply the new style
 - If installing the Lua language server with Mason for the first time, change "sumneko_lua" to "lua_ls"
 - When installing certain LSPs like pyright, npm must be installed first through terminal (just run `sudo apt install nodejs npm`
@@ -96,10 +96,12 @@ sudo apt install gthumb
 ```
 sudo apt install gnome-shell-extension-prefs
 ```
-
-## Linux tips/miscellaneous tips
-- `q` while stuck in `git diff` exits the logs (may need to hit `i` if the terminal doesn't respond to `q`)
-- For moving files to `$PATH`, you cannot just drag and drop files via the file explorer (or copy + paste them for that matter). Instead you have to do it with super user permissions: `sudo mv filename /usr/local/bin`
+- Install Thunar and set it to the default file manager:
+```
+sudo apt update
+sudo apt install thunar
+xdg-mime default thunar.desktop inode/directory
+```
 
 ## TODO
 - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
@@ -109,6 +111,5 @@ sudo apt install gnome-shell-extension-prefs
 - Look into a plugin for maintaining sessions (persistence of buffers across sessions)
 - Fix blackjack score storing directory bug
 - Find out if there is a way to do fuzzy finding for cmdline
-- Add installation for another file manager
 - Add installation and set up for i3wm
 - Add installation and set up for tmux
