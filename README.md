@@ -92,6 +92,10 @@ sudo npm install -g typescript
 ```
 sudo apt install gthumb
 ```
+- An alternative to using an image viewing software is to just set the Desktop wallpaper to an image and then install the extensions prefs app, which can disable Desktop icons:
+```
+sudo apt install gnome-shell-extension-prefs
+```
 
 ## Linux tips/miscellaneous tips
 - `q` while stuck in `git diff` exits the logs (may need to hit `i` if the terminal doesn't respond to `q`)
