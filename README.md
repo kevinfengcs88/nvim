@@ -106,11 +106,19 @@ sudo apt install variety
 ```
 
 ## List of tools
-Below is a list of tools that I've installed on my Ubuntu OS, apart from Neovim (this will be used as a reference for my dotfiles repo). This list does not include dependencies, like `ripgrep` or `lolcat`.
+Below is a list of tools that I've installed on my Ubuntu OS, apart from Neovim (this will be used as a reference for my dotfiles repo).
 - [gThumb](https://github.com/GNOME/gthumb)
 - [Gnome Shell Extension Prefs](https://www.omgubuntu.co.uk/2017/02/hidden-gnome-shell-extensions-prefs-app)
 - [Dolphin](https://apps.kde.org/dolphin/)
 - [Variety](https://github.com/varietywalls/variety)
+
+## List of dependencies
+Below is a list of dependencies that are required specifically for my Neovim config alone.
+- `ripgrep`
+- `deno`
+- `python3`
+- `figlet`
+- `lolcat`
 
 ## TODO
 - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
