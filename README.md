@@ -106,11 +106,9 @@ sudo apt install gnome-shell-extension-prefs
 - Figure out where "utf-8" Field autocomplete comes from, coding lines that end with '8' annoyingly autocomplete to this bogus
 - Change directory structure to suggested one (include `after`) folder; this could possibly improve startup time as well (clean this one up)
 - Fix noice error with transparency plugins
-- Add bash script for opening a random background image
-    - Find a way to make a bash script that can navigate to the `waifus` folder from anywhere and then alias that to something shorter in the .zshrc
 - Look into a plugin for maintaining sessions (persistence of buffers across sessions)
 - Fix blackjack score storing directory bug
 - Find out if there is a way to do fuzzy finding for cmdline
 - Add installation for another file manager
-- i3?
-- tmux?
+- Add installation and set up for i3wm
+- Add installation and set up for tmux
