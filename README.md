@@ -113,3 +113,4 @@ xdg-mime default thunar.desktop inode/directory
 - Find out if there is a way to do fuzzy finding for cmdline
 - Add installation and set up for i3wm
 - Add installation and set up for tmux
+- Replace Thunar with Dolphin
