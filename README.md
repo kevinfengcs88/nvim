@@ -112,3 +112,4 @@ xdg-mime default org.kde.dolphin.desktop inode/directory
 - Find out if there is a way to do fuzzy finding for cmdline
 - Add installation and set up for i3wm
 - Add installation and set up for tmux
+- Add installation and set up for nnn
