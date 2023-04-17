@@ -100,12 +100,17 @@ sudo apt install gnome-shell-extension-prefs
 sudo apt-get install dolphin
 xdg-mime default org.kde.dolphin.desktop inode/directory
 ```
+- Install Variety (import background images as you wish):
+```
+sudo apt install variety
+```
 
 ## List of tools
 Below is a list of tools that I've installed on my Ubuntu OS, apart from Neovim (this will be used as a reference for my dotfiles repo). This list does not include dependencies, like `ripgrep` or `lolcat`.
 - [gThumb](https://github.com/GNOME/gthumb)
 - [Gnome Shell Extension Prefs](https://www.omgubuntu.co.uk/2017/02/hidden-gnome-shell-extensions-prefs-app)
 - [Dolphin](https://apps.kde.org/dolphin/)
+- [Variety](https://github.com/varietywalls/variety)
 
 ## TODO
 - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
