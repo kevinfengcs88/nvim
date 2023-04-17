@@ -96,11 +96,10 @@ sudo apt install gthumb
 ```
 sudo apt install gnome-shell-extension-prefs
 ```
-- Install Thunar and set it to the default file manager:
+- Install Dolphin and set it to the default file manager:
 ```
-sudo apt update
-sudo apt install thunar
-xdg-mime default thunar.desktop inode/directory
+sudo apt-get install dolphin
+xdg-mime default org.kde.dolphin.desktop inode/directory
 ```
 
 ## TODO
@@ -113,4 +112,3 @@ xdg-mime default thunar.desktop inode/directory
 - Find out if there is a way to do fuzzy finding for cmdline
 - Add installation and set up for i3wm
 - Add installation and set up for tmux
-- Replace Thunar with Dolphin
