@@ -65,9 +65,9 @@ keymap.set('n', '<C-k>', '<C-u>zz', opts)
 keymap.set('n', '<CR>', 'o<Esc>', opts)
 
 -- quick resizing of buffers
-keymap.set('n', '<C-Up>', ':resize -2<CR>', opts)
-keymap.set('n', '<C-Down>', ':resize +2<CR>', opts)
-keymap.set('n', '<C-Left>', ':vertical resize -2<CR>', opts)
+keymap.set('n', '<c-up>', ':resize -2<cr>', opts)
+keymap.set('n', '<c-down>', ':resize +2<cr>', opts)
+keymap.set('n', '<c-left>', ':vertical resize -2<cr>', opts)
 keymap.set('n', '<C-Right>', ':vertical resize +2<CR>', opts)
 
 -- copy into system clipboard with CTRL + C or <leader>y
@@ -75,8 +75,8 @@ keymap.set('v', '<C-c>', '"+y', opts)
 keymap.set('v', '<leader>y', '"+y', opts)
 
 -- indent and outdent lines in visual mode
-keymap.set('v', '<TAB>', '<S->>', opts)
-keymap.set('v', '<S-TAB>', '<S-<>', opts)
+keymap.set('v', '<TAB>', '<S->>gv', opts)
+keymap.set('v', '<S-TAB>', '<S-<>gv', opts)
 
 -- the greatest remap ever (Primeagen)
 keymap.set('v', '<leader>p', "\"_dP", opts)
