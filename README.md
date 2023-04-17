@@ -84,7 +84,6 @@ sudo npm cache clean -f
 sudo npm install -g n
 sudo n stable
 sudo n latest
-
 sudo npm install eslint --global
 sudo npm install -g typescript
 ```
@@ -102,6 +101,12 @@ sudo apt-get install dolphin
 xdg-mime default org.kde.dolphin.desktop inode/directory
 ```
 
+## List of tools
+Below is a list of tools that I've installed on my Ubuntu OS, apart from Neovim (this will be used as a reference for my dotfiles repo). This list does not include dependencies, like `ripgrep` or `lolcat`.
+- [gThumb](https://github.com/GNOME/gthumb)
+- [Gnome Shell Extension Prefs](https://www.omgubuntu.co.uk/2017/02/hidden-gnome-shell-extensions-prefs-app)
+- [Dolphin](https://apps.kde.org/dolphin/)
+
 ## TODO
 - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
 - Figure out where "utf-8" Field autocomplete comes from, coding lines that end with '8' annoyingly autocomplete to this bogus
@@ -113,3 +118,4 @@ xdg-mime default org.kde.dolphin.desktop inode/directory
 - Add installation and set up for i3wm
 - Add installation and set up for tmux
 - Add installation and set up for nnn
+- Add installation and set up for Alacritty
