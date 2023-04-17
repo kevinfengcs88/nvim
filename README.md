@@ -1,27 +1,23 @@
 # My Neovim Config
 This repository contains my Neovim config, which is written in Lua. It uses lazy for managing plugins. Below, you can find various tips/commands that I learned while configuring Neovim and my workflow as a whole.
 
-## Useful keymaps/tricks for Neovim
+## Useful keymaps/tricks
 - `r` while focused on nvim-tree renames the current file
 - `a` while focused on nvim-tree adds a new file (or folder, just append a '/' character)
 - Neovim allows for pasting from the system clipboard via `CTRL + SHIFT + V` both in insert mode and command mode (note that wl-clipboard is installed, which might influence this behavior)
 - `;q` quits Neovim (by quitting all buffers) and `;w` saves all buffers
 - `TAB` and `SHIFT + TAB` indent and outdent a line, regardless of where the cursor is
     - In visual mode, the same keymaps work (just remapped to their multi-line variants)
-- Upon opening Neovim (and seeing the alpha dashboard), just hit `ENTER` rather than `CTRL + P` for telescope's find file function since the cursor is already focused on the first option
+- Upon opening Neovim (and seeing the alpha dashboard), just hit `ENTER` rather than `f` for telescope's find file function since the cursor is already focused on the first option
 - A simple search and replace of the whole file can be completed like this:
 ```
 :%s/original/replaced/g
 ```
 - `;t` toggles the transparency plugin
-
-## Other tips for configuring the workflow/Neovim
-- When setting the style for material.nvim, the style **MUST** come before enabling the colorscheme, otherwise, a manual `:source %` is required to apply the new style
-- If installing the Lua language server with Mason for the first time, change "sumneko_lua" to "lua_ls"
-- When installing certain LSPs like pyright, npm must be installed first through terminal (just run `sudo apt install nodejs npm`
-- Make sure to add the languages that you are working with in `treesitter.lua`, otherwise their syntax highlighting will be suboptimal
 - To show current keymaps, use `:nmap`, `:vmap`, and `:imap` for normal, visual, and insert mode mappings, respectively
 - To show currently installed parsers for treesitter, use `:TSInstallInfo`
+
+## Installing dependencies + additional tools
 - `pip` is a requirement for lichess
     - `pip install berserk` for the lichess requirement
 - `ripgrep` is a binary requirement for grep to work (install it as you would install Neovim, it's not a plugin)
@@ -137,3 +133,5 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - Add installation and set up for tmux
 - Add installation and set up for nnn
 - Add installation and set up for Alacritty
+- Add indent line plugin
+- Add GitHub code search plugin
