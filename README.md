@@ -1,7 +1,7 @@
 # My Neovim Config
 This repository contains my Neovim config, which is written in Lua. It uses lazy for managing plugins. Below, you can find various tips/commands that I learned while configuring Neovim and my workflow as a whole.
 
-## Useful keymaps/tricks
+## Useful keymaps/tricks for Neovim
 - `r` while focused on nvim-tree renames the current file
 - `a` while focused on nvim-tree adds a new file (or folder, just append a '/' character)
 - Neovim allows for pasting from the system clipboard via `CTRL + SHIFT + V` both in insert mode and command mode (note that wl-clipboard is installed, which might influence this behavior)
@@ -13,6 +13,7 @@ This repository contains my Neovim config, which is written in Lua. It uses lazy
 ```
 :%s/original/replaced/g
 ```
+- `;t` toggles the transparency plugin
 
 ## Other tips for configuring the workflow/Neovim
 - When setting the style for material.nvim, the style **MUST** come before enabling the colorscheme, otherwise, a manual `:source %` is required to apply the new style
@@ -121,6 +122,8 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - `lolcat`
 - `typescript`
 - `eslint`
+- `pip`
+- `berserk` (which is installed through pip)
 
 ## TODO
 - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
