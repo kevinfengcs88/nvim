@@ -1,4 +1,9 @@
-require('zone').setup {
+local status_ok, zone = pcall(require, 'zone')
+if not status_ok then
+  return
+end
+
+zone.setup {
     style = "dvd",
     after = 30,          -- Idle timeout
     exclude_filetypes = { "TelescopePrompt", "NvimTree", "neo-tree", "dashboard", "lazy" },

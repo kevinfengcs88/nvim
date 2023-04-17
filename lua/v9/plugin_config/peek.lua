@@ -1,4 +1,9 @@
-require('peek').setup({
+local status_ok, peek = pcall(require, 'peek')
+if not status_ok then
+  return
+end
+
+peek.setup({
   auto_load = true,         -- whether to automatically load preview when
                             -- entering another markdown buffer
   close_on_bdelete = true,  -- close preview window on buffer delete

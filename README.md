@@ -112,4 +112,3 @@ sudo apt install gnome-shell-extension-prefs
 - Add installation for another file manager
 - Add installation and set up for i3wm
 - Add installation and set up for tmux
-- Wrap all instances of `require` for plugins in `pcall`

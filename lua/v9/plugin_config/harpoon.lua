@@ -1,7 +1,12 @@
+local status_ok, harpoon = pcall(require, 'harpoon')
+if not status_ok then
+  return
+end
+
 local opts = { noremap = true, silent = true }
 local keymap = vim.keymap
 
-require('harpoon').setup({
+harpoon.setup({
   menu = {
     width = 60
   }
