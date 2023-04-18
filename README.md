@@ -123,8 +123,8 @@ Below is a list of dependencies that are required specifically for my Neovim con
 
 ## TODO
 - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
-- Figure out where "utf-8" Field autocomplete comes from, coding lines that end with '8' annoyingly autocomplete to this bogus
-- Change directory structure to suggested one (include `after`) folder; this could possibly improve startup time as well (clean this one up)
+- Figure out where "utf-8" Field autocomplete comes from, coding lines that end with '8' (at least in Lua) annoyingly autocomplete to this bogus
+- Change directory structure to the suggested one (include `after`) folder; this could possibly improve startup time as well (clean this one up)
 - Fix noice error with transparency plugins
 - Look into a plugin for maintaining sessions (persistence of buffers across sessions)
 - Fix blackjack score storing directory bug
