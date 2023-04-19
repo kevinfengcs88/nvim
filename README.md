@@ -84,19 +84,6 @@ sudo n latest
 sudo npm install eslint --global
 sudo npm install -g typescript
 ```
-- gThumb installation:
-```
-sudo apt install gthumb
-```
-- An alternative to using an image viewing software is to just set the Desktop wallpaper to an image and then install the extensions prefs app, which can disable Desktop icons:
-```
-sudo apt install gnome-shell-extension-prefs
-```
-- Install Dolphin and set it to the default file manager:
-```
-sudo apt-get install dolphin
-xdg-mime default org.kde.dolphin.desktop inode/directory
-```
 - Install Variety (import background images as you wish):
 ```
 sudo apt install variety
@@ -105,9 +92,7 @@ sudo apt install variety
 
 ## List of tools
 Below is a list of tools that I've installed on my Ubuntu OS, apart from Neovim (this will be used as a reference for my dotfiles repo).
-- [gThumb](https://github.com/GNOME/gthumb)
 - [Gnome Shell Extension Prefs](https://www.omgubuntu.co.uk/2017/02/hidden-gnome-shell-extensions-prefs-app)
-- [Dolphin](https://apps.kde.org/dolphin/)
 - [Variety](https://github.com/varietywalls/variety)
 
 ## List of dependencies
@@ -128,7 +113,7 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - Change directory structure to the suggested one (include `after`) folder; this could possibly improve startup time as well (clean this one up)
 - Fix noice error with transparency plugins
 - Look into a plugin for maintaining sessions (persistence of buffers across sessions)
-- Fix blackjack score storing directory bug
+- Fix blackjack score storing directory bug (once the directory is created, it becomes a permission error)
 - Find out if there is a way to do fuzzy finding for cmdline
 - Add installation and set up for i3wm
 - Add installation and set up for tmux
