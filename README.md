@@ -101,6 +101,7 @@ xdg-mime default org.kde.dolphin.desktop inode/directory
 ```
 sudo apt install variety
 ```
+- For resizing VMWare disk space, unmount the drive if `gparted` claims that the file system is read-only (?)
 
 ## List of tools
 Below is a list of tools that I've installed on my Ubuntu OS, apart from Neovim (this will be used as a reference for my dotfiles repo).
