@@ -121,3 +121,4 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - Add installation and set up for Alacritty
 - Add indent line plugin
 - Add GitHub code search plugin
+- Fix Telescope grep
