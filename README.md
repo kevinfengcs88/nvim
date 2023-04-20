@@ -89,6 +89,10 @@ sudo npm install -g typescript
 sudo apt install variety
 ```
 - For resizing VMWare disk space, unmount the drive if `gparted` claims that the file system is read-only (?)
+- To set nvim as the global git editor, run:
+```
+git config --global core.editor "nvim"
+```
 
 ## List of tools
 Below is a list of tools that I've installed on my Ubuntu OS, apart from Neovim (this will be used as a reference for my dotfiles repo).
@@ -122,3 +126,4 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - Add indent line plugin
 - Add GitHub code search plugin
 - Add colorscheme swapping plugin (Telescope has a built-in one, so not necessary)?
+- Set Git editor to nvim
