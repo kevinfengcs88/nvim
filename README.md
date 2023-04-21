@@ -125,6 +125,6 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - Add installation and set up for Alacritty
 - Add indent line plugin
 - Add GitHub code search plugin
-- Add colorscheme swapping plugin (Telescope has a built-in one, so not necessary)?
+- Add colorscheme swapping plugin 
 - Set Git editor to nvim
 - Add screenkey
