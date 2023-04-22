@@ -13,6 +13,7 @@ set.laststatus = 2
 set.autowrite = true
 set.autoread = true
 set.cursorline = true
+set.cursorlineopt = 'number'
 set.relativenumber = true
 set.wrap = false
 
