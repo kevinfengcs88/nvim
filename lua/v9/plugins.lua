@@ -73,10 +73,7 @@ local plugins = {
   {'windwp/nvim-autopairs', lazy = true},
   {'windwp/nvim-ts-autotag', lazy = true},
   {
-      'goolord/alpha-nvim',
-      config = function ()
-          require'alpha'.setup(require'alpha.themes.dashboard'.config)
-      end, lazy = true
+      'goolord/alpha-nvim', lazy = true
   },
   {'luk400/vim-lichess'},
   {'dstein64/vim-startuptime'},
