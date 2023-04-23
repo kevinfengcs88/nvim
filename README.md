@@ -121,7 +121,7 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - Find out if there is a way to do fuzzy finding for cmdline
 - Add installation and set up for i3wm
 - Add installation and set up for tmux
-- Add installation and set up for nnn
+- Add installation and set up for lf (terminal file manager)
 - Add installation and set up for Alacritty
 - Add indent line plugin
 - Add GitHub code search plugin
