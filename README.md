@@ -127,4 +127,3 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - Add GitHub code search plugin
 - Add colorscheme swapping plugin 
 - Set Git editor to nvim
-- Add screenkey
