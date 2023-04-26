@@ -101,6 +101,7 @@ Below is a list of tools that I've installed on my Ubuntu OS, apart from Neovim 
 
 ## List of dependencies
 Below is a list of dependencies that are required specifically for my Neovim config alone.
+- `wl-clipboard`
 - `ripgrep`
 - `deno`
 - `python3`
