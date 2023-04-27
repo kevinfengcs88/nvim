@@ -102,6 +102,7 @@ local plugins = {
   {'0x100101/lab.nvim', build = 'cd js && npm ci', dependencies = { 'nvim-lua/plenary.nvim' }, lazy = true},
   {'luisiacc/gruvbox-baby', lazy = true},
   {'Mofiqul/vscode.nvim', lazy = true},
+  {'folke/neodev.nvim', lazy = true}
 }
 
 local opts = {}
