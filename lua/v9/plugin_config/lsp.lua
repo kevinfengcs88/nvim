@@ -50,7 +50,7 @@ lspconfig.lua_ls.setup {
   settings = {
     Lua = {
       diagnostics = {
-        -- the line below is necessary to ignore annoying Lua LSP for vim variable
+        -- the line below is necessary to ignore annoying Lua LSP for vim variables
         globals = { 'vim' }
       }
     }

@@ -45,9 +45,9 @@ keymap.set('n', '<C-k>', '<C-u>zz', opts)
 keymap.set('n', '<CR>', 'o<Esc>', opts)
 
 -- quick resizing of buffers
-keymap.set('n', '<c-up>', ':resize -2<cr>', opts)
-keymap.set('n', '<c-down>', ':resize +2<cr>', opts)
-keymap.set('n', '<c-left>', ':vertical resize -2<cr>', opts)
+keymap.set('n', '<C-up>', ':resize -2<cr>', opts)
+keymap.set('n', '<C-down>', ':resize +2<cr>', opts)
+keymap.set('n', '<C-left>', ':vertical resize -2<cr>', opts)
 keymap.set('n', '<C-Right>', ':vertical resize +2<CR>', opts)
 
 -- copy into system clipboard with CTRL + C
