@@ -116,7 +116,6 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
 - Figure out where "utf-8" Field autocomplete comes from, coding lines that end with '8' (at least in Lua) annoyingly autocomplete to this bogus
 - Change directory structure to the suggested one (include `after`) folder; this could possibly improve startup time as well (clean this one up)
-- Fix noice error with transparency plugins
 - Look into a plugin for maintaining sessions (persistence of buffers across sessions)
 - Fix blackjack score storing directory bug (once the directory is created, it becomes a permission error)
 - Find out if there is a way to do fuzzy finding for cmdline
@@ -126,6 +125,6 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - Add installation and set up for Alacritty
 - Add indent line plugin
 - Add GitHub code search plugin
-- Add colorscheme swapping plugin 
+- Add colorscheme swapping plugin
 - Set Git editor to nvim
 - Benchmark Neovim slow "cold" starts (when it hasn't been opened for some time)
