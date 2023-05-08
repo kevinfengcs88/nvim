@@ -110,7 +110,7 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - `typescript`
 - `eslint`
 - `pip`
-- `berserk` (which is installed through pip)
+    - `berserk` (which is installed through pip)
 
 ## TODO
 - Figure out where "utf-8" Field autocomplete comes from, coding lines that end with '8' (at least in Lua) annoyingly autocomplete to this bogus
