@@ -127,4 +127,3 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - Add installation and set up for Alacritty
     - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
 - Add GitHub code search plugin
-

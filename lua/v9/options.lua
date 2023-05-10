@@ -16,6 +16,7 @@ set.relativenumber = true
 set.wrap = false
 set.ignorecase = true
 set.smartcase = true
+set.termguicolors = true
 -- set.clipboard = 'unnamedplus'
 
 set.tabstop = 2
