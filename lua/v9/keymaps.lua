@@ -44,6 +44,9 @@ keymap.set('n', '<C-k>', '<C-u>zz', opts)
 -- creates a new line below the cursor and goes back into normal mode
 keymap.set('n', '<CR>', 'o<Esc>', opts)
 
+-- creates a new line above the cursor and goes back into normal mode
+keymap.set('n', '<leader><CR>', 'O<Esc>', opts)
+
 -- quick resizing of buffers
 keymap.set('n', '<C-up>', ':resize -2<cr>', opts)
 keymap.set('n', '<C-down>', ':resize +2<cr>', opts)

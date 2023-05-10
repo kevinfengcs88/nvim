@@ -126,5 +126,4 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - Add GitHub code search plugin
 - Add colorscheme swapping plugin (Themery?)
 - Set Git editor to nvim
-- Leader <CR> for creating a new line above?
 - Override <C-K> in nvim-tree?
