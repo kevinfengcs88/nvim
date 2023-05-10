@@ -103,8 +103,9 @@ local plugins = {
   {'luisiacc/gruvbox-baby', lazy = true},
   {'Mofiqul/vscode.nvim', lazy = true},
   {'folke/neodev.nvim', lazy = true},
-  {"lukas-reineke/indent-blankline.nvim", lazy = true},
-  {"tpope/vim-surround"}
+  {'lukas-reineke/indent-blankline.nvim', lazy = true},
+  {'tpope/vim-surround'},
+  {'zaldih/themery.nvim'}
 }
 
 local opts = {}
