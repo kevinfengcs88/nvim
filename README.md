@@ -16,6 +16,7 @@ This repository contains my Neovim config, which is written in Lua. It uses lazy
 - `;t` toggles the transparency plugin
 - To show current keymaps, use `:nmap`, `:vmap`, and `:imap` for normal, visual, and insert mode mappings, respectively
 - To show currently installed parsers for treesitter, use `:TSInstallInfo`
+- vim-surround enables very quick "surround" operations, like `ysiw` to surround a word with quotes or `ci"'` to replace double quotes with single quotes
 
 ## Installing dependencies + additional tools
 - `pip` is a requirement for lichess
@@ -126,4 +127,3 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - Add GitHub code search plugin
 - Add colorscheme swapping plugin (Themery?)
 - Set Git editor to nvim
-- Override <C-K> in nvim-tree?
