@@ -73,7 +73,7 @@ local plugins = {
   {'windwp/nvim-autopairs', lazy = true},
   {'windwp/nvim-ts-autotag', lazy = true},
   {
-      'goolord/alpha-nvim', lazy = true
+    'goolord/alpha-nvim', lazy = true
   },
   {'luk400/vim-lichess'},
   {'dstein64/vim-startuptime'},
