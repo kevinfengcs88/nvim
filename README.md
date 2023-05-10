@@ -88,7 +88,7 @@ sudo npm install -g typescript
 ```
 sudo apt install variety
 ```
-- For resizing VMWare disk space, unmount the drive if `gparted` claims that the file system is read-only (?)
+- For resizing VMWare disk space, unmount the drive if `gparted` claims that the file system is read-only (seems safe?)
 - To set nvim as the global git editor, run:
 ```
 git config --global core.editor "nvim"
@@ -110,7 +110,7 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - `typescript`
 - `eslint`
 - `pip`
-    - `berserk` (which is installed through pip)
+    - `berserk`
 
 ## TODO
 - Figure out where "utf-8" Field autocomplete comes from, coding lines that end with '8' (at least in Lua) annoyingly autocomplete to this bogus
@@ -123,7 +123,6 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - Add installation and set up for lf (terminal file manager)
 - Add installation and set up for Alacritty
     - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
-- Add indent line plugin
 - Add GitHub code search plugin
 - Add colorscheme swapping plugin (Themery?)
 - Set Git editor to nvim
