@@ -1,9 +1,10 @@
 vim.o.termguicolors = true
-vim.g.material_style = 'darker'
 
 -- Themery block
 -- This block will be replaced by Themery.
-vim.cmd("colorscheme gruvbox-baby")
+vim.g.material_style='darker'
+
+vim.cmd("colorscheme material")
 -- end themery block
 
 -- alternate method for transparency

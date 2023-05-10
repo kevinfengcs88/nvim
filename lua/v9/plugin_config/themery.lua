@@ -2,7 +2,10 @@ require('themery').setup({
   -- themes = {'material', 'vscode', 'gruvbox-baby'},
   themes = {{
     name = 'material',
-    colorscheme = 'material'
+    colorscheme = 'material',
+    before = [[
+      vim.g.material_style = 'darker'
+    ]]
   },
   {
     name = 'vscode',

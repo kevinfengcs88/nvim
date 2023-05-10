@@ -114,7 +114,9 @@ Below is a list of dependencies that are required specifically for my Neovim con
     - `berserk`
 
 ## TODO
-- Figure out where "utf-8" Field autocomplete comes from, coding lines that end with '8' (at least in Lua) annoyingly autocomplete to this bogus
+- Fix completions/snippets overall
+    - Figure out where "utf-8" Field autocomplete comes from, coding lines that end with '8' (at least in Lua) annoyingly autocomplete to this bogus
+    - Writing two brackets like so `[[]]` and then hitting <CR> to create a new line can instead autocomplete a snippet or other text detected in the document (maybe intended?)
 - Change directory structure to the suggested one (include `after`) folder; this could possibly improve startup time as well (clean this one up)
 - Look into a plugin for maintaining sessions (persistence of buffers across sessions)
 - Fix blackjack score storing directory bug (once the directory is created, it becomes a permission error)
@@ -125,3 +127,4 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - Add installation and set up for Alacritty
     - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
 - Add GitHub code search plugin
+
