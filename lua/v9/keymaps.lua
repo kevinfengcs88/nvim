@@ -4,6 +4,9 @@ local keymap = vim.keymap
 -- make CTRL + C behave exactly the same as ESC
 keymap.set('i', '<C-c>', '<ESC>', opts)
 
+-- open up lazy.nvim UI
+keymap.set('n', '<leader>l', ':Lazy<CR>', opts)
+
 -- save all and quit all
 keymap.set('n', '<leader>w', ':wa<CR>', opts)
 keymap.set('n', '<leader>q', ':qa<CR>', opts)
