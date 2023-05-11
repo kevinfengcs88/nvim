@@ -126,6 +126,5 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - Add installation and set up for lf (terminal file manager)
 - Add installation and set up for Alacritty
     - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
-    - Make cursor in insert mode a block
 - Add GitHub code search plugin
 - Check for a way to decrease thickness of indent blankline's lines
