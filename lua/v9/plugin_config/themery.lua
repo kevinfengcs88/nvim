@@ -1,3 +1,5 @@
+local opts = { noremap = true, silent = true }
+
 local status_ok, themery = pcall(require, 'themery')
 if not status_ok then
   return
@@ -23,3 +25,5 @@ themery.setup({
   themeConfigFile = '~/.config/nvim/lua/v9/plugin_config/colorscheme.lua',
   livePreview = true
 })
+
+vim.keymap.set('n', '<leader>th', ':Themery<CR>', opts)
