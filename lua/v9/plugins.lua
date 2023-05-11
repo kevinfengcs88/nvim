@@ -105,7 +105,8 @@ local plugins = {
   {'folke/neodev.nvim', lazy = true},
   {'lukas-reineke/indent-blankline.nvim', lazy = true},
   {'tpope/vim-surround'},
-  {'zaldih/themery.nvim'}
+  {'zaldih/themery.nvim'},
+  {'airblade/vim-gitgutter'}
 }
 
 local opts = {}

@@ -101,7 +101,7 @@ Below is a list of tools that I've installed on my Ubuntu OS, apart from Neovim 
 - [Variety](https://github.com/varietywalls/variety)
 
 ## List of dependencies
-Below is a list of dependencies that are required specifically for my Neovim config alone.
+Below is a list of dependencies that are required specifically for my Neovim config
 - `wl-clipboard`
 - `ripgrep`
 - `deno`
@@ -129,4 +129,3 @@ Below is a list of dependencies that are required specifically for my Neovim con
     - Make cursor in insert mode a block
 - Add GitHub code search plugin
 - Add border to toggleterm
-- Add git-gutter plugin
