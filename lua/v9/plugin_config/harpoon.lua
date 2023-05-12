@@ -1,5 +1,15 @@
-local status_ok, harpoon = pcall(require, 'harpoon')
-if not status_ok then
+local harpoon_status_ok, harpoon = pcall(require, 'harpoon')
+if not harpoon_status_ok then
+  return
+end
+
+local harpoon_mark_status_ok, harpoon_mark = pcall(require, 'harpoon.mark')
+if not harpoon_mark_status_ok then
+  return
+end
+
+local harpoon_ui_status_ok, harpoon_ui = pcall(require, 'harpoon.ui')
+if not harpoon_ui_status_ok then
   return
 end
 
@@ -12,15 +22,15 @@ harpoon.setup({
   }
 })
 
-keymap.set('n', '<leader>h', ':lua require("harpoon.mark").add_file()<CR>', opts)
-keymap.set('n', '<C-h>', ':lua require("harpoon.ui").toggle_quick_menu()<CR>', opts)
+keymap.set('n', '<leader>h', harpoon_mark.add_file, opts)
+keymap.set('n', '<C-e>', harpoon_ui.toggle_quick_menu, opts)
 
-keymap.set('n', '<leader>1', ':lua require("harpoon.ui").nav_file(1)<CR>', opts)
-keymap.set('n', '<leader>2', ':lua require("harpoon.ui").nav_file(2)<CR>', opts)
-keymap.set('n', '<leader>3', ':lua require("harpoon.ui").nav_file(3)<CR>', opts)
-keymap.set('n', '<leader>4', ':lua require("harpoon.ui").nav_file(4)<CR>', opts)
-keymap.set('n', '<leader>5', ':lua require("harpoon.ui").nav_file(5)<CR>', opts)
-keymap.set('n', '<leader>6', ':lua require("harpoon.ui").nav_file(6)<CR>', opts)
-keymap.set('n', '<leader>7', ':lua require("harpoon.ui").nav_file(7)<CR>', opts)
-keymap.set('n', '<leader>8', ':lua require("harpoon.ui").nav_file(8)<CR>', opts)
-keymap.set('n', '<leader>9', ':lua require("harpoon.ui").nav_file(9)<CR>', opts)
+keymap.set('n', '<leader>1', function() harpoon_ui.nav_file(1) end, opts)
+keymap.set('n', '<leader>2', function() harpoon_ui.nav_file(2) end, opts)
+keymap.set('n', '<leader>3', function() harpoon_ui.nav_file(3) end, opts)
+keymap.set('n', '<leader>4', function() harpoon_ui.nav_file(4) end, opts)
+keymap.set('n', '<leader>5', function() harpoon_ui.nav_file(5) end, opts)
+keymap.set('n', '<leader>6', function() harpoon_ui.nav_file(6) end, opts)
+keymap.set('n', '<leader>7', function() harpoon_ui.nav_file(7) end, opts)
+keymap.set('n', '<leader>8', function() harpoon_ui.nav_file(8) end, opts)
+keymap.set('n', '<leader>9', function() harpoon_ui.nav_file(9) end, opts)

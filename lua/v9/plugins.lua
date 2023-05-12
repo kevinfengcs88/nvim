@@ -108,6 +108,7 @@ local plugins = {
   {'tpope/vim-surround'},
   {'zaldih/themery.nvim', lazy = true},
   {'airblade/vim-gitgutter'},
+  {'RRethy/vim-illuminate', lazy = true, enabled = false}
 }
 
 local opts = {}

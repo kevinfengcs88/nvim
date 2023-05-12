@@ -11,7 +11,8 @@ keymap.set('i', '<C-c>', '<ESC>', opts)
 keymap.set('n', '<leader>l', ':Lazy<CR>', opts)
 
 -- switch between buffers without CTRL + W
-keymap.set('n', '<C-l>', '<C-w>w', opts)
+keymap.set('n', '<C-h>', '<C-w>h', opts)
+keymap.set('n', '<C-l>', '<C-w>l', opts)
 
 -- save all and quit all
 keymap.set('n', '<leader>w', ':wa<CR>', opts)
