@@ -129,3 +129,4 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - Add GitHub code search plugin
 - Check for a way to decrease thickness of indent blankline's lines
 - Comments still wrap when hitting <CR> in insert mode (a new line is created with a comment by default)
+- Add vim-illuminate plugin
