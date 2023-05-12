@@ -107,7 +107,7 @@ local plugins = {
   {'lukas-reineke/indent-blankline.nvim', lazy = true},
   {'tpope/vim-surround'},
   {'zaldih/themery.nvim', lazy = true},
-  {'airblade/vim-gitgutter'}
+  {'airblade/vim-gitgutter'},
 }
 
 local opts = {}
