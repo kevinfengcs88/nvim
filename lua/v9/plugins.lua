@@ -94,7 +94,8 @@ local plugins = {
       'MunifTanjim/nui.nvim',
       'rcarriga/nvim-notify',
     },
-    lazy = true
+    lazy = true,
+    enabled = false
   },
   {'xiyaowong/transparent.nvim'},
   {'ThePrimeagen/harpoon', lazy = true},

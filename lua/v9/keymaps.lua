@@ -65,6 +65,9 @@ keymap.set('n', '<C-Right>', ':vertical resize +2<CR>', opts)
 -- copy into system clipboard with CTRL + C
 keymap.set('v', '<C-c>', '"+y', opts)
 
+-- copy into host system clipboard with <leader>y
+keymap.set('v', '<leader>y', '"*y', opts)
+
 -- indent and outdent lines in visual mode
 keymap.set('v', '<TAB>', '<S->>gv', opts)
 keymap.set('v', '<S-TAB>', '<S-<>gv', opts)
