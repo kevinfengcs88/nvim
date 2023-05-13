@@ -11,6 +11,7 @@ This repository contains my Neovim config, which is written in Lua. It uses lazy
 - Upon opening Neovim (and seeing the alpha dashboard), just hit `ENTER` rather than `f` for telescope's find file function since the cursor is already focused on the first option
 - A simple search and replace of the whole file can be completed like this:
 - Use visual mode and the `=` command to set all the tabs to be the same width as shiftwidth (if `:retab` doesn't work)
+    - Note that commented lines may alter the behavior of this
 ```
 :%s/original/replaced/g
 ```
@@ -130,3 +131,5 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - Add GitHub code search plugin
 - Check for a way to decrease thickness of indent blankline's lines
 - Comments still wrap when hitting <CR> in insert mode (a new line is created with a comment by default)
+- Add keymap for deleting one word in insert mode <C-Backspace> (and have it go back into insert mode)
+- Make keymaps consistent for visual mode with <C-j> and <C-k>
