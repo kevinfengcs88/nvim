@@ -10,6 +10,7 @@ This repository contains my Neovim config, which is written in Lua. It uses lazy
     - In visual mode, the same keymaps work (just remapped to their multi-line variants)
 - Upon opening Neovim (and seeing the alpha dashboard), just hit `ENTER` rather than `f` for telescope's find file function since the cursor is already focused on the first option
 - A simple search and replace of the whole file can be completed like this:
+- Use visual mode and the `=` command to set all the tabs to be the same width as shiftwidth (if `:retab` doesn't work)
 ```
 :%s/original/replaced/g
 ```
