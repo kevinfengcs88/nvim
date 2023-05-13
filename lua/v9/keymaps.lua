@@ -7,6 +7,9 @@ global.maplocalleader = ';'
 -- make CTRL + C behave exactly the same as ESC
 keymap.set('i', '<C-c>', '<ESC>', opts)
 
+-- delete one word in insert mode (note that <C-h> sends the same ASCII escape sequence as <C-BS>)
+keymap.set('i', '<C-h>', '<C-w>', opts)
+
 -- open up lazy.nvim UI
 keymap.set('n', '<leader>l', ':Lazy<CR>', opts)
 
