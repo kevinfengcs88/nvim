@@ -1,15 +1,15 @@
-local status_ok, lab = pcall(require, 'lab')
+local status_ok, lab = pcall(require, "lab")
 if not status_ok then
-  return
+    return
 end
 
 lab.setup({
-  require('lab').setup {
-    code_runner = {
-      enabled = true,
-    },
-    quick_data = {
-      enabled = true,
-    }
-  }
+    require("lab").setup({
+        code_runner = {
+            enabled = true,
+        },
+        quick_data = {
+            enabled = true,
+        },
+    }),
 })
