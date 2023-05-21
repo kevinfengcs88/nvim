@@ -118,6 +118,7 @@ local plugins = {
 	{ "airblade/vim-gitgutter" },
 	{ "RRethy/vim-illuminate", lazy = true, enabled = false },
 	{ "jose-elias-alvarez/null-ls.nvim", lazy = true, enabled = false },
+    { "lewis6991/gitsigns.nvim", lazy = true}
 }
 
 local opts = {}
