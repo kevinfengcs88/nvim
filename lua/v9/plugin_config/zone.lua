@@ -1,22 +1,22 @@
-local status_ok, zone = pcall(require, "zone")
+local status_ok, zone = pcall(require, 'zone')
 if not status_ok then
     return
 end
 
 zone.setup({
-    style = "dvd",
+    style = 'dvd',
     after = 30, -- Idle timeout
-    exclude_filetypes = { "TelescopePrompt", "NvimTree", "neo-tree", "dashboard", "lazy" },
+    exclude_filetypes = { 'TelescopePrompt', 'NvimTree', 'neo-tree', 'dashboard', 'lazy' },
     -- More options to come later
 
     treadmill = {
-        direction = "left",
+        direction = 'left',
         headache = true,
         tick_time = 30, -- Lower, the faster
         -- Opts for Treadmill style
     },
     epilepsy = {
-        stage = "aura", -- "aura" or "ictal"
+        stage = 'aura', -- "aura" or "ictal"
         tick_time = 100,
     },
     dvd = {

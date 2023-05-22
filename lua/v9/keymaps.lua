@@ -1,3 +1,5 @@
+-- Use double quotes for consistency in this file
+
 local opts = { noremap = true, silent = true }
 local keymap = vim.keymap
 local global = vim.g
