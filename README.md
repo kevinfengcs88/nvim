@@ -100,6 +100,11 @@ git config --global core.editor "nvim"
 ```
 sudo apt install neofetch
 ```
+- To install `i3wm`, perform
+```
+sudo apt-get install i3
+```
+and then logout of Ubuntu to change the desktop manager
 
 ## List of tools
 Below is a list of tools that I've installed on my Ubuntu OS, apart from Neovim (this will be used as a reference for my dotfiles repo).
