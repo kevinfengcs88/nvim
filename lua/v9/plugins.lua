@@ -115,10 +115,10 @@ local plugins = {
 	{ "lukas-reineke/indent-blankline.nvim", lazy = true },
 	{ "tpope/vim-surround" },
 	{ "zaldih/themery.nvim", lazy = true },
-	{ "airblade/vim-gitgutter" },
+	{ "airblade/vim-gitgutter", enabled = false },
 	{ "RRethy/vim-illuminate", lazy = true, enabled = false },
 	{ "jose-elias-alvarez/null-ls.nvim", lazy = true, enabled = false },
-    { "lewis6991/gitsigns.nvim", lazy = true}
+    { "lewis6991/gitsigns.nvim", lazy = true }
 }
 
 local opts = {}
