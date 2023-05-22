@@ -96,6 +96,10 @@ sudo apt install variety
 ```
 git config --global core.editor "nvim"
 ```
+- To install `neofetch`, simply perform
+```
+sudo apt install neofetch
+```
 
 ## List of tools
 Below is a list of tools that I've installed on my Ubuntu OS, apart from Neovim (this will be used as a reference for my dotfiles repo).
@@ -103,7 +107,7 @@ Below is a list of tools that I've installed on my Ubuntu OS, apart from Neovim 
 - [Variety](https://github.com/varietywalls/variety)
 
 ## List of dependencies
-Below is a list of dependencies that are required specifically for my Neovim config
+Below is a list of dependencies/tools for my Neovim config and overall workflow
 - `wl-clipboard`
 - `ripgrep`
 - `deno`
@@ -114,6 +118,7 @@ Below is a list of dependencies that are required specifically for my Neovim con
 - `eslint`
 - `pip`
     - `berserk`
+- `neofetch`
 
 ## TODO
 - Fix completions/snippets overall

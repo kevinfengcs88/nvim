@@ -20,3 +20,5 @@ set.tabstop = 4
 set.shiftwidth = 4
 set.expandtab = true
 set.shiftround = true
+
+set.formatoptions:remove({ 'c', 'r', 'o' })
