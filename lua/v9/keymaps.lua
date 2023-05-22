@@ -27,7 +27,7 @@ keymap.set("n", "<leader>q", ":qa<CR>", opts)
 keymap.set("n", "<leader><leader>", ":noh<CR>", opts)
 
 -- toggle transparency
-keymap.set("n", "<leader>tr", ":TransparentToggle<CR>", opts)
+keymap.set("n", "<C-t>", ":TransparentToggle<CR>", opts)
 
 -- replace current word
 keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])

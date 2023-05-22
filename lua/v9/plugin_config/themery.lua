@@ -26,4 +26,4 @@ themery.setup({
     livePreview = true,
 })
 
-vim.keymap.set('n', '<leader>th', ':Themery<CR>', opts)
+vim.keymap.set('n', '<leader>t', ':Themery<CR>', opts)
