@@ -124,6 +124,7 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow
 - `pip`
     - `berserk`
 - `neofetch`
+- `i3wm`
 
 ## TODO
 - Fix completions/snippets overall
@@ -133,7 +134,6 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow
 - Look into a plugin for maintaining sessions (persistence of buffers across sessions)
 - Fix blackjack score storing directory bug (once the directory is created, it becomes a permission error)
 - Find out if there is a way to do fuzzy finding for cmdline
-- Add installation and set up for i3wm
 - Add installation and set up for tmux
 - Add installation and set up for lf (terminal file manager)
 - Add installation and set up for Alacritty
