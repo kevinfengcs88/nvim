@@ -139,5 +139,5 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow
 - Add installation and set up for Alacritty
     - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
 - Add GitHub code search plugin
-- Check for a way to decrease thickness of indent blankline's lines
+- Add something like oil.nvim (netrw philosophy for exploring files)
 - Comments still wrap when hitting <CR> in insert mode (a new line is created with a comment by default)

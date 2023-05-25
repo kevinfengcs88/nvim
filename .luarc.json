@@ -38,6 +38,7 @@
         "/home/kevinfengcs88/.local/share/nvim/lazy/cmp_luasnip/lua",
         "/home/kevinfengcs88/.local/share/nvim/lazy/mason.nvim/lua",
         "/home/kevinfengcs88/.config/nvim/lua",
-        "${3rd}/luv/library"
+        "${3rd}/luv/library",
+        "/home/kevinfengcs88/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/5ebcae30"
     ]
 }
