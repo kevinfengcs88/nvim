@@ -106,13 +106,10 @@ sudo apt-get install i3
 ```
 and then logout of Ubuntu to change the desktop manager
 
-## List of tools
-Below is a list of tools that I've installed on my Ubuntu OS, apart from Neovim (this will be used as a reference for my dotfiles repo).
+## List of dependencies/tools
+Below is a list of dependencies/tools for my Neovim config and overall workflow. Everything prior to the demarcation line is used prior to my configuration of i3wm (which breaks many things by default).
 - [Gnome Shell Extension Prefs](https://www.omgubuntu.co.uk/2017/02/hidden-gnome-shell-extensions-prefs-app)
 - [Variety](https://github.com/varietywalls/variety)
-
-## List of dependencies
-Below is a list of dependencies/tools for my Neovim config and overall workflow
 - `wl-clipboard`
 - `ripgrep`
 - `deno`
@@ -124,7 +121,10 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow
 - `pip`
     - `berserk`
 - `neofetch`
+
+===**Demarcation line**===
 - `i3wm`
+    - Note: Default i3wm conflicts with much of the standard Ubuntu setup: Variety will not work. Basic features like media controls will not work, and even wl-clipboard does not work.
 
 ## TODO
 - Fix completions/snippets overall
@@ -141,3 +141,5 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow
 - Add GitHub code search plugin
 - Add something like oil.nvim (netrw philosophy for exploring files)
 - Comments still wrap when hitting <CR> in insert mode (a new line is created with a comment by default)
+- Figure out why Neovim's insert mode cursor is not a block on the first time it opens (but is a block every time after)
+    - Might have something to do with the longer initial startup time as well (>100 ms on first start, but sub 100 ms every time after)
