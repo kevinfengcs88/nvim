@@ -141,6 +141,6 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
 - Add GitHub code search plugin
 - Add something like oil.nvim (netrw philosophy for exploring files)
 - Comments still wrap when hitting <CR> in insert mode (a new line is created with a comment by default)
-- Figure out why Neovim's insert mode cursor is not a block on the first time it opens (but is a block every time after)
+- Figure out why Neovim's insert mode cursor is not a block on the first time it opens (this behavior is not consistent)
 - Change comment color for Material darker theme to yellow (?)
 - LSP warning still occurring for noice
