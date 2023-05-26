@@ -143,4 +143,4 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
 - Comments still wrap when hitting <CR> in insert mode (a new line is created with a comment by default)
 - Figure out why Neovim's insert mode cursor is not a block on the first time it opens (but is a block every time after)
 - Change comment color for Material darker theme to yellow (?)
-- Change indent line color to something more subtle
+- LSP warning still occurring for noice
