@@ -142,4 +142,4 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
 - Add something like oil.nvim (netrw philosophy for exploring files)
 - Comments still wrap when hitting <CR> in insert mode (a new line is created with a comment by default)
 - Figure out why Neovim's insert mode cursor is not a block on the first time it opens (but is a block every time after)
-    - Might have something to do with the longer initial startup time as well (>100 ms on first start, but sub 100 ms every time after)
+- Find the last group that noice still has enabled for popups
