@@ -90,7 +90,6 @@ local plugins = {
     },
     { 'ThePrimeagen/vim-be-good', lazy = true },
     { 'alec-gibson/nvim-tetris' },
-    { 'tamton-aquib/zone.nvim', lazy = true, enabled = false },
     {
         'folke/noice.nvim',
         dependencies = {
@@ -101,23 +100,12 @@ local plugins = {
     },
     { 'xiyaowong/transparent.nvim' },
     { 'ThePrimeagen/harpoon', lazy = true },
-    { 'alanfortlink/blackjack.nvim', lazy = true },
-    {
-        '0x100101/lab.nvim',
-        build = 'cd js && npm ci',
-        dependencies = { 'nvim-lua/plenary.nvim' },
-        lazy = true,
-        enabled = false,
-    },
     { 'luisiacc/gruvbox-baby', lazy = true },
     { 'Mofiqul/vscode.nvim', lazy = true },
     { 'folke/neodev.nvim', lazy = true },
-    { 'lukas-reineke/indent-blankline.nvim', lazy = true },
+    { 'lukas-reineke/indent-blankline.nvim', lazy = true, enabled = true},
     { 'tpope/vim-surround' },
     { 'zaldih/themery.nvim', lazy = true },
-    { 'airblade/vim-gitgutter', enabled = false },
-    { 'RRethy/vim-illuminate', lazy = true, enabled = false },
-    { 'jose-elias-alvarez/null-ls.nvim', lazy = true, enabled = false },
     { 'lewis6991/gitsigns.nvim', lazy = true },
 }
 
