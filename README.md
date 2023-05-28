@@ -144,4 +144,3 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
 - Figure out why Neovim's insert mode cursor is not a block on the first time it opens (this behavior is not consistent)
     - Also figure out why cursor doesn't always stay yellow (sometimes it matches the color of the character underneath it)
 - LSP warning still occurring for noice
-- Configure Neovim tabstop to be variable for different file types (JSON should always be 2 spaces for example)
