@@ -12,6 +12,7 @@ This repository contains my Neovim config, which is written in Lua. It uses lazy
 - A simple search and replace of the whole file can be completed like this:
 - Use visual mode and the `=` command to set all the tabs to be the same width as shiftwidth (if `:retab` doesn't work)
     - Note that commented lines may alter the behavior of this
+- Use `da(` to delete everything inside parentheses and the parentheses themselves
 ```
 :%s/original/replaced/g
 ```
@@ -145,4 +146,3 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
     - Also figure out why cursor doesn't always stay yellow (sometimes it matches the color of the character underneath it)
 - LSP warning still occurring for noice
 - Change "accept completion" key from <CR> to something more specific
-    - When typing a keyword or completion at the end of a line, hitting <CR> does not create a new line and instead accepts a redundant completion
