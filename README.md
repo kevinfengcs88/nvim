@@ -146,3 +146,4 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
     - Also figure out why cursor doesn't always stay yellow (sometimes it matches the color of the character underneath it)
 - LSP warning still occurring for noice
 - Change "accept completion" key from <CR> to something more specific
+- Adjust markdown syntax highlighting from Treesitter to have markdown_inline
