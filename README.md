@@ -131,7 +131,6 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
     - Writing two brackets like so `[[]]` and then hitting <CR> to create a new line can instead autocomplete a snippet or other text detected in the document (maybe intended?)
 - Change directory structure to the suggested one (include `after`) folder; this could possibly improve startup time as well (clean this one up)
 - Look into a plugin for maintaining sessions (persistence of buffers across sessions)
-
 - Fix blackjack score storing directory bug (once the directory is created, it becomes a permission error)
 - Find out if there is a way to do fuzzy finding for cmdline
 - Add installation and set up for tmux
@@ -146,3 +145,4 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
 - LSP warning still occurring for noice
 - Adjust markdown syntax highlighting from Treesitter to have markdown_inline
 - Organize dotfiles (.zsh, .gitconfig, etc.) in preparation for new repo
+- Remove vertical images from waifus folder
