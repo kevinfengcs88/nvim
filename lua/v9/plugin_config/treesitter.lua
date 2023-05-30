@@ -4,10 +4,10 @@ if not status_ok then
 end
 
 treesitter.setup({
-    ensure_installed = { 'lua', 'vim', 'python' },
+    ensure_installed = { 'lua', 'vim', 'python', 'markdown_inline' },
 
     sync_install = false,
-    auto_install = true,
+    auto_install = false,
     highlight = {
         enable = true,
     },
