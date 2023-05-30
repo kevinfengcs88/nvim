@@ -138,7 +138,6 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
 - Add installation and set up for lf (terminal file manager)
 - Add installation and set up for Alacritty
     - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
-
 - Add GitHub code search plugin
 - Add something like oil.nvim (netrw philosophy for exploring files)
 - Comments still wrap when hitting <CR> in insert mode (a new line is created with a comment by default)
@@ -146,3 +145,4 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
     - Also figure out why cursor doesn't always stay yellow (sometimes it matches the color of the character underneath it)
 - LSP warning still occurring for noice
 - Adjust markdown syntax highlighting from Treesitter to have markdown_inline
+- Organize dotfiles (.zsh, .gitconfig, etc.) in preparation for new repo
