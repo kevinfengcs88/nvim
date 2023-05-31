@@ -143,6 +143,5 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
 - Figure out why Neovim's insert mode cursor is not a block on the first time it opens (this behavior is not consistent)
     - Also figure out why cursor doesn't always stay yellow (sometimes it matches the color of the character underneath it)
 - LSP warning still occurring for noice
-- Adjust markdown syntax highlighting from Treesitter to have markdown_inline
 - Organize dotfiles (.zsh, .gitconfig, etc.) in preparation for new repo
 - Remove vertical images from waifus folder
