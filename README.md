@@ -16,7 +16,7 @@ This repository contains my Neovim config, which is written in Lua. It uses lazy
 ```
 :%s/original/replaced/g
 ```
-- `;t` toggles the transparency plugin
+- `<C-t>` toggles the transparency plugin
 - To show current keymaps, use `:nmap`, `:vmap`, and `:imap` for normal, visual, and insert mode mappings, respectively
 - To show currently installed parsers for treesitter, use `:TSInstallInfo`
 - vim-surround enables very quick "surround" operations, like `ysiw` to surround a word with quotes or `ci"'` to replace double quotes with single quotes
