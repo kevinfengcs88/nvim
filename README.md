@@ -4,7 +4,7 @@ This repository contains my Neovim config, which is written in Lua. It uses lazy
 ## Useful keymaps/tricks
 - `r` while focused on nvim-tree renames the current file
 - `a` while focused on nvim-tree adds a new file (or folder, just append a '/' character)
-- Neovim allows for pasting from the system clipboard via `CTRL + SHIFT + V` both in insert mode and command mode (note that wl-clipboard is installed, which might influence this behavior)
+- Neovim allows for pasting from the system clipboard via `CTRL + SHIFT + V` both in insert mode and command mode (note that xclip is installed, which might influence this behavior)
 - `;q` quits Neovim (by quitting all buffers) and `;w` saves all buffers
 - `TAB` and `SHIFT + TAB` indent and outdent a line, regardless of where the cursor is
     - In visual mode, the same keymaps work (just remapped to their multi-line variants)
@@ -106,12 +106,17 @@ sudo apt install neofetch
 sudo apt-get install i3
 ```
 and then logout of Ubuntu to change the desktop manager
+- If Neovim can't find xclip, try running
+```
+export DISPLAY=:0
+```
+in terminal to enable xclip
 
 ## List of dependencies/tools
 Below is a list of dependencies/tools for my Neovim config and overall workflow. Everything prior to the demarcation line is used prior to my configuration of i3wm (which breaks many things by default).
 - [Gnome Shell Extension Prefs](https://www.omgubuntu.co.uk/2017/02/hidden-gnome-shell-extensions-prefs-app)
 - [Variety](https://github.com/varietywalls/variety)
-- `wl-clipboard`
+- `xclip`
 - `ripgrep`
 - `deno`
 - `python3`
@@ -123,7 +128,7 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
     - `berserk`
 - `neofetch`
 - `i3wm`
-    - Note: Default i3wm conflicts with much of the standard Ubuntu setup: Variety will not work. Basic features like media controls will not work, and even wl-clipboard does not work.
+    - Note: Default i3wm conflicts with much of the standard Ubuntu setup: Variety will not work. Basic features like media controls will not work, and even xclip does not work.
 
 ## TODO
 - Fix completions/snippets overall
@@ -145,3 +150,4 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
 - LSP warning still occurring for noice
 - Organize dotfiles (.zsh, .gitconfig, etc.) in preparation for new repo
 - Remove vertical images from waifus folder
+- Change color of relative line numbers to white (more visible)
