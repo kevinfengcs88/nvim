@@ -23,7 +23,7 @@ neodev.setup()
 
 mason.setup()
 mason_lspconfig.setup({
-    ensure_installed = { 'lua_ls' },
+    ensure_installed = { 'lua_ls', 'pyright' },
 })
 
 local on_attach = function(_, _)
