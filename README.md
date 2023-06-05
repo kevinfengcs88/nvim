@@ -152,3 +152,4 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
 - Remove vertical images from waifus folder
 - Change color of relative line numbers to white (more visible)
 - Fix LSP overall (python is definitely not working)
+- Make all alpha dashboard options silent (Vim cmd currently pops up)
