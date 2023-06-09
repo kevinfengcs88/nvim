@@ -116,6 +116,8 @@ in terminal to enable xclip
 Below is a list of dependencies/tools for my Neovim config and overall workflow. Everything prior to the demarcation line is used prior to my configuration of i3wm (which breaks many things by default).
 - [Gnome Shell Extension Prefs](https://www.omgubuntu.co.uk/2017/02/hidden-gnome-shell-extensions-prefs-app)
 - [Variety](https://github.com/varietywalls/variety)
+- `node`
+    - `npm`
 - `xclip`
 - `ripgrep`
 - `deno`
