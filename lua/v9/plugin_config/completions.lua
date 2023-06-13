@@ -21,11 +21,11 @@ cmp.setup({
     window = {
         completion = { -- rounded border; thin-style scrollbar
             border = 'rounded',
-            scrollbar = '',
+            -- scrollbar = '',
         },
         documentation = { -- no border; native-style scrollbar
             border = 'rounded',
-            scrollbar = '',
+            -- scrollbar = '',
         },
     },
     sources = cmp.config.sources({
