@@ -27,17 +27,6 @@ local plugins = {
         lazy = true,
     },
     {
-        'williamboman/mason.nvim',
-        'williamboman/mason-lspconfig.nvim',
-        'neovim/nvim-lspconfig',
-        lazy = true,
-    },
-    { 'hrsh7th/nvim-cmp' },
-    { 'hrsh7th/cmp-nvim-lsp' },
-    { 'L3MON4D3/LuaSnip' },
-    { 'saadparwaiz1/cmp_luasnip' },
-    { 'rafamadriz/friendly-snippets' },
-    {
         'akinsho/toggleterm.nvim',
         commit = '2a787c426ef00cb3488c11b14f5dcf892bbd0bda',
         config = "require('toggleterm')",
@@ -107,6 +96,27 @@ local plugins = {
     { 'tpope/vim-surround' },
     { 'zaldih/themery.nvim', lazy = true },
     { 'lewis6991/gitsigns.nvim', lazy = true },
+    {
+    'VonHeikemen/lsp-zero.nvim',
+    branch = 'v2.x',
+    dependencies = {
+        -- LSP Support
+        {'neovim/nvim-lspconfig'},             -- Required
+        {                                      -- Optional
+        'williamboman/mason.nvim',
+        build = function()
+            pcall(vim.cmd, 'MasonUpdate')
+        end,
+        },
+        {'williamboman/mason-lspconfig.nvim'}, -- Optional
+
+        -- Autocompletion
+        {'hrsh7th/nvim-cmp'},     -- Required
+        {'hrsh7th/cmp-nvim-lsp'}, -- Required
+        {'L3MON4D3/LuaSnip'},     -- Required
+    }
+    }
+
 }
 
 local opts = {}

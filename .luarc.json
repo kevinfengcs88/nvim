@@ -40,5 +40,6 @@
     "/home/kevinfengcs88/.config/nvim/lua",
     "${3rd}/luv/library",
     "/home/kevinfengcs88/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/5ebcae30"
-  ]
+  ],
+    "workspace.checkThirdParty": false
 }
