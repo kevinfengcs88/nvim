@@ -153,6 +153,8 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
 - Organize dotfiles (.zsh, .gitconfig, etc.) in preparation for new repo
 - Remove vertical images from waifus folder
 - Change color of relative line numbers to white (more visible)
-- Fix LSP overall (python is definitely not working)
-    - Conflicting <C-BS> keymap when completion menu comes up (doesn't delete prior word)
-    - Border goes way on <C-n> or <C-p> with completion menu
+- LSP overhaul:
+    - Autocompletion of variables, files, functions, packages
+    - Goto definition
+    - Documentation on hover
+    - Snippets
