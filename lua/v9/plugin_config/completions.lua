@@ -20,12 +20,10 @@ cmp.setup({
     },
     window = {
         completion = { -- rounded border; thin-style scrollbar
-            border = 'rounded',
-            -- scrollbar = '',
+            border = 'rounded'
         },
         documentation = { -- no border; native-style scrollbar
-            border = 'rounded',
-            -- scrollbar = '',
+            border = 'rounded'
         },
     },
     sources = cmp.config.sources({
