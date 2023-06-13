@@ -17,6 +17,5 @@ require('v9.plugin_config.vim-be-good')
 require('v9.plugin_config.indent')
 require('v9.plugin_config.themery')
 require('v9.plugin_config.gitsigns')
-require('v9.plugin_config.cmp')
 
 -- require('v9.plugin_config.peek')
