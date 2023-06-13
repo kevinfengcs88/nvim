@@ -25,8 +25,8 @@ require('luasnip.loaders.from_vscode').lazy_load()
 
 cmp.setup({
     sources = {
-        {name = 'nvim_lsp'},
-        {name = 'luasnip'},
+        { name = 'nvim_lsp' },
+        { name = 'luasnip' },
     },
     mapping = {
         ['<CR>'] = cmp.mapping.confirm({ select = true })
@@ -34,5 +34,10 @@ cmp.setup({
     window = {
         completion = cmp.config.window.bordered(),
         documentation = cmp.config.window.bordered(),
+    },
+    snippet = {
+        expand = function(args)
+            require('luasnip').lsp_expand(args.body)
+        end
     }
 })
