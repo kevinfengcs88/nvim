@@ -29,7 +29,8 @@ cmp.setup({
         { name = 'luasnip' },
     },
     mapping = {
-        ['<CR>'] = cmp.mapping.confirm({ select = true })
+        ['<CR>'] = cmp.mapping.confirm({ select = true }),
+        ['<C-Space>'] = cmp.mapping.complete()
     },
     window = {
         completion = cmp.config.window.bordered(),
@@ -39,6 +40,9 @@ cmp.setup({
         expand = function(args)
             require('luasnip').lsp_expand(args.body)
         end
+    },
+    completion = {
+        autocomplete = false
     }
 })
 
