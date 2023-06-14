@@ -30,7 +30,6 @@ cmp.setup({
     },
     mapping = {
         ['<CR>'] = cmp.mapping.confirm({ select = false }),
-        ['<C-Space>'] = cmp.mapping.complete()
     },
     window = {
         completion = cmp.config.window.bordered(),
