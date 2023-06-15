@@ -21,4 +21,8 @@ treesitter.setup({
     autotag = {
         enable = true,
     },
+    indent = {
+        enable = true,
+        disable = { 'yaml', 'yml' }
+    }
 })
