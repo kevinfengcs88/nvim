@@ -3,56 +3,42 @@ if not neodev_status_ok then
     return
 end
 
-local mason_status_ok, mason = pcall(require, 'mason')
-if not mason_status_ok then
-    return
-end
+local lsp = require('lsp-zero').preset({})
 
-local mason_lspconfig_status_ok, mason_lspconfig = pcall(require, 'mason-lspconfig')
-if not mason_lspconfig_status_ok then
-    return
-end
+lsp.on_attach(function(client, bufnr)
+    lsp.default_keymaps({buffer = bufnr})
+end)
 
-local lspconfig_status_ok, lspconfig = pcall(require, 'lspconfig')
-if not lspconfig_status_ok then
-    return
-end
+require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
--- set up neodev before any other LSP
-neodev.setup()
-
-mason.setup()
-mason_lspconfig.setup({
-    ensure_installed = { 'lua_ls', 'pyright' },
+lsp.ensure_installed({
+    'pyright',
+    'lua_ls'
 })
 
-local on_attach = function(_, _)
-    vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {})
-    vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
+lsp.setup()
 
-    vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
-    vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, {})
-    vim.keymap.set('n', 'gr', require('telescope.builtin').lsp_references, {})
-    vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
-end
+local cmp = require('cmp')
+-- local cmp_action = require('lsp-zero').cmp_action()
 
--- local capabilities = require('cmp_nvim_lsp').default_capabilities()
-local capabilities_status_ok, capabilities = pcall(require, 'cmp_nvim_lsp')
-if not capabilities_status_ok then
-    return
-end
+require('luasnip.loaders.from_vscode').lazy_load()
 
-capabilities = capabilities.default_capabilities()
-
-lspconfig.lua_ls.setup({
-    on_attach = on_attach,
-    capabilities = capabilities,
-    settings = {
-        Lua = {
-            diagnostics = {
-                -- the line below is necessary to ignore annoying Lua LSP for vim variables
-                globals = { 'vim' },
-            },
-        },
+cmp.setup({
+    sources = {
+        { name = 'nvim_lsp' },
+        { name = 'luasnip' },
     },
+    mapping = {
+        ['<CR>'] = cmp.mapping.confirm({ select = false }),
+    },
+    window = {
+        completion = cmp.config.window.bordered(),
+        documentation = cmp.config.window.bordered(),
+    },
+    snippet = {
+        expand = function(args)
+            require('luasnip').lsp_expand(args.body)
+        end
+    }
 })
+

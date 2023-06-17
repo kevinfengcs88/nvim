@@ -20,5 +20,5 @@ treesitter.setup({
     },
     autotag = {
         enable = true,
-    },
+    }
 })
