@@ -13,24 +13,22 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-    { 'nvim-tree/nvim-tree.lua', lazy = true },
-    { 'nvim-tree/nvim-web-devicons', lazy = true },
-    { 'nvim-lualine/lualine.nvim', lazy = true },
-    { 'marko-cerovac/material.nvim', lazy = true },
-    { 'nvim-treesitter/nvim-treesitter', lazy = true },
+    { 'nvim-tree/nvim-tree.lua' },
+    { 'nvim-tree/nvim-web-devicons' },
+    { 'nvim-lualine/lualine.nvim' },
+    { 'marko-cerovac/material.nvim' },
+    { 'nvim-treesitter/nvim-treesitter' },
     {
         'nvim-telescope/telescope.nvim',
         version = '0.1.0',
         dependencies = {
             'nvim-lua/plenary.nvim',
-        },
-        lazy = true
+        }
     },
     {
         'akinsho/toggleterm.nvim',
         commit = '2a787c426ef00cb3488c11b14f5dcf892bbd0bda',
-        config = "require('toggleterm')",
-        lazy = true
+        config = "require('toggleterm')"
     },
     -- This method works for lazy, but it doubles startup time
     -- {
@@ -59,13 +57,12 @@ local plugins = {
     --     vim.api.nvim_create_user_command('PeekClose', require('peek').close, {})
     --   end,
     -- },
-    { 'numToStr/Comment.nvim', lazy = true },
-    { 'JoosepAlviste/nvim-ts-context-commentstring', lazy = true },
-    { 'windwp/nvim-autopairs', lazy = true },
-    { 'windwp/nvim-ts-autotag', lazy = true },
+    { 'numToStr/Comment.nvim' },
+    { 'JoosepAlviste/nvim-ts-context-commentstring' },
+    { 'windwp/nvim-autopairs' },
+    { 'windwp/nvim-ts-autotag' },
     {
-        'goolord/alpha-nvim',
-        lazy = true
+        'goolord/alpha-nvim'
     },
     { 'luk400/vim-lichess' },
     { 'dstein64/vim-startuptime' },
@@ -74,52 +71,50 @@ local plugins = {
         'ggandor/leap.nvim',
         config = function()
             require('leap').add_default_mappings()
-        end,
-        lazy = true
+        end
     },
-    { 'ThePrimeagen/vim-be-good', lazy = true },
+    { 'ThePrimeagen/vim-be-good' },
     { 'alec-gibson/nvim-tetris' },
     {
         'folke/noice.nvim',
         dependencies = {
             'MunifTanjim/nui.nvim',
             'rcarriga/nvim-notify',
-        },
-        lazy = true
+        }
     },
     { 'xiyaowong/transparent.nvim' },
-    { 'ThePrimeagen/harpoon', lazy = true },
-    { 'luisiacc/gruvbox-baby', lazy = true },
-    { 'Mofiqul/vscode.nvim', lazy = true },
-    { 'folke/neodev.nvim', lazy = true },
-    { 'lukas-reineke/indent-blankline.nvim', lazy = true },
+    { 'ThePrimeagen/harpoon' },
+    { 'luisiacc/gruvbox-baby' },
+    { 'Mofiqul/vscode.nvim' },
+    { 'folke/neodev.nvim' },
+    { 'lukas-reineke/indent-blankline.nvim' },
     { 'tpope/vim-surround' },
-    { 'zaldih/themery.nvim', lazy = true },
-    { 'lewis6991/gitsigns.nvim', lazy = true },
+    { 'zaldih/themery.nvim' },
+    { 'lewis6991/gitsigns.nvim' },
     {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v2.x',
         dependencies = {
-            { 'neovim/nvim-lspconfig', lazy = true },
+            { 'neovim/nvim-lspconfig' },
             {
                 'williamboman/mason.nvim',
                 build = function()
                     pcall(vim.cmd, 'MasonUpdate')
-                end,
-                lazy = true
+                end
             },
-            { 'williamboman/mason-lspconfig.nvim', lazy = true },
+            { 'williamboman/mason-lspconfig.nvim' },
 
-            { 'hrsh7th/nvim-cmp', lazy = true },
-            { 'hrsh7th/cmp-nvim-lsp', lazy = true },
-            { 'L3MON4D3/LuaSnip', lazy = true },
-        },
-        lazy = true
+            { 'hrsh7th/nvim-cmp' },
+            { 'hrsh7th/cmp-nvim-lsp' },
+            { 'L3MON4D3/LuaSnip' },
+        }
     },
-    { 'saadparwaiz1/cmp_luasnip', lazy = true },
-    { 'rafamadriz/friendly-snippets', lazy = true }
+    { 'saadparwaiz1/cmp_luasnip' },
+    { 'rafamadriz/friendly-snippets' }
 }
 
-local opts = {}
+local opts = {
+    defaults = { lazy = true }
+}
 
 require('lazy').setup(plugins, opts)
