@@ -24,13 +24,13 @@ local plugins = {
         dependencies = {
             'nvim-lua/plenary.nvim',
         },
-        lazy = true,
+        lazy = true
     },
     {
         'akinsho/toggleterm.nvim',
         commit = '2a787c426ef00cb3488c11b14f5dcf892bbd0bda',
         config = "require('toggleterm')",
-        lazy = true,
+        lazy = true
     },
     -- This method works for lazy, but it doubles startup time
     -- {
@@ -65,7 +65,7 @@ local plugins = {
     { 'windwp/nvim-ts-autotag', lazy = true },
     {
         'goolord/alpha-nvim',
-        lazy = true,
+        lazy = true
     },
     { 'luk400/vim-lichess' },
     { 'dstein64/vim-startuptime' },
@@ -75,7 +75,7 @@ local plugins = {
         config = function()
             require('leap').add_default_mappings()
         end,
-        lazy = true,
+        lazy = true
     },
     { 'ThePrimeagen/vim-be-good', lazy = true },
     { 'alec-gibson/nvim-tetris' },
@@ -85,14 +85,14 @@ local plugins = {
             'MunifTanjim/nui.nvim',
             'rcarriga/nvim-notify',
         },
-        lazy = true,
+        lazy = true
     },
     { 'xiyaowong/transparent.nvim' },
     { 'ThePrimeagen/harpoon', lazy = true },
     { 'luisiacc/gruvbox-baby', lazy = true },
     { 'Mofiqul/vscode.nvim', lazy = true },
     { 'folke/neodev.nvim', lazy = true },
-    { 'lukas-reineke/indent-blankline.nvim', lazy = true, enabled = true},
+    { 'lukas-reineke/indent-blankline.nvim', lazy = true },
     { 'tpope/vim-surround' },
     { 'zaldih/themery.nvim', lazy = true },
     { 'lewis6991/gitsigns.nvim', lazy = true },
@@ -100,22 +100,24 @@ local plugins = {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v2.x',
         dependencies = {
-            {'neovim/nvim-lspconfig'},
+            { 'neovim/nvim-lspconfig', lazy = true },
             {
-            'williamboman/mason.nvim',
-            build = function()
-                pcall(vim.cmd, 'MasonUpdate')
-            end,
+                'williamboman/mason.nvim',
+                build = function()
+                    pcall(vim.cmd, 'MasonUpdate')
+                end,
+                lazy = true
             },
-            {'williamboman/mason-lspconfig.nvim'},
+            { 'williamboman/mason-lspconfig.nvim', lazy = true },
 
-            {'hrsh7th/nvim-cmp'},
-            {'hrsh7th/cmp-nvim-lsp'},
-            {'L3MON4D3/LuaSnip'},
-        }
+            { 'hrsh7th/nvim-cmp', lazy = true },
+            { 'hrsh7th/cmp-nvim-lsp', lazy = true },
+            { 'L3MON4D3/LuaSnip', lazy = true },
+        },
+        lazy = true
     },
-    { 'saadparwaiz1/cmp_luasnip' },
-    { 'rafamadriz/friendly-snippets' }
+    { 'saadparwaiz1/cmp_luasnip', lazy = true },
+    { 'rafamadriz/friendly-snippets', lazy = true }
 }
 
 local opts = {}
