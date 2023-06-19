@@ -9,5 +9,7 @@ return {
         end
 
         leap.setup({})
+
+        leap.add_default_mappings()
     end
 }
