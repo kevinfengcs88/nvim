@@ -1,0 +1,7 @@
+return {
+
+    {
+        'folke/neodev.nvim',
+    }
+
+}
