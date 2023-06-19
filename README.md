@@ -157,3 +157,4 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
 - Overhaul lazy.nvim to increase startup time
     - Check markdown-preview functionality on VM
     - clever-f lazy-loading might be breaking it, test this
+    - Check TransparentToggle functionality on VM
