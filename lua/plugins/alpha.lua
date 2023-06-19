@@ -12,7 +12,7 @@ return {
         end
 
         local function header()
-            return require('v9.plugin_config.logos')['random']
+            return require('plugins.logos')['random']
         end
 
         local dashboard = require('alpha.themes.dashboard')
