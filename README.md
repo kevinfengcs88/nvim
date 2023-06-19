@@ -156,3 +156,5 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
 - Change color of relative line numbers to white (more visible)
 - Overhaul lazy.nvim to increase startup time
     - Fix leap plugin
+    - Check markdown-preview functionality on VM
+    - clever-f lazy-loading might be breaking it, test this
