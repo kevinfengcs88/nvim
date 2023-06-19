@@ -4,6 +4,7 @@ return {
         event = { 'BufReadPre', 'BufNewFile' },
         config = function()
             local neodev_status_ok, neodev = pcall(require, 'neodev')
+
             if not neodev_status_ok then
                 return
             end
