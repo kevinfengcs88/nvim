@@ -1,4 +1,3 @@
 return {
-    'rhysd/clever-f.vim',
-    event = { 'BufReadPre', 'BufNewFile' }
+    'rhysd/clever-f.vim'
 }
