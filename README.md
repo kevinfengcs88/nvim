@@ -118,7 +118,7 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
 - [Variety](https://github.com/varietywalls/variety)
 - `node`
     - `npm`
-- `xclip`
+- `xclip` (switched to unnamedplus clipboard, not needed)
 - `ripgrep`
 - `deno`
 - `python3`
