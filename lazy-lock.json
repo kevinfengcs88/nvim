@@ -6,8 +6,10 @@
   "material.nvim": { "branch": "main", "commit": "f3783f2a8e55904887d3ea7cae8d7ab57d7f3e8e" },
   "neodev.nvim": { "branch": "main", "commit": "b41da3926ce1c022a2f6a7ea8858889c3a8be4d7" },
   "nvim-autopairs": { "branch": "master", "commit": "e8f7dd7a72de3e7b6626c050a802000e69d53ff0" },
+  "nvim-tree.lua": { "branch": "master", "commit": "c3c6544ee00333b0f1d6a13735d0dd302dba4f70" },
   "nvim-treesitter": { "branch": "master", "commit": "70f161b1dda985d08e106d5e3744b2612755f748" },
   "nvim-ts-autotag": { "branch": "main", "commit": "6be1192965df35f94b8ea6d323354f7dc7a557e4" },
+  "nvim-web-devicons": { "branch": "master", "commit": "14b3a5ba63b82b60cde98d0a40319d80f25e8301" },
   "themery.nvim": { "branch": "main", "commit": "3c2734405261cc2a063f702691f56101336618bc" },
   "toggleterm.nvim": { "branch": "main", "commit": "cf146a267a6a7db62b1e2aff40414b20081048a1" },
   "vscode.nvim": { "branch": "main", "commit": "3ae7e188f0b58b29bc1b5d3698e47ce54f51caf9" }
