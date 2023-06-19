@@ -20,6 +20,7 @@ This repository contains my Neovim config, which is written in Lua. It uses lazy
 - To show current keymaps, use `:nmap`, `:vmap`, and `:imap` for normal, visual, and insert mode mappings, respectively
 - To show currently installed parsers for treesitter, use `:TSInstallInfo`
 - vim-surround enables very quick "surround" operations, like `ysiw` to surround a word with quotes or `ci"'` to replace double quotes with single quotes
+- Switching theme with Themery can fix cursor color bugs (experienced in wezterm)
 
 ## Installing dependencies + additional tools
 - `pip` is a requirement for lichess
@@ -153,3 +154,7 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
 - Organize dotfiles (.zsh, .gitconfig, etc.) in preparation for new repo
 - Remove vertical images from waifus folder
 - Change color of relative line numbers to white (more visible)
+- Overhaul lazy.nvim to increase startup time
+    - Check markdown-preview functionality on VM
+    - clever-f is slightly broken
+    - Check TransparentToggle functionality on VM
