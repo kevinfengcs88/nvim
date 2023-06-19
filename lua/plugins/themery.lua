@@ -1,6 +1,6 @@
 return {
     'zaldih/themery.nvim',
-    event = 'VimEnter',
+    cmd = 'Themery',
     config = function()
         local opts = { noremap = true, silent = true }
 
