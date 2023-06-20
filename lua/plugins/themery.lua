@@ -2,8 +2,6 @@ return {
     'zaldih/themery.nvim',
     cmd = 'Themery',
     config = function()
-        local opts = { noremap = true, silent = true }
-
         local status_ok, themery = pcall(require, 'themery')
         if not status_ok then
             return
@@ -29,7 +27,5 @@ return {
             themeConfigFile = '~/.config/nvim/lua/v9/colorscheme.lua',
             livePreview = true,
         })
-
-        vim.keymap.set('n', '<leader>t', ':Themery<CR>', opts)
     end
 }
