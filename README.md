@@ -134,26 +134,15 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
     - Note: Default i3wm conflicts with much of the standard Ubuntu setup: Variety will not work. Basic features like media controls will not work, and even xclip does not work.
 
 ## TODO
-- Fix completions/snippets overall
-    - Figure out where "utf-8" Field autocomplete comes from, coding lines that end with '8' (at least in Lua) annoyingly autocomplete to this bogus
-    - Writing two brackets like so `[[]]` and then hitting <CR> to create a new line can instead autocomplete a snippet or other text detected in the document (maybe intended?)
-- Change directory structure to the suggested one (include `after`) folder; this could possibly improve startup time as well (clean this one up)
-- Look into a plugin for maintaining sessions (persistence of buffers across sessions)
-- Fix blackjack score storing directory bug (once the directory is created, it becomes a permission error)
-- Find out if there is a way to do fuzzy finding for cmdline
-- Add installation and set up for tmux
-- Add installation and set up for lf (terminal file manager)
-- Add installation and set up for Alacritty
-    - Underline errors through LSP (this requires a terminal with undercurl support like Alacritty)
-- Add something like oil.nvim (netrw philosophy for exploring files)
 - Comments still wrap when hitting <CR> in insert mode (a new line is created with a comment by default)
-- Figure out why Neovim's insert mode cursor is not a block on the first time it opens (this behavior is not consistent)
-    - Also figure out why cursor doesn't always stay yellow (sometimes it matches the color of the character underneath it)
-- LSP warning still occurring for noice
-- Organize dotfiles (.zsh, .gitconfig, etc.) in preparation for new repo
+- Organize dotfiles (.zsh, .gitconfig, .wezterm, etc.) in preparation for new repo
 - Remove vertical images from waifus folder
 - Change color of relative line numbers to white (more visible)
 - Switch to xsel and update README
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
+- https://github.com/stevearc/oil.nvim
+- Sessions/persistence (one of these)
+    - https://github.com/folke/persistence.nvim
+    - https://github.com/rmagatti/auto-session
