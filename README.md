@@ -119,7 +119,7 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
 - [Variety](https://github.com/varietywalls/variety)
 - `node`
     - `npm`
-- `gcc`
+- `gcc` (especially for Windows machines which installed Neovim without building from source code)
 - `xsel` (in conjunction with 'unnamedplus' clipboard)
 - `ripgrep`
 - `deno`

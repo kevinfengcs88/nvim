@@ -2,7 +2,13 @@ return {
     'luk400/vim-lichess',
     event = 'VeryLazy',
     config = function ()
+
+
+        -- lower my ELO (or boost me), I don't care :)
         vim.g.lichess_api_token = 'lip_ETrgIHObUoa63yibFO4W'
+        -- catch this one, Git Guardian!
+
+
         vim.g.lichess_time = 10
         vim.g.lichess_increment = 0
         vim.g.lichess_rated = 0
