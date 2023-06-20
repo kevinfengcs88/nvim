@@ -136,7 +136,6 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
 ## TODO
 - Comments still wrap when hitting <CR> in insert mode (a new line is created with a comment by default)
 - Organize dotfiles (.zsh, .gitconfig, .wezterm, etc.) in preparation for new repo
-- Remove vertical images from waifus folder
 - Change color of relative line numbers to white (more visible)
 - Switch to xsel and update README
 
