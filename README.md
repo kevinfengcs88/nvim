@@ -119,17 +119,16 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
 - [Variety](https://github.com/varietywalls/variety)
 - `node`
     - `npm`
-- `xclip` (switched to unnamedplus clipboard, not needed)
+- `gcc`
+- `xsel` (in conjunction with 'unnamedplus' clipboard)
 - `ripgrep`
 - `deno`
 - `python3`
 - `figlet`
 - `lolcat`
-- `typescript`
-- `eslint`
+- `neofetch`
 - `pip`
     - `berserk`
-- `neofetch`
 - `i3wm`
     - Note: Default i3wm conflicts with much of the standard Ubuntu setup: Variety will not work. Basic features like media controls will not work, and even xclip does not work.
 
@@ -137,7 +136,9 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow.
 - Comments still wrap when hitting <CR> in insert mode (a new line is created with a comment by default)
 - Organize dotfiles (.zsh, .gitconfig, .wezterm, etc.) in preparation for new repo
 - Change color of relative line numbers to white (more visible)
-- Switch to xsel and update README
+- Python f-string fixes:
+    - Disable annoying {} wrapping around ''
+    - Disable annoying f''' behavior (it should be f'')
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
