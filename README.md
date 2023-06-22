@@ -86,7 +86,10 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
 - https://github.com/stevearc/oil.nvim
-- Sessions/persistence (one of these)
+- Sessions/persistence
     - https://github.com/folke/persistence.nvim
     - https://github.com/rmagatti/auto-session
+- Bracket colorizer
+    - https://github.com/fedepujol/bracketpair.nvim
+    - https://github.com/mrjones2014/nvim-ts-rainbow
 - https://github.com/akinsho/bufferline.nvim
