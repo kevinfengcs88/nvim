@@ -82,6 +82,7 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow
 - Python f-string fixes:
     - Disable annoying {} wrapping around ''
     - Disable annoying f''' behavior (it should be f'')
+- Get startup time to sub 100 ms across all environments
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
