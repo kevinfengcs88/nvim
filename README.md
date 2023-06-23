@@ -84,6 +84,7 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow
     - Disable annoying f''' behavior (it should be f'')
 - Get startup time to sub 100 ms across all environments
 - Alpha dashboard options are not silent if hitting <CR> while focused on an option
+- Add Lazygit as a CLI tool
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
@@ -94,4 +95,3 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow
 - Bracket colorizer
     - https://github.com/fedepujol/bracketpair.nvim
     - https://github.com/mrjones2014/nvim-ts-rainbow
-- https://github.com/tpope/vim-fugitive
