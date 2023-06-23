@@ -10,21 +10,23 @@ return {
 
         treesitter.setup({
             ensure_installed = { 'lua', 'vim', 'python', 'markdown_inline' },
-
             sync_install = false,
             auto_install = false,
             highlight = {
-                enable = true,
+                enable = true
             },
             context_commentstring = {
                 enable = true,
-                autocmd = false,
+                autocmd = false
             },
             autopairs = {
-                enable = true,
+                enable = true
             },
             autotag = {
-                enable = true,
+                enable = true
+            },
+            indent = {
+                enable = true
             }
         })
     end

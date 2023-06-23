@@ -82,7 +82,6 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow
 - Python f-string fixes:
     - Disable annoying {} wrapping around ''
     - Disable annoying f''' behavior (it should be f'')
-- Python: Fix indentation error with cursor creating new line in between (), {}, or []
 - Get startup time to sub 100 ms across all environments
 - Alpha dashboard options are not silent if hitting <CR> while focused on an option
 
@@ -95,3 +94,4 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow
 - Bracket colorizer
     - https://github.com/fedepujol/bracketpair.nvim
     - https://github.com/mrjones2014/nvim-ts-rainbow
+- https://github.com/tpope/vim-fugitive
