@@ -16,7 +16,13 @@ return {
                         text_align = 'center'
                     }
                 },
-                separator_style = 'slant'
+                separator_style = 'slant',
+                hover = {
+                    enabled = true,
+                    delay = 0,
+                    reveal = {'close'}
+                }
+
             }
         })
     end

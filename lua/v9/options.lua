@@ -21,5 +21,5 @@ set.shiftwidth = 4
 set.expandtab = true
 set.shiftround = true
 set.clipboard = 'unnamedplus'
-
 set.formatoptions:remove({ 'c', 'r', 'o' })
+set.mousemoveevent = true
