@@ -34,12 +34,12 @@ return {
                 bottom_search = false,
                 command_palette = false
             },
-            messages = {
-                enabled = false
-            },
-            popupmenu = {
-                enabled = false
-            }
+            -- messages = {
+            --     enabled = false
+            -- },
+            -- popupmenu = {
+            --     enabled = false
+            -- }
         })
 
         require('notify').setup({

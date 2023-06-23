@@ -76,14 +76,14 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow
     - `berserk`
 
 ## TODO
-- Comments still wrap when hitting <CR> in insert mode (a new line is created with a comment by default)
+- Comments still wrap when hitting <CR> in insert mode (Lua only?)
 - Organize dotfiles (.zsh, .gitconfig, .wezterm, etc.) in preparation for new repo
-- Change color of relative line numbers to white (more visible)
-- Python f-string fixes:
+- Change color of relative line numbers to white
+- Python f-string fixes (this is due to the autopairs plugin):
     - Disable annoying {} wrapping around ''
     - Disable annoying f''' behavior (it should be f'')
 - Get startup time to sub 100 ms across all environments
-- Alpha dashboard options are not silent if hitting <CR> while focused on an option
+- Alpha dashboard options are not silent if selecting an option with <CR>
 - Add Lazygit as a CLI tool
 
 ## Plugins to test
