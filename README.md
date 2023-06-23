@@ -4,7 +4,7 @@ This repository contains my Neovim config, which is written in Lua. It uses lazy
 ## Useful keymaps/tricks
 - `r` while focused on nvim-tree renames the current file
 - `a` while focused on nvim-tree adds a new file (or folder, just append a '/' character)
-- Neovim allows for pasting from the system clipboard via `CTRL + SHIFT + V` both in insert mode and command mode (note that xclip is installed, which might influence this behavior)
+- Neovim allows for pasting from the system clipboard via `CTRL + SHIFT + V` both in insert mode and command mode (note that xsel is installed, which might influence this behavior)
 - `;q` quits Neovim (by quitting all buffers) and `;w` saves all buffers
 - `TAB` and `SHIFT + TAB` indent and outdent a line, regardless of where the cursor is
     - In visual mode, the same keymaps work (just remapped to their multi-line variants)
