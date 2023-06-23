@@ -98,3 +98,4 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow
 - https://github.com/SmiteshP/nvim-navic
 - https://github.com/nvim-treesitter/nvim-treesitter-context
 - https://github.com/kevinhwang91/nvim-ufo
+- https://github.com/mbbill/undotree
