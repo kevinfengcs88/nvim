@@ -1,5 +1,5 @@
 # My Neovim Config
-This repository contains my Neovim config, which is written in Lua. It uses lazy for managing plugins. Below, you can find various tips/commands that I learned while configuring Neovim and my workflow as a whole.
+This repository contains my Neovim config, which is written in Lua. It uses [lazy.nvim](https://github.com/folke/lazy.nvim) for managing plugins. Below, you can find various tips/commands that I learned while configuring Neovim and my workflow as a whole.
 
 ## Useful keymaps/tricks
 - `r` while focused on nvim-tree renames the current file
