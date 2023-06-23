@@ -13,9 +13,9 @@ keymap.set('i', '<C-h>', '<C-w>', opts)
 -- open up lazy.nvim UI
 keymap.set('n', '<leader>l', ':Lazy<CR>', opts)
 
--- switch between buffers without CTRL + W
-keymap.set('n', '<C-h>', '<C-w>h', opts)
-keymap.set('n', '<C-l>', '<C-w>l', opts)
+-- quickly switch between buffers
+keymap.set('n', '<C-h>', ':bp<CR>', opts)
+keymap.set('n', '<C-l>', ':bn<CR>', opts)
 
 -- save all and quit all
 keymap.set('n', '<leader>w', ':wa<CR>', opts)

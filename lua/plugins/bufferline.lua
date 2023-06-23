@@ -21,8 +21,10 @@ return {
                     enabled = true,
                     delay = 0,
                     reveal = {'close'}
+                },
+                indicator = {
+                    style = 'icon'
                 }
-
             }
         })
     end
