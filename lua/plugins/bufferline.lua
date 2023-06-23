@@ -15,7 +15,8 @@ return {
                         highlight = 'Directory',
                         text_align = 'center'
                     }
-                }
+                },
+                separator_style = 'slant'
             }
         })
     end
