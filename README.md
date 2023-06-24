@@ -54,7 +54,7 @@ dconf write /org/gnome/terminal/legacy/profiles:/<PROFILE-ID>/background-transpa
 ```
 git config --global core.editor "nvim"
 ```
-- If Neovim can't find xsel, try running
+- If Neovim can't find xsel, try running this should really be included in `.zshrc`
 ```
 export DISPLAY=:0
 ```
@@ -105,3 +105,6 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - https://github.com/mbbill/undotree
 - https://github.com/kevinhwang91/rnvimr
 - https://github.com/willothy/wezterm.nvim
+- https://github.com/edluffy/hologram.nvim
+- Svelte???
+    - https://github.com/leafOfTree/vim-svelte-plugin
