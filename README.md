@@ -58,6 +58,7 @@ git config --global core.editor "nvim"
 ```
 export DISPLAY=:0
 ```
+- To set up Svelte development, make sure that treesitter has svelte, javascript, and css installed, and then install the svelte-language-server through Mason
 
 ## List of dependencies/tools
 Below is a list of dependencies/tools for my Neovim config and overall development environment
@@ -106,5 +107,3 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - https://github.com/kevinhwang91/rnvimr
 - https://github.com/willothy/wezterm.nvim
 - https://github.com/edluffy/hologram.nvim
-- Svelte???
-    - https://github.com/leafOfTree/vim-svelte-plugin
