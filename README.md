@@ -90,6 +90,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Add Lazygit as a tool
 - Add Ueberzug as a tool
 - Add Ranger as a tool
+- Fix Lichess plugin
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
@@ -106,4 +107,3 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - https://github.com/mbbill/undotree
 - https://github.com/kevinhwang91/rnvimr
 - https://github.com/willothy/wezterm.nvim
-- https://github.com/edluffy/hologram.nvim
