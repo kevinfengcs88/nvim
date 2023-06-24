@@ -60,10 +60,11 @@ export DISPLAY=:0
 ```
 
 ## List of dependencies/tools
-Below is a list of dependencies/tools for my Neovim config and overall workflow
+Below is a list of dependencies/tools for my Neovim config and overall development environment
 - [Gnome Shell Extension Prefs](https://www.omgubuntu.co.uk/2017/02/hidden-gnome-shell-extensions-prefs-app)
 - [Variety](https://github.com/varietywalls/variety)
-- `node`
+- `nvm` (install this with `curl`)
+    - `node`
     - `npm`
 - `gcc` (especially for Windows machines which installed Neovim without building from source code)
 - `xsel` (in conjunction with 'unnamedplus' clipboard)
