@@ -14,8 +14,13 @@ keymap.set('i', '<C-h>', '<C-w>', opts)
 keymap.set('n', '<leader>l', ':Lazy<CR>', opts)
 
 -- quickly switch between buffers
-keymap.set('n', '<C-h>', ':bp<CR>', opts)
-keymap.set('n', '<C-l>', ':bn<CR>', opts)
+keymap.set('n', '<', ':bp<CR>', opts)
+keymap.set('n', '>', ':bn<CR>', opts)
+
+-- quickly switch between windows
+keymap.set('n', '<C-h>', '<C-w>h', opts)
+keymap.set('n', '<C-l>', '<C-w>l', opts)
+
 
 -- save all and quit all
 keymap.set('n', '<leader>w', ':wa<CR>', opts)
