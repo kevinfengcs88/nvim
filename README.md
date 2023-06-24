@@ -21,6 +21,7 @@ This repository contains my Neovim config, which is written in Lua. It uses [laz
 - To show currently installed parsers for treesitter, use `:TSInstallInfo`
 - vim-surround enables very quick "surround" operations, like `ysiw` to surround a word with quotes or `ci"'` to replace double quotes with single quotes
 - Switching colorscheme can fix cursor bugs
+- <C-z> to background Neovim and `fg` in terminal to bring it back
 
 ## Installing dependencies + additional tools
 - Install `berserk` for lichess:
@@ -84,7 +85,9 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow
     - Disable annoying f''' behavior (it should be f'')
 - Get startup time to sub 100 ms across all environments
 - Alpha dashboard options are not silent if selecting an option with <CR>
-- Add Lazygit as a CLI tool
+- Add Lazygit as a tool
+- Add Ueberzug as a tool
+- Add Ranger as a tool
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
@@ -99,3 +102,5 @@ Below is a list of dependencies/tools for my Neovim config and overall workflow
 - https://github.com/nvim-treesitter/nvim-treesitter-context
 - https://github.com/kevinhwang91/nvim-ufo
 - https://github.com/mbbill/undotree
+- https://github.com/kevinhwang91/rnvimr
+- https://github.com/willothy/wezterm.nvim
