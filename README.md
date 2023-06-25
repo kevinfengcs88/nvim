@@ -82,7 +82,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Comments still wrap when hitting <CR> in insert mode (Lua only?)
 - Organize dotfiles (.zsh, .gitconfig, .wezterm, etc.) in preparation for new repo
 - Change color of relative line numbers to white
-- Python f-string fixes (this is due to the autopairs plugin):
+- Python f-string fixes (control autopairs rule behavior):
     - Disable annoying {} wrapping around ''
     - Disable annoying f''' behavior (it should be f'')
 - Get startup time to sub 100 ms across all environments
