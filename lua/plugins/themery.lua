@@ -8,12 +8,11 @@ return {
         end
 
         themery.setup({
-            -- themes = {'material', 'vscode', 'gruvbox-baby'},
             themes = {
                 {
                     name = 'material',
                     colorscheme = 'material',
-                    before = [[vim.g.material_style = 'darker']],
+                    before = [[vim.g.material_style = 'darker']]
                 },
                 {
                     name = 'vscode',
