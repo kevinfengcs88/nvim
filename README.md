@@ -90,6 +90,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Add Lazygit as a tool
 - Add Ueberzug as a tool
 - Add Ranger as a tool
+- Changing the colorscheme overrides all Vim highlight commands, change this behavior for Themery
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
