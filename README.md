@@ -102,7 +102,6 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
     - https://github.com/fedepujol/bracketpair.nvim
     - https://github.com/mrjones2014/nvim-ts-rainbow
 - https://github.com/SmiteshP/nvim-navic
-- https://github.com/nvim-treesitter/nvim-treesitter-context
 - https://github.com/kevinhwang91/nvim-ufo
 - https://github.com/mbbill/undotree
 - https://github.com/kevinhwang91/rnvimr
