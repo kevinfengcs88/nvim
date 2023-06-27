@@ -82,7 +82,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Comments still wrap when hitting <CR> in insert mode (Lua only?)
 - Organize dotfiles (.zsh, .gitconfig, .wezterm, etc.) in preparation for new repo
 - Change color of relative line numbers to white
-- Python f-string fixes (control autopairs rule behavior):
+- Python f-string fixes (change autopairs rule behavior):
     - Disable annoying {} wrapping around ''
     - Disable annoying f''' behavior (it should be f'')
 - Get startup time to sub 100 ms across all environments
@@ -91,7 +91,6 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Add Ueberzug as a tool
 - Add Ranger as a tool
 - Changing the colorscheme overrides all Vim highlight commands, change this behavior for Themery
-- Fix undotree
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
@@ -105,3 +104,5 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - https://github.com/folke/trouble.nvim
 - https://github.com/folke/todo-comments.nvim
 - https://github.com/echasnovski/mini.nvim
+- https://github.com/lmburns/lf.nvim
+    - Which requires https://github.com/gokcehan/lf
