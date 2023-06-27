@@ -100,3 +100,6 @@ keymap.set('v', 'K', ":m '<-2<CR>gv=gv", opts)
 -- vertical movement keeps cursor in middle (visual mode)
 keymap.set('v', '<C-j>', '<C-d>zz', opts)
 keymap.set('v', '<C-k>', '<C-u>zz', opts)
+
+-- prevent incrementing numbers in file (this is actually horrible)
+keymap.set('v', '<C-a>', 'ggVG', opts)
