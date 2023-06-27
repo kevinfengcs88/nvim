@@ -101,8 +101,12 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Bracket colorizer
     - https://github.com/fedepujol/bracketpair.nvim
     - https://github.com/mrjones2014/nvim-ts-rainbow
+    - https://gitlab.com/HiPhish/nvim-ts-rainbow2
+    - https://github.com/luochen1990/rainbow
 - https://github.com/SmiteshP/nvim-navic
 - https://github.com/kevinhwang91/nvim-ufo
 - https://github.com/mbbill/undotree
 - https://github.com/kevinhwang91/rnvimr
 - https://github.com/willothy/wezterm.nvim
+- https://github.com/folke/trouble.nvim
+- https://github.com/folke/todo-comments.nvim
