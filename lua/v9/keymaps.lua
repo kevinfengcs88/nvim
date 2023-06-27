@@ -17,7 +17,7 @@ keymap.set('n', '<leader>l', ':Lazy<CR>', opts)
 keymap.set('n', '<C-u>', ':UndotreeToggle<CR>', opts)
 
 -- unbind <C-d> for now
-keymap.set('n', '<C-d>', '', opts)
+keymap.set('n', '<C-d>', '<nop>', opts)
 
 -- quickly switch between buffers
 keymap.set('n', '<', ':bp<CR>', opts)
