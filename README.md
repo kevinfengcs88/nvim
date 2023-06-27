@@ -98,10 +98,10 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Sessions/persistence
     - https://github.com/folke/persistence.nvim
     - https://github.com/rmagatti/auto-session
-- https://github.com/SmiteshP/nvim-navic
 - https://github.com/kevinhwang91/nvim-ufo
 - https://github.com/mbbill/undotree
 - https://github.com/kevinhwang91/rnvimr
 - https://github.com/willothy/wezterm.nvim
 - https://github.com/folke/trouble.nvim
 - https://github.com/folke/todo-comments.nvim
+- https://github.com/echasnovski/mini.nvim

@@ -23,3 +23,4 @@ set.shiftround = true
 set.clipboard = 'unnamedplus'
 set.formatoptions:remove({ 'c', 'r', 'o' })
 set.mousemoveevent = true
+vim.o.winbar = " %{%v:lua.vim.fn.expand('%F')%}  %{%v:lua.require'nvim-navic'.get_location()%}"
