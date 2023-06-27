@@ -13,6 +13,12 @@ keymap.set('i', '<C-h>', '<C-w>', opts)
 -- open up lazy.nvim UI
 keymap.set('n', '<leader>l', ':Lazy<CR>', opts)
 
+-- toggle undotree
+keymap.set('n', '<C-u>', ':UndotreeToggle<CR>', opts)
+
+-- unbind <C-d> for now
+keymap.set('n', '<C-d>', '', opts)
+
 -- quickly switch between buffers
 keymap.set('n', '<', ':bp<CR>', opts)
 keymap.set('n', '>', ':bn<CR>', opts)
