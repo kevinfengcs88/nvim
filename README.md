@@ -91,6 +91,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Add Ueberzug as a tool
 - Add Ranger as a tool
 - Changing the colorscheme overrides all Vim highlight commands, change this behavior for Themery
+- Add sorting configuration to cmp
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
@@ -106,3 +107,4 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - https://github.com/echasnovski/mini.nvim
 - https://github.com/lmburns/lf.nvim
     - Which requires https://github.com/gokcehan/lf
+- https://github.com/debugloop/telescope-undo.nvim

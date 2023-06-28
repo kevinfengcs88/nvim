@@ -1,7 +1,6 @@
 -- Themery block
 -- This block will be replaced by Themery.
 vim.g.material_style='darker'
-
 vim.cmd("colorscheme material")
 -- end themery block
 
