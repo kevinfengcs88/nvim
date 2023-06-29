@@ -93,6 +93,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Changing the colorscheme overrides all Vim highlight commands, change this behavior for Themery
 - Add sorting configuration to cmp
 - Add keymap to jump to treesitter-context
+- Add keymap to quit and discard changes
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
