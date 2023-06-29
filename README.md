@@ -92,6 +92,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Add Ranger as a tool
 - Changing the colorscheme overrides all Vim highlight commands, change this behavior for Themery
 - Add sorting configuration to cmp
+- Add keymap to jump to treesitter-context
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
