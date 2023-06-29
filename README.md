@@ -94,6 +94,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Add sorting configuration to cmp
 - Add keymap to jump to treesitter-context
 - Add keymap to quit and discard changes
+- Fix weird bug in Python (?) where you cannot tab comments over that are at the leftmost column
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
