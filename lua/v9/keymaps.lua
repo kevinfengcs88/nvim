@@ -16,6 +16,9 @@ keymap.set('n', '<leader>l', ':Lazy<CR>', opts)
 -- toggle undotree
 keymap.set('n', '<C-u>', ':UndotreeToggle<CR>', opts)
 
+-- toggle nvim-tree
+keymap.set('n', '<C-n>', ':NvimTreeFindFileToggle<CR>', opts)
+
 -- unbind <C-d> for now
 keymap.set('n', '<C-d>', '<nop>', opts)
 

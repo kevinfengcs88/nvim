@@ -1,7 +1,7 @@
 return {
     {
         'nvim-tree/nvim-tree.lua',
-        event = 'VimEnter',
+        cmd = 'NvimTreeFindFileToggle',
         config = function()
             local status_ok, tree = pcall(require, 'nvim-tree')
 
@@ -30,8 +30,6 @@ return {
                     adaptive_size = true,
                 },
             })
-
-            vim.keymap.set('n', '<c-n>', ':NvimTreeFindFileToggle<CR>', opts)
         end
     },
     {
