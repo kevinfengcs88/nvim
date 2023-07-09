@@ -22,6 +22,9 @@ keymap.set('n', '<C-n>', ':NvimTreeFindFileToggle<CR>', opts)
 -- unbind <C-d> for now
 keymap.set('n', '<C-d>', '<nop>', opts)
 
+-- close the current buffer
+keymap.set('n', '<C-x>', ':bd<CR>', opts)
+
 -- quickly switch between buffers
 keymap.set('n', '<', ':bp<CR>', opts)
 keymap.set('n', '>', ':bn<CR>', opts)
