@@ -96,6 +96,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Add keymap to quit and discard changes
 - Fix weird bug in Python (?) where you cannot tab comments over that are at the leftmost column
 - Add keymap to access recent files (oldfiles) with Telescope outside of alpha
+- Switch leader key back to <SPC> and remove clever-f
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
