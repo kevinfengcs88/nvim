@@ -117,6 +117,3 @@ keymap.set('v', '<C-k>', '<C-u>zz', opts)
 
 -- prevent incrementing numbers in file (this is actually horrible)
 keymap.set('v', '<C-a>', 'ggVG', opts)
-
--- make capital V select additional lines
-keymap.set('v', 'V', 'j', opts)
