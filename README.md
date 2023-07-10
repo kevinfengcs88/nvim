@@ -59,10 +59,6 @@ git config --global core.editor "nvim"
 export DISPLAY=:0
 ```
 - To set up Svelte development, make sure that treesitter has svelte, javascript, and css installed, and then install the svelte-language-server through Mason
-- To switch the crontab editor to Neovim, run this command in the terminal:
-```shell
-export EDITOR=/usr/local/bin/nvim
-```
 
 ## List of dependencies/tools
 Below is a list of dependencies/tools for my Neovim config and overall development environment
