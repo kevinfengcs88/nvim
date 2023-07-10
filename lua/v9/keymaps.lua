@@ -43,8 +43,8 @@ keymap.set('n', '<leader>w', ':wa<CR>', opts)
 -- quite all buffers
 keymap.set('n', '<leader>q', ':qa<CR>', opts)
 
--- clear search term
-keymap.set('n', '<leader><leader>', ':noh<CR>', opts)
+-- clear search term when centering the cursor
+keymap.set('n', 'zz', 'zz:noh<CR>', opts)
 
 -- toggle transparency
 keymap.set('n', '<C-t>', ':TransparentToggle<CR>', opts)

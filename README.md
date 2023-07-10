@@ -118,3 +118,4 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - https://github.com/nvim-pack/nvim-spectre
 - https://github.com/epwalsh/obsidian.nvim
 - https://github.com/folke/which-key.nvim
+- https://github.com/folke/flash.nvim
