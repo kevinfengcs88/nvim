@@ -10,6 +10,10 @@ keymap.set('i', '<C-c>', '<ESC>', opts)
 -- delete one word in insert mode (note that <C-h> sends the same ASCII escape sequence as <C-BS>)
 keymap.set('i', '<C-h>', '<C-w>', opts)
 
+-- remap ^ and $ to H and L, respectively
+keymap.set('n', 'H', '^', opts)
+keymap.set('n', 'L', '$', opts)
+
 -- open up lazy.nvim UI
 keymap.set('n', '<leader>l', ':Lazy<CR>', opts)
 
@@ -33,9 +37,10 @@ keymap.set('n', '>', ':bn<CR>', opts)
 keymap.set('n', '<C-h>', '<C-w>h', opts)
 keymap.set('n', '<C-l>', '<C-w>l', opts)
 
-
--- save all and quit all
+-- write to all buffers
 keymap.set('n', '<leader>w', ':wa<CR>', opts)
+
+-- quite all buffers
 keymap.set('n', '<leader>q', ':qa<CR>', opts)
 
 -- clear search term
@@ -109,3 +114,6 @@ keymap.set('v', '<C-k>', '<C-u>zz', opts)
 
 -- prevent incrementing numbers in file (this is actually horrible)
 keymap.set('v', '<C-a>', 'ggVG', opts)
+
+-- make capital V select additional lines
+keymap.set('v', 'V', 'j', opts)
