@@ -40,8 +40,11 @@ keymap.set('n', '<C-l>', '<C-w>l', opts)
 -- write to all buffers
 keymap.set('n', '<leader>w', ':wa<CR>', opts)
 
--- quite all buffers
+-- quit all buffers
 keymap.set('n', '<leader>q', ':qa<CR>', opts)
+
+-- force quit all buffers
+keymap.set('n', '<leader>fq', ':qa!<CR>', opts)
 
 -- clear search term when centering the cursor
 keymap.set('n', 'zz', 'zz:noh<CR>', opts)
