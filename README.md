@@ -96,6 +96,8 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Add keymap to quit and discard changes
 - Fix weird bug in Python (?) where you cannot tab comments over that are at the leftmost column
 - Add keymap to access recent files (oldfiles) with Telescope outside of alpha
+- Remap something without a modifier key to $ (end of line), like 9
+- Map capital V in visual mode to j (so it selects more lines each time you hit it)
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
