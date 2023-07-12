@@ -54,7 +54,7 @@ dconf write /org/gnome/terminal/legacy/profiles:/<PROFILE-ID>/background-transpa
 ```
 git config --global core.editor "nvim"
 ```
-- If Neovim can't find xsel, try running this should really be included in `.zshrc`
+- If Neovim can't find xsel, try running this (should really be included in `.zshrc`)
 ```
 export DISPLAY=:0
 ```
