@@ -50,7 +50,7 @@ keymap.set('n', '<leader>fq', ':qa!<CR>', opts)
 keymap.set('n', 'zz', 'zz:noh<CR>', opts)
 
 -- toggle transparency
-keymap.set('n', '<C-t>', ':TransparentToggle<CR>', opts)
+keymap.set('n', '<M-t>', ':TransparentToggle<CR>', opts)
 
 -- open up Themery
 keymap.set('n', '<leader>t', ':Themery<CR>', opts)
