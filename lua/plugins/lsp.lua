@@ -8,6 +8,8 @@ return {
             if not neodev_status_ok then
                 return
             end
+
+            neodev.setup()
         end
     },
     {
