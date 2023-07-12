@@ -35,7 +35,8 @@ return {
             })
 
             npairs.add_rules({
-                rule("'", "'", 'python'):with_pair(cond.before_text('f'))
+                rule("'", "'", 'python'):with_pair(cond.before_text('f')),
+                rule("{", "}", 'python'):with_pair(cond.is_inside_quote()),
             })
         end
     },

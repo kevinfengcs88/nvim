@@ -82,8 +82,6 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Comments still wrap when hitting <CR> in insert mode (Lua only?)
 - Organize dotfiles (.zsh, .gitconfig, .wezterm, etc.) in preparation for new repo
 - Change color of relative line numbers to white
-- Python f-string fixes (change autopairs rule behavior):
-    - Disable annoying {} wrapping around ''
 - Get startup time to sub 100 ms across all environments
 - Alpha dashboard options are not silent if selecting an option with <CR>
 - Add Lazygit as a tool
