@@ -96,6 +96,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Lazy-load nvim-web-devicons (currently loading on start even though it's only a dependency of other plugins)
 - Add more languages under `ensure_installed` in LSP config
 - Fix obsidian.nvim note autocompletion with nvim-cmp
+- Load colorscheme later so that manual Themery switch does not have to be made to fix cursor color
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
@@ -121,3 +122,4 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Markdown
     - https://github.com/dkarter/bullets.vim
     - https://github.com/preservim/vim-markdown
+- https://github.com/HiPhish/rainbow-delimiters.nvim
