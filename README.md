@@ -122,4 +122,3 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Markdown
     - https://github.com/dkarter/bullets.vim
     - https://github.com/preservim/vim-markdown
-- https://github.com/HiPhish/rainbow-delimiters.nvim

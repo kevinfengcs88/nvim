@@ -22,6 +22,10 @@ return {
                     name = 'gruvbox',
                     colorscheme = 'gruvbox-baby',
                 },
+                {
+                    name = 'tokyonight',
+                    colorscheme = 'tokyonight'
+                }
             },
             themeConfigFile = '~/.config/nvim/lua/v9/colorscheme.lua',
             livePreview = true,
