@@ -97,6 +97,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Fix obsidian.nvim note autocompletion with nvim-cmp
 - Load colorscheme later so that manual Themery switch does not have to be made to fix cursor color
 - Kanban board is broken :(
+- which-key doesn't know what <leader>1-9 do (it's Harpoon)
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
