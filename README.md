@@ -95,6 +95,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Add keymap to access recent files (oldfiles) with Telescope outside of alpha
 - Lazy-load nvim-web-devicons (currently loading on start even though it's only a dependency of other plugins)
 - Add more languages under `ensure_installed` in LSP config
+- Lazy-load obsidian.nvim upon opening a Markdown file in Obsidian Vault
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
