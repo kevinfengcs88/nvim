@@ -1,6 +1,6 @@
 return {
     'epwalsh/obsidian.nvim',
-    -- event = { 'BufReadPre C:/Users/Kevin/Documents/Obsidian Vault/**.md' },
+    event = { 'BufReadPre C:/Users/Kevin/Documents/Obsidian Vault/**.md' },
     dependencies = {
         -- Required.
         'nvim-lua/plenary.nvim',
