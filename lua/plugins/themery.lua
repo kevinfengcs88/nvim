@@ -23,6 +23,10 @@ return {
                     colorscheme = 'gruvbox-baby',
                 },
                 {
+                    name = 'catppuccin',
+                    colorscheme = 'catppuccin',
+                },
+                {
                     name = 'tokyonight',
                     colorscheme = 'tokyonight'
                 }
