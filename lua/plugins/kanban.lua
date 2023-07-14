@@ -1,5 +1,6 @@
 return {
     'arakkkkk/kanban.nvim',
+    cmd = { 'KanbanCreate', 'KanbanOpen' },
     config = function ()
         require('kanban').setup({
             markdown = {
