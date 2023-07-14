@@ -1,6 +1,6 @@
 -- Themery block
 -- This block will be replaced by Themery.
-vim.cmd("colorscheme catppuccin")
+vim.cmd("colorscheme tokyonight")
 -- end themery block
 
 -- alternate method for transparency
