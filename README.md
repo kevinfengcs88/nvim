@@ -96,6 +96,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Add more languages under `ensure_installed` in LSP config
 - Fix obsidian.nvim note autocompletion with nvim-cmp
 - Load colorscheme later so that manual Themery switch does not have to be made to fix cursor color
+- Kanban board is broken :(
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
