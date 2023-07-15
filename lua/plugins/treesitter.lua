@@ -2,6 +2,7 @@ return {
     {
         'nvim-treesitter/nvim-treesitter',
         event = { 'BufReadPre', 'BufNewFile' },
+        cmd = { 'TSInstallInfo', 'TSInstall' },
         config = function()
             local status_ok, treesitter = pcall(require, 'nvim-treesitter.configs')
 
