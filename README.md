@@ -118,3 +118,6 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Markdown
     - https://github.com/dkarter/bullets.vim
     - https://github.com/preservim/vim-markdown
+- Formatting
+    - https://github.com/jose-elias-alvarez/null-ls.nvim (getting archived)
+    - https://github.com/elentok/format-on-save.nvim
