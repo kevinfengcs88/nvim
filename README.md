@@ -93,7 +93,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
     - Changing the colorscheme overrides all Vim highlight commands, change this behavior for Themery
 - Kanban board is broken :(
 - which-key doesn't know what <leader>1-9 do (it's Harpoon)
-- Get nvim-tree to be fully transparent with wezterm background
+- Get more UI components to be transparent with transparent.nvim (toggleterm, lualine, etc.)
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
