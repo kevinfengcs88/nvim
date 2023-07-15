@@ -99,7 +99,6 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Fixed a bug with persistence disabling nvim-tree by lazy-loading nvim-tree with VeryLazy event; check if any other plugins break with session loading
 - flash.nvim
     - Make `:noh` automatic after `/` searching with flash.nvim
-    - Add remote yanking for flash.nvim
 
 ## Plugins to test
 ### High priority
