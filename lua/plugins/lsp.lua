@@ -83,5 +83,9 @@ return {
         end
     },
     { 'saadparwaiz1/cmp_luasnip' },
-    { 'rafamadriz/friendly-snippets' }
+    { 'rafamadriz/friendly-snippets' },
+    {
+        'dgagn/diagflow.nvim',
+        opts = {}
+    }
 }
