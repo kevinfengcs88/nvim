@@ -15,6 +15,7 @@ return {
     {
         'VonHeikemen/lsp-zero.nvim',
         event = 'BufReadPre',
+        cmd = 'Mason',
         branch = 'v2.x',
         dependencies = {
             { 'neovim/nvim-lspconfig' },
@@ -24,7 +25,7 @@ return {
                     pcall(vim.cmd, 'MasonUpdate')
                 end
             },
-            { 'williamboman/mason-lspconfig.nvim' },
+            { 'williamboman/mason-lspconfig.nvim', },
 
             { 'hrsh7th/nvim-cmp' },
             { 'hrsh7th/cmp-nvim-lsp' },

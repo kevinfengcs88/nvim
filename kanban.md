@@ -7,9 +7,12 @@ kanban-plugin: basic
 
 ## TODO
 
-## Plugins
+## Work in progress
 
 ## Done
+
+## Archive
+
 
 %% kanban:settings
 ```
