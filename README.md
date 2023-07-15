@@ -94,6 +94,8 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Kanban board is broken :(
 - which-key doesn't know what <leader>1-9 do (it's Harpoon)
 - Get more UI components to be transparent with transparent.nvim (toggleterm, lualine, etc.)
+- Fix visual bug with gitsigns (looks worse for certain colorschemes, like material)
+- Load block style cursor with autocmd to make it more consistent (sometimes it goes back to being a thin line)
 
 ## Plugins to test
 - https://github.com/napisani/nvim-github-codesearch
