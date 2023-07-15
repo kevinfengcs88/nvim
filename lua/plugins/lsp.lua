@@ -86,6 +86,9 @@ return {
     { 'rafamadriz/friendly-snippets' },
     {
         'dgagn/diagflow.nvim',
-        opts = {}
+        opts = {
+            scope = 'line',
+            padding_right = 3
+        }
     }
 }
