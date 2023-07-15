@@ -1,6 +1,9 @@
 return {
     {
         'nvim-tree/nvim-tree.lua',
+        dependecies = {
+            'nvim-tree/nvim-web-devicons'
+        },
         cmd = { 'NvimTreeOpen', 'NvimTreeFindFileToggle' },
         config = function()
             local status_ok, tree = pcall(require, 'nvim-tree')
@@ -32,7 +35,4 @@ return {
             })
         end
     },
-    {
-        'nvim-tree/nvim-web-devicons'
-    }
 }

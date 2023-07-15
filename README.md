@@ -80,22 +80,17 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 
 ## TODO
 - Comments still wrap when hitting <CR> in insert mode (Lua only?)
-- Organize dotfiles (.zsh, .gitconfig, .wezterm, etc.) in preparation for new repo
-- Change color of relative line numbers to white
-- Get startup time to sub 100 ms across all environments
 - Alpha dashboard options are not silent if selecting an option with <CR>
 - Add Lazygit as a tool
 - Add Ueberzug as a tool
 - Add Ranger as a tool
-- Changing the colorscheme overrides all Vim highlight commands, change this behavior for Themery
 - Add sorting configuration to cmp
 - Add keymap to jump to treesitter-context
-- Add keymap to quit and discard changes
 - Fix weird bug in Python (?) where you cannot tab comments over that are at the leftmost column
-- Lazy-load nvim-web-devicons (currently loading on start even though it's only a dependency of other plugins)
-- Add more languages under `ensure_installed` in LSP config
 - Fix obsidian.nvim note autocompletion with nvim-cmp
-- Load colorscheme later so that manual Themery switch does not have to be made to fix cursor color
+- Colorscheme stuff
+    - Load colorscheme later so that manual Themery switch does not have to be made to fix cursor color
+    - Changing the colorscheme overrides all Vim highlight commands, change this behavior for Themery
 - Kanban board is broken :(
 - which-key doesn't know what <leader>1-9 do (it's Harpoon)
 - Get nvim-tree to be fully transparent with wezterm background
