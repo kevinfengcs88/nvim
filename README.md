@@ -96,17 +96,18 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Get more UI components to be transparent with transparent.nvim (toggleterm, lualine, etc.)
 - Fix visual bug with gitsigns (looks worse for certain colorschemes, like material)
 - Load block style cursor with autocmd to make it more consistent (sometimes it goes back to being a thin line)
+- Fixed a bug with persistence disabling nvim-tree by lazy-loading nvim-tree with VeryLazy event; check if any other plugins break with session loading
+- Make `:noh` automatic after `/` searching with flash.nvim
 
 ## Plugins to test
 ### High priority
-- https://github.com/willothy/wezterm.nvim
 - https://github.com/folke/trouble.nvim
 - https://github.com/dgagn/diagflow.nvim
 - https://github.com/folke/todo-comments.nvim
 - https://github.com/debugloop/telescope-undo.nvim
-- https://github.com/folke/flash.nvim
 
 ### Low priority
+- https://github.com/willothy/wezterm.nvim
 - https://github.com/echasnovski/mini.nvim
 - https://github.com/napisani/nvim-github-codesearch
 - https://github.com/stevearc/oil.nvim

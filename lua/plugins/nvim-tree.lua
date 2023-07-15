@@ -4,7 +4,8 @@ return {
         dependecies = {
             'nvim-tree/nvim-web-devicons'
         },
-        cmd = { 'NvimTreeOpen', 'NvimTreeFindFileToggle' },
+        -- cmd = { 'NvimTreeOpen', 'NvimTreeFindFileToggle' },
+        event = 'VeryLazy',
         config = function()
             local status_ok, tree = pcall(require, 'nvim-tree')
 
