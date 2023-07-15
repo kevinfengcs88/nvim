@@ -116,7 +116,6 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - https://github.com/lmburns/lf.nvim
     - Which requires https://github.com/gokcehan/lf
 - https://github.com/debugloop/telescope-undo.nvim
-- https://github.com/Bekaboo/dropbar.nvim
 - https://github.com/folke/neoconf.nvim
 - https://github.com/nvim-pack/nvim-spectre
 - https://github.com/folke/flash.nvim
