@@ -103,7 +103,6 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 
 ## Plugins to test
 ### High priority
-- https://github.com/folke/trouble.nvim
 - https://github.com/dgagn/diagflow.nvim
 - https://github.com/debugloop/telescope-undo.nvim
 
