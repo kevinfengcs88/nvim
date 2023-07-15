@@ -97,7 +97,9 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - Fix visual bug with gitsigns (looks worse for certain colorschemes, like material)
 - Load block style cursor with autocmd to make it more consistent (sometimes it goes back to being a thin line)
 - Fixed a bug with persistence disabling nvim-tree by lazy-loading nvim-tree with VeryLazy event; check if any other plugins break with session loading
-- Make `:noh` automatic after `/` searching with flash.nvim
+- flash.nvim
+    - Make `:noh` automatic after `/` searching with flash.nvim
+    - Add remote yanking for flash.nvim
 
 ## Plugins to test
 ### High priority
