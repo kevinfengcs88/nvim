@@ -49,7 +49,8 @@ return {
 
             lsp.ensure_installed({
                 'pyright',
-                'lua_ls'
+                'lua_ls',
+                'gopls'
             })
 
             lsp.setup()
@@ -60,6 +61,7 @@ return {
             require('luasnip.loaders.from_vscode').lazy_load()
 
             cmp.setup({
+                preselect = cmp.PreselectMode.None,
                 sources = {
                     { name = 'nvim_lsp' },
                     { name = 'luasnip' },
