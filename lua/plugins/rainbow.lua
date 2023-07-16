@@ -1,6 +1,5 @@
 return {
     'HiPhish/rainbow-delimiters.nvim',
-    enabled = false,
     event = { 'BufReadPre', 'BufNewFile' },
     config = function ()
         -- This module contains a number of default definitions
