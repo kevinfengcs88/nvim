@@ -103,6 +103,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 
 ## Plugins to test
 ### High priority
+- https://github.com/jackMort/ChatGPT.nvim
 
 ### Low priority
 - https://github.com/willothy/wezterm.nvim
