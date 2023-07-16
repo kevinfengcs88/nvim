@@ -88,7 +88,7 @@ return {
         'dgagn/diagflow.nvim',
         opts = {
             scope = 'line',
-            padding_right = 3
+            padding_right = 5
         }
     }
 }
