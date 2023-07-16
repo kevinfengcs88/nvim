@@ -14,7 +14,7 @@ return {
                 edit_with_instructions = {
                     diff = false,
                     keymaps = {
-                        close = '<C-c>',
+                        close = '<Esc>',
                         accept = '<C-y>',
                         toggle_diff = '<C-d>',
                         toggle_settings = '<C-o>',
@@ -23,7 +23,7 @@ return {
                     },
                 },
                 chat = {
-                    welcome_message = WELCOME_MESSAGE,
+                    welcome_message = 'Not all those who wander are lost...',
                     loading_text = 'Loading, please wait ...',
                     question_sign = '',
                     answer_sign = 'ﮧ',
@@ -40,11 +40,11 @@ return {
                         },
                     },
                     keymaps = {
-                        close = { '<C-c>' },
+                        close = { '<Esc>' },
                         yank_last = '<C-y>',
-                        yank_last_code = '<C-k>',
-                        scroll_up = '<C-u>',
-                        scroll_down = '<C-d>',
+                        yank_last_code = '<C-u>',
+                        scroll_up = '<C-k>',
+                        scroll_down = '<C-j>',
                         new_session = '<C-n>',
                         cycle_windows = '<Tab>',
                         cycle_modes = '<C-f>',
