@@ -22,6 +22,7 @@ This repository contains my Neovim config, which is written in Lua. It uses [laz
 - vim-surround enables very quick "surround" operations, like `ysiw` to surround a word with quotes or `ci"'` to replace double quotes with single quotes
 - Switching colorscheme can fix cursor bugs
 - <C-z> to background Neovim and `fg` in terminal to bring it back
+- `ls` restores WezTerm recoloring the shell prompt when using Neovim in Windows while SSH'd into a Linux machine
 
 ## Installing dependencies + additional tools
 - Install `berserk` for lichess:
