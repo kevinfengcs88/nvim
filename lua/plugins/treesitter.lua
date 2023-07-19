@@ -28,9 +28,11 @@ return {
                     enable = true
                 },
                 indent = {
-                    enable = true
+                    enable = true,
+                    disable = { 'go' }
                 }
             })
         end
+
     }
 }
