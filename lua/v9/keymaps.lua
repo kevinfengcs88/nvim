@@ -23,6 +23,24 @@ keymap.set('n', '<C-u>', ':UndotreeToggle<CR>', opts)
 -- toggle nvim-tree
 keymap.set('n', '<C-n>', ':NvimTreeFindFileToggle<CR>', opts)
 
+-- debugging stuff
+keymap.set('n', '<leader>db', ':DapToggleBreakpoint<CR>', opts)
+keymap.set('n', '<leader>dus',
+    function ()
+        local widgets = require('dap.ui.widgets');
+        local sidebar = widgets.sidebar(widgets.scopes);
+        sidebar.open();
+    end, opts)
+keymap.set('n', '<leader>dgt',
+    function ()
+        require('dap-go').debug_test()
+    end, opts)
+keymap.set('n', '<leader>dgl',
+    function ()
+        require('dap-go').debug_last()
+    end, opts)
+keymap.set('n', '<leader>ds', ':DapStepOver<CR>', opts)
+
 -- unbind <C-d> for now
 keymap.set('n', '<C-d>', '<nop>', opts)
 
