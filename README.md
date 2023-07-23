@@ -101,6 +101,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - flash.nvim
     - Make `:noh` automatic after `/` searching with flash.nvim
 - Investigate rainbow delimiters behavior (is it just highlight groups happening in the wrong order?)
+- diagflow only works on LSP updates, fix this
 
 ## Plugins to test
 ### High priority
