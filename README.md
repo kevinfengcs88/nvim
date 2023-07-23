@@ -108,6 +108,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 ## Plugins to test
 ### High priority
 - https://github.com/mfussenegger/nvim-dap
+    - https://github.com/leoluz/nvim-dap-go
 - Markdown
     - https://github.com/dkarter/bullets.vim
     - https://github.com/preservim/vim-markdown
