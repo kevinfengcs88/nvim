@@ -78,6 +78,8 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - `neofetch`
 - `pip`
     - `berserk`
+- `go`
+- `delve` (Go debugger)
 
 ## TODO
 - Comments still wrap when hitting <CR> in insert mode (Lua only?)
@@ -105,6 +107,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 
 ## Plugins to test
 ### High priority
+- https://github.com/mfussenegger/nvim-dap
 - Markdown
     - https://github.com/dkarter/bullets.vim
     - https://github.com/preservim/vim-markdown
