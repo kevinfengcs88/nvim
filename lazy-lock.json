@@ -8,6 +8,7 @@
   "cmp_luasnip": { "branch": "master", "commit": "18095520391186d634a0045dacaa346291096566" },
   "diagflow.nvim": { "branch": "main", "commit": "a9816fb30866b46e4eb44135aabcc99ddb3f507f" },
   "flash.nvim": { "branch": "main", "commit": "c92ecbff98fdc8770c283aa3934349e6889195dd" },
+  "format-on-save.nvim": { "branch": "main", "commit": "bfeb3fc4a6a11d3bc7edf7a32b47654c617f49b1" },
   "friendly-snippets": { "branch": "main", "commit": "8f5db6c5b691a6bbaa5dabd9afeb164ef8a06d04" },
   "gitsigns.nvim": { "branch": "main", "commit": "5a04466685008f29c71fa5ec25d421deb1c83fea" },
   "gruvbox-baby": { "branch": "main", "commit": "4f45f5182b986ea8099b8ad0207e07f1bc49a47f" },

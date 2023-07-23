@@ -1,5 +1,6 @@
 return {
-    "folke/zen-mode.nvim",
+    'folke/zen-mode.nvim',
+    event = 'VeryLazy',
     opts = {
         window = {
             backdrop = 0.9, -- shade the backdrop of the Zen window. Set to 1 to keep the same as Normal

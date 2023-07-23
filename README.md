@@ -105,6 +105,9 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 
 ## Plugins to test
 ### High priority
+- Markdown
+    - https://github.com/dkarter/bullets.vim
+    - https://github.com/preservim/vim-markdown
 
 ### Low priority
 - https://github.com/willothy/wezterm.nvim
@@ -115,9 +118,3 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - https://github.com/kevinhwang91/rnvimr
 - https://github.com/lmburns/lf.nvim
     - Which requires https://github.com/gokcehan/lf
-- Markdown
-    - https://github.com/dkarter/bullets.vim
-    - https://github.com/preservim/vim-markdown
-- Formatting
-    - https://github.com/jose-elias-alvarez/null-ls.nvim (getting archived)
-    - https://github.com/elentok/format-on-save.nvim
