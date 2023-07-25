@@ -24,22 +24,28 @@ keymap.set('n', '<C-u>', ':UndotreeToggle<CR>', opts)
 keymap.set('n', '<C-n>', ':NvimTreeFindFileToggle<CR>', opts)
 
 -- debugging stuff
-keymap.set('n', '<leader>db', ':DapToggleBreakpoint<CR>', opts)
-keymap.set('n', '<leader>dus',
-    function ()
-        local widgets = require('dap.ui.widgets');
-        local sidebar = widgets.sidebar(widgets.scopes);
-        sidebar.open();
-    end, opts)
-keymap.set('n', '<leader>dgt',
-    function ()
-        require('dap-go').debug_test()
-    end, opts)
-keymap.set('n', '<leader>dgl',
-    function ()
-        require('dap-go').debug_last()
-    end, opts)
-keymap.set('n', '<leader>ds', ':DapStepOver<CR>', opts)
+-- keymap.set('n', '<leader>db', ':DapToggleBreakpoint<CR>', opts)
+-- keymap.set('n', '<leader>dus',
+--     function ()
+--         local widgets = require('dap.ui.widgets');
+--         local sidebar = widgets.sidebar(widgets.scopes);
+--         sidebar.open();
+--     end, opts)
+-- keymap.set('n', '<leader>dgt',
+--     function ()
+--         require('dap-go').debug_test()
+--     end, opts)
+-- keymap.set('n', '<leader>dgl',
+--     function ()
+--         require('dap-go').debug_last()
+--     end, opts)
+-- keymap.set('n', '<leader>ds', ':DapStepOver<CR>', opts)
+
+-- debugging take 2
+vim.api.nvim_set_keymap('n', '<leader>dt', ':DapUiToggle<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>db', ':DapToggleBreakpoint<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>dc', ':DapContinue<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>dr', ":lua require('dapui').open({reset = true})<CR>", opts)
 
 -- unbind <C-d> for now
 keymap.set('n', '<C-d>', '<nop>', opts)

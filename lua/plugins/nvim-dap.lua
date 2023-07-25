@@ -1,15 +1,20 @@
 return {
     {
-        'mfussenegger/nvim-dap',
+        'rcarriga/nvim-dap-ui',
+        dependencies = {
+            'mfussenegger/nvim-dap'
+        },
         config = function()
+            require('dapui').setup()
         end
     },
     {
         'leoluz/nvim-dap-go',
-        ft = 'go',
-        dependencies = 'mfussenegger/nvim-dap',
-        config = function (_, opts)
-            require('dap-go').setup(opts)
+        dependencies = {
+            'mfussenegger/nvim-dap'
+        },
+        config = function ()
+            require('dap-go').setup()
         end
-    }
+    },
 }
