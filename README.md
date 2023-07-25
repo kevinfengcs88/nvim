@@ -4,7 +4,7 @@ This repository contains my Neovim config, which is written in Lua. It uses [laz
 ## Useful keymaps/tricks
 - `r` while focused on nvim-tree renames the current file
 - `a` while focused on nvim-tree adds a new file (or folder, just append a '/' character)
-- Neovim allows for pasting from the system clipboard via `CTRL + SHIFT + V` both in insert mode and command mode (note that xsel is installed, which might influence this behavior)
+- Neovim allows for pasting from the system clipboard via `CTRL + SHIFT + V` both in insert mode and command mode
 - `;q` quits Neovim (by quitting all buffers) and `;w` saves all buffers
 - `TAB` and `SHIFT + TAB` indent and outdent a line, regardless of where the cursor is
     - In visual mode, the same keymaps work (just remapped to their multi-line variants)
@@ -55,10 +55,6 @@ dconf write /org/gnome/terminal/legacy/profiles:/<PROFILE-ID>/background-transpa
 ```
 git config --global core.editor "nvim"
 ```
-- If Neovim can't find xsel, try running this (should really be included in `.zshrc`)
-```
-export DISPLAY=:0
-```
 - To set up Svelte development, make sure that treesitter has svelte, javascript, and css installed, and then install the svelte-language-server through Mason
 
 ## List of dependencies/tools
@@ -69,7 +65,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
     - `node`
     - `npm`
 - `gcc` (especially for Windows machines which installed Neovim without building from source code)
-- `xsel` (in conjunction with 'unnamedplus' clipboard)
+- `win32yank` (install this in Windows using something like Chocolatey)
 - `ripgrep`
 - `deno`
 - `python3`

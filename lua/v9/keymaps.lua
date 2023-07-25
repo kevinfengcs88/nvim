@@ -141,3 +141,5 @@ keymap.set('v', '<C-k>', '<C-u>zz', opts)
 
 -- prevent incrementing numbers in file (this is actually horrible)
 keymap.set('v', '<C-a>', 'ggVG', opts)
+
+keymap.set('v', '<C-d>', '"+ygvd', opts)
