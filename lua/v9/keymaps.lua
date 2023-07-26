@@ -85,9 +85,6 @@ keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left
 -- make current file an executable
 keymap.set('n', '<leader>x', '<cmd>!chmod +x %<CR>', opts)
 
--- avoid falling into the black hole that is capital Q
-keymap.set('n', 'Q', '<nop>', opts)
-
 -- keep cursor at front when appending lines below
 keymap.set('n', 'J', 'mzJ`z', opts)
 
