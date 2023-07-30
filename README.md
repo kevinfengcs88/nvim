@@ -100,6 +100,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
     - Make `:noh` automatic after `/` searching with flash.nvim
 - Investigate rainbow delimiters behavior (is it just highlight groups happening in the wrong order?)
 - diagflow only works on LSP updates, fix this
+    - Fix diagflow bug working on nvim-tree (just disable it for nvim-tree buffers)
 - Clean up keymaps so that they only load when necessary (plugin = true) option
 
 ## Plugins to test
