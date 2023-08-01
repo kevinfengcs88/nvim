@@ -80,9 +80,6 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 ## TODO
 - Comments still wrap when hitting <CR> in insert mode (Lua only?)
 - Alpha dashboard options are not silent if selecting an option with <CR>
-- Add Lazygit as a tool
-- Add Ueberzug as a tool
-- Add Ranger as a tool
 - Add sorting configuration to cmp
 - Add keymap to jump to treesitter-context
 - Fix weird bug in Python (?) where you cannot tab comments over that are at the leftmost column
