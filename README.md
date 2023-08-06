@@ -65,7 +65,6 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
     - `node`
     - `npm`
 - `gcc` (especially for Windows machines which installed Neovim without building from source code)
-- `win32yank` (install this in Windows using something like Chocolatey)
 - `ripgrep`
 - `deno`
 - `python3`
