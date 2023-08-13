@@ -22,7 +22,7 @@ return {
             npairs.setup({
                 check_ts = true,
                 fast_wrap = {
-                    map = 'Q',
+                    map = '<C-q>',
                     chars = { '{', '[', '(', '"', "'" },
                     pattern = [=[[%'%"%>%]%)%}%,]]=],
                     end_key = '$',
