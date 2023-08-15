@@ -87,7 +87,6 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
     - Load colorscheme later so that manual Themery switch does not have to be made to fix cursor color
     - Changing the colorscheme overrides all Vim highlight commands, change this behavior for Themery
 - Kanban board is broken :(
-- which-key doesn't know what <leader>1-9 do (it's Harpoon)
 - Get more UI components to be transparent with transparent.nvim (toggleterm, lualine, etc.)
 - Fix visual bug with gitsigns (looks worse for certain colorschemes, like material)
 - Load block style cursor with autocmd to make it more consistent (sometimes it goes back to being a thin line)
@@ -96,8 +95,6 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 - flash.nvim
     - Make `:noh` automatic after `/` searching with flash.nvim
 - Investigate rainbow delimiters behavior (is it just highlight groups happening in the wrong order?)
-- diagflow only works on LSP updates, fix this
-    - Fix diagflow bug working on nvim-tree (just disable it for nvim-tree buffers)
 - Clean up keymaps so that they only load when necessary (plugin = true) option
 
 ## Plugins to test

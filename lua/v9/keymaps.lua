@@ -97,6 +97,9 @@ keymap.set('v', '<C-c>', '"+y', opts)
 -- copy into host system clipboard with <leader>y
 keymap.set('v', '<leader>y', '"*y', opts)
 
+-- prevent x from copying over Vim clipboard
+keymap.set('n', 'x', '"_x', opts)
+
 -- indent and outdent lines in visual mode
 keymap.set('v', '<TAB>', '<S->>gv', opts)
 keymap.set('v', '<S-TAB>', '<S-<>gv', opts)
