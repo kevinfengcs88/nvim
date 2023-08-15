@@ -102,11 +102,9 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 
 ## Plugins to test
 ### High priority
-- https://github.com/mfussenegger/nvim-dap
-    - https://github.com/leoluz/nvim-dap-go
+- https://github.com/andweeb/presence.nvim
 
 ### Low priority
-- https://github.com/andweeb/presence.nvim
 - https://github.com/willothy/wezterm.nvim
 - https://github.com/echasnovski/mini.nvim
 - https://github.com/napisani/nvim-github-codesearch
