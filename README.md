@@ -102,13 +102,12 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 
 ## Plugins to test
 ### High priority
-- https://github.com/andweeb/presence.nvim
+- https://github.com/stevearc/oil.nvim
 
 ### Low priority
 - https://github.com/willothy/wezterm.nvim
 - https://github.com/echasnovski/mini.nvim
 - https://github.com/napisani/nvim-github-codesearch
-- https://github.com/stevearc/oil.nvim
 - https://github.com/kevinhwang91/nvim-ufo
 - https://github.com/kevinhwang91/rnvimr
 - https://github.com/lmburns/lf.nvim
