@@ -50,7 +50,8 @@ return {
             lsp.ensure_installed({
                 'pyright',
                 'lua_ls',
-                'gopls'
+                'gopls',
+                'clangd'
             })
 
             lsp.setup()
