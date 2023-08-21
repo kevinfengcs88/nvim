@@ -99,6 +99,5 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 
 ## Plugins to test
 ### High priority
-- https://github.com/kevinhwang91/nvim-ufo
 
 ### Low priority
