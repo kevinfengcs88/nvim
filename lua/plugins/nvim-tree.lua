@@ -33,6 +33,11 @@ return {
                 view = {
                     adaptive_size = true,
                 },
+                git = {
+                    enable = true,
+                    ignore = false,
+                    timeout = 500,
+                },
             })
         end
     },
