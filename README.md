@@ -99,6 +99,7 @@ Below is a list of dependencies/tools for my Neovim config and overall developme
 
 ## Plugins to test
 ### High priority
+https://github.com/NStefan002/speedtyper.nvim
 https://github.com/piersolenski/wtf.nvim
 
 ### Low priority
