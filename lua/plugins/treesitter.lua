@@ -11,13 +11,10 @@ return {
             end
 
             treesitter.setup({
-                -- ensure_installed = { 'lua', 'vim', 'python', 'markdown_inline', 'go' },
+                ensure_installed = { 'lua', 'vim', 'python', 'markdown_inline', 'go' },
                 sync_install = false,
                 auto_install = false,
                 ignore_install = {},
-                highlight = {
-                    enable = true
-                },
                 context_commentstring = {
                     enable = true,
                     autocmd = false

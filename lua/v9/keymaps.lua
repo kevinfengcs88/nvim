@@ -17,67 +17,26 @@ keymap.set('n', 'L', '$', opts)
 -- open up lazy.nvim UI
 keymap.set('n', '<leader>l', ':Lazy<CR>', opts)
 
--- toggle undotree
-keymap.set('n', '<C-u>', ':UndotreeToggle<CR>', opts)
-
--- toggle nvim-tree
-keymap.set('n', '<C-n>', ':NvimTreeFindFileToggle<CR>', opts)
-
--- unbind <C-d> for now
-keymap.set('n', '<C-d>', '<nop>', opts)
-
--- close the current buffer
-keymap.set('n', '<C-x>', ':bd<CR>', opts)
-
--- quickly switch between buffers
-keymap.set('n', '<', ':bp<CR>', opts)
-keymap.set('n', '>', ':bn<CR>', opts)
-
--- quickly switch between windows
-keymap.set('n', '<C-h>', '<C-w>h', opts)
-keymap.set('n', '<C-l>', '<C-w>l', opts)
-
--- write to all buffers
-keymap.set('n', '<leader>w', ':wa<CR>', opts)
-
--- quit all buffers
-keymap.set('n', '<leader>q', ':qa<CR>', opts)
-
--- force quit all buffers
-keymap.set('n', '<leader>fq', ':qa!<CR>', opts)
-
 -- clear search term when centering the cursor
 keymap.set('n', 'zz', 'zz:noh<CR>', opts)
-
--- toggle transparency
-keymap.set('n', '<C-t>', ':TransparentToggle<CR>', opts)
 
 -- open up Themery
 keymap.set('n', '<leader>t', ':Themery<CR>', opts)
 
--- replace current word
-keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
-
--- make current file an executable
-keymap.set('n', '<leader>x', '<cmd>!chmod +x %<CR>', opts)
-
--- keep cursor at front when appending lines below
-keymap.set('n', 'J', 'mzJ`z', opts)
-
--- select entire file with CTRL + A
-keymap.set('n', '<C-a>', 'ggVG', opts)
-
 -- indent and outdent lines quickly
 keymap.set('n', '<TAB>', '>>', opts)
 keymap.set('n', '<S-TAB>', '<<', opts)
+
+-- keep cursor at front when appending lines below
+keymap.set('n', 'J', 'mzJ`z', opts)
 
 -- search movement keeps cursor in middle
 keymap.set('n', 'n', 'nzzzv', opts)
 keymap.set('n', 'N', 'Nzzzv', opts)
 
 -- vertical movement keeps cursor in middle
-keymap.set('n', '<C-j>', '<C-d>zz', opts)
-keymap.set('n', '<C-k>', '<C-u>zz', opts)
+keymap.set('n', '<C-d>', '<C-d>zz', opts)
+keymap.set('n', '<C-u>', '<C-u>zz', opts)
 
 -- creates a new line below the cursor and goes back into normal mode
 keymap.set('n', '<CR>', 'o<Esc>', opts)
@@ -112,10 +71,5 @@ keymap.set('v', 'J', ":m '>+1<CR>gv=gv", opts)
 keymap.set('v', 'K', ":m '<-2<CR>gv=gv", opts)
 
 -- vertical movement keeps cursor in middle (visual mode)
-keymap.set('v', '<C-j>', '<C-d>zz', opts)
-keymap.set('v', '<C-k>', '<C-u>zz', opts)
-
--- prevent incrementing numbers in file (this is actually horrible)
-keymap.set('v', '<C-a>', 'ggVG', opts)
-
-keymap.set('v', '<C-d>', '"+ygvd', opts)
+keymap.set('v', '<C-d>', '<C-d>zz', opts)
+keymap.set('v', '<C-u>', '<C-u>zz', opts)
