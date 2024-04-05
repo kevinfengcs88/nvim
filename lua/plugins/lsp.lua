@@ -85,12 +85,4 @@ return {
     },
     { 'saadparwaiz1/cmp_luasnip' },
     { 'rafamadriz/friendly-snippets' },
-    -- {
-    --     'dgagn/diagflow.nvim',
-    --     opts = {
-    --         -- placement = 'inline',
-    --         scope = 'line',
-    --         padding_right = 5
-    --     }
-    -- }
 }
