@@ -36,7 +36,7 @@ return {
                 command_palette = false
             },
             messages = {
-                enabled = true
+                enabled = false
             },
             -- popupmenu = {
             --     enabled = false
