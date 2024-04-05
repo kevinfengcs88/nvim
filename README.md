@@ -5,3 +5,4 @@ This repository contains my Neovim config, which is written in Lua. It uses [laz
 
 - Bring back inline LSP errors
 - Bring back write messages to noice
+- for retroactive commit*
