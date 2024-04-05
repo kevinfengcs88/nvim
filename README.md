@@ -3,7 +3,10 @@ This repository contains my Neovim config, which is written in Lua. It uses [laz
 
 ## work in progress...
 
-- Polish LSP popups
+- retroactive: removed messages from noice again (errors are just too annoying)
+- prevent comments from automatically generating on newline (lua?)
+- replace nerd font icon for status line
+- figure out if there is a way to have flash search and regular vim search both available
 
 ## Uninstalling
 
