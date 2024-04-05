@@ -3,5 +3,12 @@ This repository contains my Neovim config, which is written in Lua. It uses [laz
 
 ## work in progress...
 
-- Polish noice and LSP popups
-- retroactive for commit
+- Polish LSP popups
+
+## Uninstalling
+
+I build Neovim from source. To uninstall just run:
+
+```
+rm -f $(which nvim)
+```
