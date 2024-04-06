@@ -4,6 +4,7 @@ This repository contains my Neovim config, which is written in Lua. It uses [laz
 ## work in progress...
 
 - still need to fix treesitter parse query error
+    - more information: this is a treesitter telescope error when telescope renders the file's preview and tries to parse the syntax
 
 ## Uninstalling
 

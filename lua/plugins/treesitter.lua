@@ -11,6 +11,7 @@ return {
             end
 
             treesitter.setup({
+                modules = {},
                 ensure_installed = { 'lua', 'vim', 'python', 'markdown_inline', 'go' },
                 sync_install = false,
                 auto_install = false,
