@@ -3,7 +3,6 @@ This repository contains my Neovim config, which is written in Lua. It uses [laz
 
 ## work in progress...
 
-- prevent comments from automatically generating on newline (lua?)
 - figure out if there is a way to have flash search and regular vim search both available
 
 ## Uninstalling

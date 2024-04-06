@@ -20,7 +20,6 @@ set.tabstop = 4
 set.shiftwidth = 4
 set.expandtab = true
 set.shiftround = true
-set.formatoptions:remove({ 'c', 'r', 'o' })
 set.mousemoveevent = true
 set.winbar = " %{%v:lua.vim.fn.expand('%F')%}  %{%v:lua.require'nvim-navic'.get_location()%}"
 
