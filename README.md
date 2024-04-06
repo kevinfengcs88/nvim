@@ -3,8 +3,6 @@ This repository contains my Neovim config, which is written in Lua. It uses [laz
 
 ## work in progress...
 
-- flash f/F functionality is gone now as well
-
 ## Uninstalling
 
 I build Neovim from source. To uninstall just run:
