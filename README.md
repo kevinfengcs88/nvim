@@ -3,7 +3,7 @@ This repository contains my Neovim config, which is written in Lua. It uses [laz
 
 ## work in progress...
 
-- figure out if there is a way to have flash search and regular vim search both available
+- still need to fix treesitter parse query error
 
 ## Uninstalling
 
