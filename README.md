@@ -3,7 +3,7 @@ This repository contains my Neovim config, which is written in Lua. It uses [laz
 
 ## work in progress...
 
-- add trouble back with no toggle (just to be able to see long LSP error messages)
+empty...
 
 ## Uninstalling
 

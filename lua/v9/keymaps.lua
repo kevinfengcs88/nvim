@@ -23,6 +23,9 @@ keymap.set('n', 'zz', 'zz:noh<CR>', opts)
 -- open up Themery
 keymap.set('n', '<leader>t', ':Themery<CR>', opts)
 
+-- toggle Trouble
+keymap.set('n', '<C-\\>', '<cmd>TroubleToggle<cr>')
+
 -- indent and outdent lines quickly
 keymap.set('n', '<TAB>', '>>', opts)
 keymap.set('n', '<S-TAB>', '<<', opts)
