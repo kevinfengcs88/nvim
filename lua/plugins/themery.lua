@@ -19,8 +19,12 @@ return {
                     colorscheme = 'vscode',
                 },
                 {
-                    name = 'gruvbox',
+                    name = 'gruvbox-baby',
                     colorscheme = 'gruvbox-baby',
+                },
+                {
+                    name = 'gruvbox-material',
+                    colorscheme = 'gruvbox-material'
                 },
                 {
                     name = 'catppuccin',
@@ -29,7 +33,7 @@ return {
                 {
                     name = 'tokyonight',
                     colorscheme = 'tokyonight'
-                }
+                },
             },
             themeConfigFile = '~/.config/nvim/lua/v9/colorscheme.lua',
             livePreview = true,

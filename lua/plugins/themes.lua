@@ -3,5 +3,6 @@ return {
     {'Mofiqul/vscode.nvim'},
     {'luisiacc/gruvbox-baby'},
     {'folke/tokyonight.nvim'},
-    {'catppuccin/nvim'}
+    {'catppuccin/nvim'},
+    {'sainnhe/gruvbox-material'},
 }

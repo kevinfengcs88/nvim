@@ -1,7 +1,7 @@
 -- Themery block
 -- This block will be replaced by Themery.
-vim.cmd("colorscheme tokyonight")
-vim.g.theme_id = 5
+vim.cmd("colorscheme gruvbox-material")
+vim.g.theme_id = 4
 -- end themery block
 
 -- alternate method for transparency
