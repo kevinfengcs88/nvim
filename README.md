@@ -3,7 +3,7 @@ This repository contains my Neovim config, which is written in Lua. It uses [laz
 
 ## work in progress...
 
-empty...
+- Make jumping to a mark also perform zz afterwards
 
 ## Uninstalling
 
