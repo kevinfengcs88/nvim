@@ -4,6 +4,7 @@ This repository contains my Neovim config, which is written in Lua. It uses [laz
 ## work in progress...
 
 - Make jumping to a mark also perform zz afterwards
+- Bring back format-on-save but with retab for formatting (so tabs convert to spaces)
 
 ## Uninstalling
 
