@@ -4,6 +4,7 @@ This repository contains my Neovim config, which is written in Lua. It uses [laz
 ## work in progress...
 
 - Make jumping to a mark also perform zz afterwards
+- Prevent comment lines being added in bash
 
 ## Uninstalling
 
