@@ -4,7 +4,6 @@ This repository contains my Neovim config, which is written in Lua. It uses [laz
 ## work in progress...
 
 - Make jumping to a mark also perform zz afterwards
-- Make .sh files have "tabs" of two spaces, rather than 4 
 
 ## Uninstalling
 
