@@ -51,7 +51,8 @@ return {
                 'pyright',
                 'lua_ls',
                 'gopls',
-                'clangd'
+                'clangd',
+                'bashls'
             })
 
             lsp.setup()

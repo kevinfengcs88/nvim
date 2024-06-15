@@ -5,4 +5,5 @@ return {
     {'folke/tokyonight.nvim'},
     {'catppuccin/nvim'},
     {'sainnhe/gruvbox-material'},
+    {'scottmckendry/cyberdream.nvim'},
 }

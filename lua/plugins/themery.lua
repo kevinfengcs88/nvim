@@ -34,6 +34,10 @@ return {
                     name = 'tokyonight',
                     colorscheme = 'tokyonight'
                 },
+                {
+                    name = 'cyberdream',
+                    colorscheme = 'cyberdream'
+                },
             },
             themeConfigFile = '~/.config/nvim/lua/v9/colorscheme.lua',
             livePreview = true,
