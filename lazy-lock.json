@@ -6,6 +6,7 @@
   "cmp_luasnip": { "branch": "master", "commit": "05a9ab28b53f71d1aece421ef32fee2cb857a843" },
   "cyberdream.nvim": { "branch": "main", "commit": "dab90f1cf0c49bab8fb7a967d47724e075bcc437" },
   "flash.nvim": { "branch": "main", "commit": "48817af25f51c0590653bbc290866e4890fe1cbe" },
+  "format-on-save.nvim": { "branch": "main", "commit": "fed870bb08d9889580f5ca335649da2074bd4b6f" },
   "friendly-snippets": { "branch": "main", "commit": "ea068f1becd91bcd4591fceb6420d4335e2e14d3" },
   "gitsigns.nvim": { "branch": "main", "commit": "81369ed5405ec0c5d55a9608b495dbf827415116" },
   "gruvbox-baby": { "branch": "main", "commit": "bd52e62d8134647090108189e69c8b3cd18bdbbf" },
