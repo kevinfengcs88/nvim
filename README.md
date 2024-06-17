@@ -6,7 +6,6 @@ This repository contains my Neovim config, which is written in Lua. It uses [laz
 - Make jumping to a mark also perform zz afterwards
 - Prevent comment lines being added in bash
 - Get harpoon back in here primeagen is just terry davis v2
-- Find out why ESC is slow (some keymap is stalling it)
 
 ## Uninstalling
 
