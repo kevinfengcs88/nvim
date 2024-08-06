@@ -12,7 +12,7 @@ return {
 
             treesitter.setup({
                 modules = {},
-                ensure_installed = { 'lua', 'vim', 'python', 'markdown_inline', 'go' },
+                ensure_installed = { 'lua', 'vim', 'python', 'markdown_inline', 'go', 'html' },
                 highlight = {
                     enable = true
                 },
