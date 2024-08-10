@@ -29,7 +29,7 @@ return {
 
         local v = vim.version()
         local version = ' v' .. v.major .. '.' .. v.minor .. '.' .. v.patch
-        local datetime = os.date(' %d-%m-%Y 󱑏 %H:%M:%S')
+        local datetime = os.date(' %m-%d-%Y 󱑏 %H:%M:%S')
 
         vim.api.nvim_create_autocmd('User', {
             pattern = 'LazyVimStarted',
