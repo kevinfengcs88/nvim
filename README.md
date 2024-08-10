@@ -7,7 +7,7 @@ This repository contains my Neovim config, which is written in Lua. It uses [laz
 - Prevent comment lines being added in bash
 - Get harpoon back in here primeagen is just terry davis v2
 - Have treesitter install vimdoc by default (help menus are broken without it)
-- Switch from xclip to wl-clipboard if using wayland (more native)
+- Prevent pattern not found from spawning a message (is this from noice?)
 
 ## Uninstalling
 
